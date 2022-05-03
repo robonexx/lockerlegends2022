@@ -20,7 +20,7 @@ export default function DropDownItem(props) {
   }, [closeMobileMenu, events]);
 
   return (
-    <li key={props.title}>
+    <li key={props.title} className={styles.dropdown_item}>
       <a
         href={props.url}
         onClick={closeMobileMenu}

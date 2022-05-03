@@ -25,6 +25,7 @@ export default function Home({ posts, interviews }) {
             initial={{ opacity: 0 }}
             className={styles.title}
           >
+            <p style={{color: 'white', fontSize: '1.2rem', backgroundColor: 'tomato', padding: '8px'}}>This is just for testing, posts will be from lockerlegends at final release</p>
             <h1>Editorials (Blogs) </h1>
           </motion.div>
           <h2 className={styles.sub_title}>
