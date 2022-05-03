@@ -14,3 +14,4 @@ export function metaDescription(str) {
 export function removeTags(str) {
   return str.toString().replace(/(<([^>]+)>)/gi, '');
 }
+

@@ -3,6 +3,10 @@
     position: relative;
     width: 300px;
     object-fit: cover;
+
+    @media screen and (max-width: 50em){
+        width: 200px;
+    }
 }
 
 .logo_img {

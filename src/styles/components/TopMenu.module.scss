@@ -8,9 +8,12 @@
     height: 54px;
     background-color: #1b1b1b;
     z-index: 1000;
-}
+    .subtitle {
+        font-family: inherit;
+        color: white;
+    }
 
-.subtitle {
-    font-family: inherit;
-    color: white;
+    @media screen and (max-width: 50em){
+        padding: 0 0.5rem;
+    }
 }

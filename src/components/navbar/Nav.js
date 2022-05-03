@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiMenu } from 'react-icons/fi';
 import { FiX } from 'react-icons/fi';
-
 import styles from '../../styles/components/Navbar.module.scss';
 
 export default function Nav(props) {
@@ -26,6 +25,7 @@ export default function Nav(props) {
       prevScrollpos = currentScrollPos;
     });
   }, []);
+
   return (
     <nav className={styles.navbar} ref={menu}>
       <div className={styles.menu_icon} onClick={handleClick}>
@@ -39,8 +39,7 @@ export default function Nav(props) {
       </div>
       <ul
         className={
-          styles.nav_menu
-          /* click ? `${styles.nav_menu} ${styles.active}` : `${styles.nav_menu}` */
+          click ? `${styles.nav_menu} ${styles.active}` : `${styles.nav_menu}`
         }
       >
         {props.children}
