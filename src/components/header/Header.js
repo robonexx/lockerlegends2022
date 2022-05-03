@@ -14,7 +14,11 @@ export default function Header() {
       <Nav>
         <NavItem title='home' icon={<AiFillCaretRight />} url='/' />
         <NavItem title='about' icon={<AiFillCaretRight />} url='/about' />
-        <NavItem title='history' icon={<AiFillCaretRight />} url='/history'>
+
+        <NavItem
+          title='history'
+          icon={<AiFillCaretRight />} /*  url='/history' */
+        >
           <DropDown>
             <DropDownItem
               title='History Of Locking'
@@ -43,7 +47,10 @@ export default function Header() {
             />
           </DropDown>
         </NavItem>
-        <NavItem title='knowledge' icon={<AiFillCaretRight />} url='/knowledge'>
+        <NavItem
+          title='knowledge'
+          icon={<AiFillCaretRight />} /* url='/knowledge' */
+        >
           <DropDown>
             <DropDownItem
               title='Pioneers'
