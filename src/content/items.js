@@ -1,33 +1,39 @@
 
 export const items = [
     {
-      title: 'Music as inspiration',
+      title: 'History of Locking',
       image:
-        'https://picsum.photos/200/300?grayscale',
+      'https://picsum.photos/200/300?grayscale',
+      url: '#',
     },
     {
-      title: 'Music as healing',
+      title: 'Soul Train',
       image:
         'https://picsum.photos/200/300?grayscale',
+        url: '#',
     },
     {
-      title: 'Music for motivation',
+      title: 'Wattsstax',
       image:
         'https://picsum.photos/200/300?grayscale',
+        url: '#',
     },
     {
       title: 'Music for movement',
       image:
         'https://picsum.photos/200/300?grayscale',
+        url: '#',
     },
     {
       title: 'Music and coffee',
       image:
         'https://picsum.photos/200/300?grayscale',
+        url: '#',
     },
     {
       title: 'Music make me loose control',
       image:
         'https://picsum.photos/200/300?grayscale',
+        url: '#',
     },
   ];

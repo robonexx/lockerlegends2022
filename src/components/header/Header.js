@@ -17,27 +17,63 @@ export default function Header() {
         <NavItem title='history' icon={<AiFillCaretRight />} url='/history'>
           <DropDown>
             <DropDownItem
+              title='History Of Locking'
+              icon={<AiFillCaretRight />}
+              url='/lockinghistory'
+            />
+            <DropDownItem
               title='Hall of Fame'
               icon={<AiFillCaretRight />}
               url='/hof'
+            />
+            <DropDownItem
+              title='Memorial Page'
+              icon={<AiFillCaretRight />}
+              url='/memorial'
+            />
+            <DropDownItem
+              title='Groups & Dancers'
+              icon={<AiFillCaretRight />}
+              url='/groups'
+            />
+            <DropDownItem
+              title='Soul Train'
+              icon={<AiFillCaretRight />}
+              url='/soultrain'
+            />
+            <DropDownItem
+              title='Wattsstaxx'
+              icon={<AiFillCaretRight />}
+              url='/wattsstaxx'
             />
           </DropDown>
         </NavItem>
         <NavItem title='knowledge' icon={<AiFillCaretRight />} url='/knowledge'>
           <DropDown>
             <DropDownItem
+              title='Timeline of Locking'
+              icon={<AiFillCaretRight />}
+              url='/timeline'
+            />
+            <DropDownItem
               title='Steps & Moves'
               icon={<AiFillCaretRight />}
               url='/steps'
             />
+            <DropDownItem
+              title='Street terminology'
+              icon={<AiFillCaretRight />}
+              url='/terminology'
+            />
+            <DropDownItem
+              title='Social Party'
+              icon={<AiFillCaretRight />}
+              url='/socialparty'
+            />
           </DropDown>
         </NavItem>
         <NavItem title='editorials' icon={<AiFillCaretRight />} url='/blog' />
-        <NavItem
-          title='contact'
-          icon={<AiFillCaretRight />}
-          url='/contact'
-        />
+        <NavItem title='contact' icon={<AiFillCaretRight />} url='/contact' />
       </Nav>
     </div>
   );

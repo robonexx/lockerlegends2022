@@ -89,27 +89,29 @@ a .mobile {
 .nav_item a:before {
   content: "";
   position: absolute;
-  top: 98%;
+  top: 99%;
   bottom: 0;
   /* left: 100%; */
   right: 100%;
   transition: all 0.3s ease-out;
+  background: $color-client-3;
+  border-radius: 25px;
 }
-
+/* 
 .nav_item:nth-of-type(1) a:before {
-  background: $color-client-2;
+  
   border-radius: 25px;
 }
 .nav_item:nth-of-type(2) a:before {
-  background: $color-client-2;
+  
   border-radius: 25px;
 }
 .nav_item:nth-of-type(3) a:before {
-  background: $color-client-2;
+  
   border-radius: 25px;
 }
 .nav_item:nth-of-type(4) a:before {
-  background: $color-client-2;
+ 
   border-radius: 25px;
 }
 .nav_item:nth-of-type(5) a:before {
@@ -123,17 +125,17 @@ a .mobile {
 .nav_item:nth-of-type(7) a:before {
   background: transparent;
   border-radius: 25px;
-}
+} */
 
 
 .nav_item a:hover:before {
-  bottom: -1px;
+  bottom: -3px;
   left: 1.4rem;
   right: 0;
   font-weight: 400;
 
-  &.link_icon {
-    color: $color-client-2;
+  >.link_icon {
+    color: $color-client-3;
   }
 }
 .navbar ul li:nth-of-type(6) a:hover:before {
@@ -148,7 +150,7 @@ a .mobile {
   margin: 0 2rem;
 }
 .nav_links.contact:hover {
-  background: $color-client-1;
+  background: $color-client-3;
   color: $color-client-2;
   border-radius: 25px;
 }
@@ -182,19 +184,22 @@ a .mobile {
   
   .menu_icon {
     top: 54px;
-    right: 20px;
+    right: 0px;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     z-index: 1100;
     cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(0,0,0,.225);
   }
 
   .nav_icon {
     color: #fff;
     font-size: 2rem;
+    
+    
   } 
    
 
@@ -226,7 +231,7 @@ a .mobile {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #242222;
+    background: #121212;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 100;
