@@ -58,11 +58,19 @@ Then use NEXT and vercel to have the website on.
 - [siteground]
 - [localstorage]
 - [json-server]
+
 </br>
-For design:
+
+### For design:
+
+</br>
+
 - [figma]
 </br>
-For my Scrumboard, sprints etc
+
+### For my Scrumboard, sprints etc
+</br>
+
 - [trello]
 
 </br>
@@ -113,6 +121,5 @@ I dident like that the page got slow and I decided to switch to
 [siteground]: https://www.siteground.com/
 [localstorage]: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 [json-server]: https://newbedev.com/javascript-how-to-install-json-server-in-vscode-code-example
-
 [figma]: https://www.figma.com/
 [trello]: https://trello.com/
