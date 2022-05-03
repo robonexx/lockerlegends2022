@@ -24,6 +24,10 @@
  
  .dropdown_menu li:hover {
     background: lighten($color-client-3, 0.05%);
+
+    a:before {
+       opacity: 0;
+    }
  }
  
  .dropdown_menu.clicked {
@@ -31,28 +35,31 @@
  }
  
  .dropdown_link {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 100%;
     text-decoration: none;
     padding: 16px;
+    
 
     .link_icon {
-       --button-size: calc(60px * 0.5);
-       width: 32px;
-       height: 32px;
-       padding: 0.5rem 0.25rem;
-       margin: 2px;
-        align-items: center;
-        justify-content: center;
+       left: 0;
+       top: 2px;
+       width: 36px;
+       height: 36px;
+       padding: 5px;
         transition: filter 300ms;
-      color: $color-client-2;
+      color: $color-client-1;
     }
     .link_title {
        text-transform: uppercase;
        font-size: $font-size-base;
-       padding: 5px;
+       padding: 3px;
        float: left;
+       margin-right: auto;
        color: $color-client-1;
     }
  }

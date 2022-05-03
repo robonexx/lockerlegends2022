@@ -1,86 +1,100 @@
 import { useState } from 'react';
 import TopMenu from '../topmenu/TopMenu';
-import { AiFillCaretRight, AiFillMail, AiFillCaretDown } from 'react-icons/ai';
-import styles from '../../styles/components/Header.module.scss';
 import Nav from '../navbar/Nav';
 import NavItem from '../navbar/NavItem';
 import DropDown from '../navbar/DropDown';
 import DropDownItem from '../navbar/DropDownItem';
+
+// styles
+import styles from '../../styles/components/Header.module.scss';
+
+import { AiFillMail, AiOutlineHome } from 'react-icons/ai';
+import { RiArticleLine } from 'react-icons/ri';
+import { SiMusicbrainz, SiHandshake } from 'react-icons/si';
+import {
+  MdOutlineHistoryEdu,
+  MdOutlineAnnouncement,
+  MdOutlineGroups,
+} from 'react-icons/md';
+import { GiPeaceDove, GiFist } from 'react-icons/gi';
+import { WiTrain } from 'react-icons/wi';
+import { FiMusic } from 'react-icons/fi';
+import { FaRecordVinyl } from 'react-icons/fa';
 
 export default function Header() {
   return (
     <div className={styles.header}>
       <TopMenu />
       <Nav>
-        <NavItem title='home' icon={<AiFillCaretRight />} url='/' />
-        <NavItem title='about' icon={<AiFillCaretRight />} url='/about' />
+        <NavItem title='home' icon={<AiOutlineHome />} url='/' />
+        <NavItem title='about' icon={<MdOutlineAnnouncement />} url='/about' />
 
         <NavItem
           title='history'
-          icon={<AiFillCaretRight />} /*  url='/history' */
+          icon={<MdOutlineHistoryEdu />} /*  url='/history' */
         >
           <DropDown>
             <DropDownItem
               title='History Of Locking'
-              icon={<AiFillCaretRight />}
+              icon={<SiMusicbrainz />}
               url='/lockinghistory'
             />
             <DropDownItem
               title='Memorial Page'
-              icon={<AiFillCaretRight />}
+              icon={<GiPeaceDove />}
               url='/memorial'
             />
             <DropDownItem
               title='Groups & Dancers'
-              icon={<AiFillCaretRight />}
+              icon={<MdOutlineGroups />}
               url='/groups'
             />
             <DropDownItem
               title='Soul Train'
-              icon={<AiFillCaretRight />}
+              icon={<WiTrain />}
               url='/soultrain'
             />
             <DropDownItem
               title='Wattsstaxx'
-              icon={<AiFillCaretRight />}
+              icon={<FiMusic />}
               url='/wattsstaxx'
             />
           </DropDown>
         </NavItem>
         <NavItem
           title='knowledge'
-          icon={<AiFillCaretRight />} /* url='/knowledge' */
+          icon={<SiMusicbrainz />} /* url='/knowledge' */
         >
           <DropDown>
             <DropDownItem
               title='Pioneers'
-              icon={<AiFillCaretRight />}
+              icon={<MdOutlineGroups />}
               url='/halloffame'
             />
             <DropDownItem
               title='Timeline of Locking'
-              icon={<AiFillCaretRight />}
+              icon={<GiFist />}
               url='/timeline'
             />
             <DropDownItem
               title='Steps & Moves'
-              icon={<AiFillCaretRight />}
+              icon={<SiHandshake />}
               url='/steps'
             />
             <DropDownItem
               title='Street terminology'
-              icon={<AiFillCaretRight />}
+              icon={<GiFist />}
               url='/terminology'
             />
             <DropDownItem
               title='Social Party'
-              icon={<AiFillCaretRight />}
+              icon={<FaRecordVinyl />}
               url='/socialparty'
             />
           </DropDown>
         </NavItem>
-        <NavItem title='editorials' icon={<AiFillCaretRight />} url='/blog' />
-        <NavItem title='contact' icon={<AiFillCaretRight />} url='/contact' />
+        <NavItem title='editorials' icon={<RiArticleLine />} url='/blog' />
+        <NavItem title='contact' icon={<AiFillMail />} url='/contact' />
       </Nav>
     </div>
   );
