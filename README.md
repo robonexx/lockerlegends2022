@@ -62,7 +62,7 @@ Then use NEXT and vercel to have the website on.
 ### For design:
 - [figma]
 
-### For my Scrumboard, sprints etc
+### For my Scrumboard, sprints etc:
 - [trello]
 
 </br>
