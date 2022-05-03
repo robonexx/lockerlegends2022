@@ -22,11 +22,6 @@ export default function Header() {
               url='/lockinghistory'
             />
             <DropDownItem
-              title='Hall of Fame'
-              icon={<AiFillCaretRight />}
-              url='/hof'
-            />
-            <DropDownItem
               title='Memorial Page'
               icon={<AiFillCaretRight />}
               url='/memorial'
@@ -50,6 +45,11 @@ export default function Header() {
         </NavItem>
         <NavItem title='knowledge' icon={<AiFillCaretRight />} url='/knowledge'>
           <DropDown>
+            <DropDownItem
+              title='Pioneers'
+              icon={<AiFillCaretRight />}
+              url='/halloffame'
+            />
             <DropDownItem
               title='Timeline of Locking'
               icon={<AiFillCaretRight />}

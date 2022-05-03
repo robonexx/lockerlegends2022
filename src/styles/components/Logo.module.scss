@@ -1,15 +1,15 @@
 
 .logo {
     position: relative;
-    width: 300px;
     object-fit: cover;
 
-    @media screen and (max-width: 50em){
-        width: 200px;
-    }
+   
 }
 
 .logo_img {
-width: 100%;
+
 cursor: pointer;
+@media screen and (max-width: 50em){
+    transform: scale(0.8);
+}
 }
