@@ -1,0 +1,128 @@
+@use '../base' as *;
+.hof {
+  display: flex;
+  margin-top: 8rem;
+  width: 100vw;
+  height: 100%;
+    
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+
+    #main_doc {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      left: 15vw;
+      
+      background-color: $color-bg;
+      color: $color-client-1;
+      width: 85vw;
+      min-height: 100vh;
+      height: 100%;
+    }
+    
+    .hof_title {
+      font-size: 4rem;
+      font-family: var(--big-font);
+      font-weight: 800;
+      text-align: center;
+      text-shadow: 0px 6px 6px rgba(0,0,0,0.335);
+      margin: 4rem 0;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+    }
+    
+      /* #main-doc header {
+        text-align: left;
+        font-size: 1.4em;
+        font-weight: thin;
+        text-transform: uppercase;
+      } */
+      
+}
+      /* .main-section {
+        margin-top: 5rem;
+        padding: 5rem 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row: 1fr auto;
+
+        >.left-side {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 5rem 3rem 3rem;
+          font-weight: 800;   
+          
+          .image {
+            margin: 2rem 0;
+            width: 380px;
+            height: 300px;
+            background-position: center;
+            object-fit: cover;
+            object-position: center;
+          }
+  }
+
+  .content {
+    max-width: 800px;
+    padding: 8rem 4rem 2rem 0;
+
+  .og-era {
+      color: var(--color-txtSnd);
+      font-weight: 800;
+      
+      
+    }
+
+    .text {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 200;
+    }
+
+    
+    
+    section li {
+      margin: 15px 0px 0px 20px;
+     
+    }
+  } */
+
+     
+
+      
+      
+      @media only screen and (max-width: 960px) {
+        .hof {
+          .hof_title {
+            font-size: 3rem;
+            margin: 2rem auto;
+            text-align: center;
+            width: 100%;
+          }
+          #main_doc {
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin-left: 0px;
+            margin-top: 8rem;
+          }
+        }
+
+    }
+
+
+      @media only screen and (max-width: 460px) {
+        .hof {
+          .hof_title {
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 2rem auto;
+            text-align: center;
+            width: 100%;
+          }
+    }
+  }

@@ -1,0 +1,160 @@
+.hof_wrapper {
+  width: 100%;
+  height: 100%;
+
+  img {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+  }
+}
+
+.main_section {
+  margin: 0;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row: 1fr auto;
+
+  header {
+      text-align: left;
+      font-size: 1.4em;
+      text-transform: uppercase;
+    }
+
+  >.left_side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5rem 8rem 3rem;
+    font-weight: 800;   
+
+    h2 {
+        color: #eeeeee;
+        text-shadow: 0 4px 3px rgba(0,0,0,.825);
+        font-size: 2rem;
+    }
+    
+    .image {
+      margin: 2rem 0;
+      width: 380px;
+      height: 300px;
+      background-position: center;
+      object-fit: cover;
+      object-position: center;
+    }
+}
+
+.content {
+max-width: 800px;
+padding: 8rem 6rem 2rem 0;
+
+.og_era {
+color: var(--color-text-secondary);
+font-weight: 800;
+font-size: 2rem;
+
+
+}
+
+.text {
+margin-top: 2rem;
+font-size: 1.2rem;
+font-weight: 400;
+}
+
+
+
+section li {
+margin: 15px 0px 0px 20px;
+
+}
+}
+}
+
+
+@media screen and (max-width: 960px) {
+  .main_section {       
+      padding: 10rem 0 0;
+         
+      header {
+          text-align: left;
+          font-size: 1.4rem;
+          font-weight: thin;
+          text-transform: uppercase;
+        }
+  
+      >.left_side {
+  
+        h2 {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .image {
+          width: 280px;
+          height: 280px;
+        }
+  }
+  
+  .content {
+  max-width: 100%;
+  padding: 8rem 4rem 2rem 0;
+  
+  .og_era {
+    font-size: 1rem;
+  }
+  
+  .text {
+    font-size: 1rem;
+  }
+  }
+}
+  
+ }
+
+ @media screen and (max-width: 460px) {
+
+  .hof_wrapper {
+      position: absolute;
+      top: 20vh;
+  }
+  .main_section {       
+      padding: 6rem 0 0;
+      display: flex;
+      flex-direction: column;
+         
+      header {
+          text-align: left;
+          font-size: 1.4rem;
+          font-weight: thin;
+          text-transform: uppercase;
+        }
+  
+      >.left_side {
+          padding: 0;
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        .image {
+            border-radius: 0;
+          width: 100%;
+          height: 240px;
+        }
+  }
+  
+  .content {
+  width: 100%;
+  padding: 0 2rem;
+  
+  .og_era {
+    font-size: 1rem;
+  }
+  
+  .text {
+    font-size: 0.9rem;
+  }
+  }
+}
+ }

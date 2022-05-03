@@ -1,0 +1,153 @@
+.about_main {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+
+  .about_section {
+    position: relative;
+    margin: 8rem auto 0;
+    display: block;
+    padding: 0 3rem;
+    max-width: 1000px;
+    height: 90vh;
+    
+  
+    > h3 {
+      margin-top: 20vh;
+      font-size: 3rem;
+      font-weight: 400;
+      color: var(--color-text-secondary);
+    }
+    .headline {
+      padding: 3rem 0;
+      font-family: var(--big-font);
+      font-size: 5.5rem;
+      color: var(--color-text-primary);
+    }
+  
+      .sub_header {
+        font-size: 3rem;
+        font-weight: 400;
+        color: white;
+      }
+  }
+  
+  .about_article {
+    position: relative;
+    margin: 5rem auto 0;
+    padding: 0 3rem;
+    max-width: 1000px;
+  
+    
+    h2 {
+      font-size: 2rem;
+      margin: 5rem auto 5rem;
+      color: #fff;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      color: var(--color-text-secondary);
+      font-weight: 800;
+      font-style: italic;
+    }
+  
+    p {
+      color: #fff;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .about_main {
+
+    .about_section {    
+      margin: 8rem auto 0;
+      display: block;
+       padding: 0 3rem;
+      > h3 {
+        margin-top: 30vh;
+        font-size: 1.8rem;
+        
+      }
+      .headline {
+        font-size: 4rem;
+        padding: 2rem 0;
+      }
+    
+        .sub_header {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+    }
+  
+    .about_article {
+      position: relative;
+      margin: 0rem auto 5rem;
+      padding: 1rem 5rem;
+      max-width: 800px;
+      ;
+    }
+  }
+  }
+@media screen and (max-width: 40em) {
+
+  .about_main {
+
+    .about_section {
+      position: relative;
+      display: block;
+    
+      
+      > h3 {
+        margin-top: 20vh;
+        font-size: 1.4rem;
+        font-weight: 100;
+      }
+      .headline {
+        margin: 1rem auto;
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem;
+      }
+    
+        .sub_header {
+          font-size: 1rem;
+          font-weight: 100;
+        }
+    }
+    
+    .about_article {
+      position: relative;
+      margin: 1rem auto 1rem;
+      padding: 1rem 3rem;
+    
+      
+      h2 {
+        margin: 2rem auto 5rem;
+        color: #fff;
+      }
+    
+      h3 {
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+    
+      p {
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+      }
+    }
+  
+  }
+  }

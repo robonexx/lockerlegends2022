@@ -1,0 +1,54 @@
+@use '../../styles//base/' as *;
+
+.dropdown_menu {
+    position: fixed;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    top: 5rem;
+    list-style: none;
+    text-align: start;
+    z-index: 1000;
+    height: 100%;
+ }
+ 
+ .dropdown_menu li {
+    background: #080808;
+    cursor: pointer;
+ }
+
+ 
+ .dropdown_menu li:hover {
+    background: #000000;
+ }
+ 
+ .dropdown_menu.clicked {
+    display: none;
+ }
+ 
+ .dropdown_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 16px;
+ }
+
+ 
+.drop_icon {
+   --button-size: calc(60px * 0.5);
+   width: 32px;
+   height: 32px;
+   padding: 0.5rem 0.25rem;
+   margin: 2px;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+}
+
+.link_title {
+   text-transform: uppercase;
+   padding: 5px;
+   margin: 0 2px;
+   color: $color-client-1;
+}
