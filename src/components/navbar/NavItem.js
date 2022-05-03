@@ -8,7 +8,7 @@ export default function NavItem(props) {
   const [dropdown, setDropdown] = useState(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 300) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -16,7 +16,7 @@ export default function NavItem(props) {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 300) {
       setDropdown(false);
     } else {
       setDropdown(false);
