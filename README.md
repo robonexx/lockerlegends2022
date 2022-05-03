@@ -59,18 +59,10 @@ Then use NEXT and vercel to have the website on.
 - [localstorage]
 - [json-server]
 
-</br>
-
 ### For design:
-
-</br>
-
 - [figma]
-</br>
 
 ### For my Scrumboard, sprints etc
-</br>
-
 - [trello]
 
 </br>
