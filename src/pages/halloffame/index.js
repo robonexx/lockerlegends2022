@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import Hof from '../../components/hof/Hof';
+import Hof from '../../components/Hof/Hof';
 
 import styles from '../../styles/pages/HallOfFame.module.scss';
 
