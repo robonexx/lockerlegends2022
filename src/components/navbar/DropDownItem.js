@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 
 import styles from '../../styles/components/DropDown.module.scss';
@@ -7,7 +7,10 @@ export default function DropDownItem(props) {
   const [click, setClick] = useState(false);
 
   const { events } = useRouter();
-  const closeMobileMenu = () => setClick(false);
+
+  const closeMobileMenu = useCallback(() => {
+    setClick(false);
+  }, [click]);
 
   // using useEffect to navigate from nav to a new page
   useEffect(() => {

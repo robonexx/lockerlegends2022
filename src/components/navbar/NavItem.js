@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
 
 import styles from '../../styles/components/Navbar.module.scss';
@@ -24,7 +24,9 @@ export default function NavItem(props) {
   };
 
   const { events } = useRouter();
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = useCallback(() => {
+    setClick(false);
+  }, [click]);
 
   useEffect(() => {
     // subscribe to next/router event
