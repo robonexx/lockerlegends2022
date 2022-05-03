@@ -8,10 +8,10 @@ export default function Sidebar() {
     <>
       <div className={styles.sidebar}>
         <ul>
-          {pioneers.map(({ id, name, href, cName }) => (
+          {pioneers.map(({ id, name, href }) => (
             <li key={id}>
-              <a href={href} className={cName}>
-                <b>{name}</b>
+              <a href={href} className={styles.sidebar_link}>
+                {name}
               </a>
             </li>
           ))}

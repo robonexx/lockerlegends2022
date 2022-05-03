@@ -20,7 +20,7 @@ export default function Nav(props) {
         menu.current.classList.remove(`${styles.hide}`);
       } else {
         menu.current.classList.add(`${styles.hide}`);
-        menu.current.classList.remove(`${styles.navbar}`);
+        menu.current.classList.remove(`${styles.navbar && styles.bg_orange}`);
       }
       prevScrollpos = currentScrollPos;
     });

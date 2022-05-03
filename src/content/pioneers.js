@@ -6,7 +6,6 @@ export const pioneers = [
     href: '#Introduction',
     url: '',
     img: 'mavericksflat.png',
-    cName: 'nav-link',
     id: 'Introduction',
   },
   {
@@ -16,7 +15,6 @@ export const pioneers = [
     href: '#The_term_OG',
     url: '',
     img: 'watts.jpg',
-    cName: 'nav-link',
     id: 'The_term_OG',
   },
   {
@@ -26,7 +24,6 @@ export const pioneers = [
     href: '#Don_Campbell',
     url: '',
     img: 'campbell.jpg',
-    cName: 'nav-link',
     id: 'Don_Campbell',
   },
   {
@@ -36,7 +33,6 @@ export const pioneers = [
     href: '#Damita_Jo_Freeman',
     url: '',
     img: 'damita.jpg',
-    cName: 'nav-link',
     id: 'Damita_Jo_Freeman',
   },
   {
@@ -46,7 +42,6 @@ export const pioneers = [
     href: '#Greg_Pope',
     url: '',
     img: 'greg.png',
-    cName: 'nav-link',
     id: 'Greg_Pope',
   },
   {
@@ -56,7 +51,6 @@ export const pioneers = [
     href: '#Fred_Berry',
     url: '',
     img: 'Fredberry.png',
-    cName: 'nav-link',
     id: 'Fred_Berry',
   },
   {
@@ -66,7 +60,6 @@ export const pioneers = [
     href: '#Leo_Williams',
     url: '',
     img: 'flukyluke.png',
-    cName: 'nav-link',
     id: 'Leo_Williams',
   },
   {
@@ -76,7 +69,6 @@ export const pioneers = [
     href: '#Jimmy_Foster',
     url: '',
     img: 'scoobdoo.png',
-    cName: 'nav-link',
     id: 'Jimmy_Foster',
   },
   {
@@ -86,7 +78,6 @@ export const pioneers = [
     href: '#James_Higgins',
     url: '',
     img: 'Skeet.png',
-    cName: 'nav-link',
     id: 'James_Higgins',
   },
   {
@@ -96,7 +87,6 @@ export const pioneers = [
     href: '#Arnetta_Johnson',
     url: '',
     img: 'ArnettaJohnsson.png',
-    cName: 'nav-link',
     id: 'Arnetta_Johnson',
   },
   {
@@ -106,7 +96,6 @@ export const pioneers = [
     href: ' #Anthony_Lewis',
     url: '',
     img: 'tonygogo.png',
-    cName: 'nav-link',
     id: 'Anthony_Lewis',
   },
   {
@@ -116,17 +105,15 @@ export const pioneers = [
     href: '#Adolfo_Quinones',
     url: '',
     img: 'Shabbadoo.png',
-    cName: 'nav-link',
     id: 'Adolfo_Quinones',
   },
   {
     name: 'Bill Williams',
-    aka: 'Slim the Robot',
+    aka: 'Slim The Robot',
     desc: 'Early Soul Train Dancer who was known for doing the Robot. Slim went on to tour with the improvistional dancers known as the “Campbellock dancers” and was an Original Member of the “Original Lockers”. He reinovated the basic robot style into a quick karate style robot movement and was also known for introducing a colored light suit and flame throwing capabilities into his act.',
     href: '#Bill_Williams',
     url: '',
     img: 'billwilliams.png',
-    cName: 'nav-link',
     id: 'Bill_Williams',
   },
   {
@@ -136,7 +123,6 @@ export const pioneers = [
     href: '#Edwin_Lombard',
     url: '',
     img: 'edwinlombard.png',
-    cName: 'nav-link',
     id: 'Edwin_Lombard',
   },
   {
@@ -146,7 +132,6 @@ export const pioneers = [
     href: '#Freddie_Maxie',
     url: '',
     img: 'freddiemaxie.png',
-    cName: 'nav-link',
     id: 'Freddie_Maxie',
   },
   {
@@ -156,7 +141,6 @@ export const pioneers = [
     href: '#Alpha_Andersson',
     url: '',
     img: 'alpha.png',
-    cName: 'nav-link',
     id: 'Alpha_Andersson',
   },
   {
@@ -166,7 +150,6 @@ export const pioneers = [
     href: '#Johnnie_McCloud',
     url: '',
     img: '',
-    cName: 'nav-link',
     id: 'Johnnie_McCloud',
   },
   {
@@ -176,7 +159,6 @@ export const pioneers = [
     href: '#Toni_Basil',
     url: '',
     img: 'tonibasil.png',
-    cName: 'nav-link',
     id: 'Toni_Basil',
   },
   {
@@ -185,8 +167,7 @@ export const pioneers = [
     desc: 'He was around from the very beginning. when Robots & Locking was both classified as Lockers, Charles is considered the Godfather of the Party dance of the  Robot style within Locking. Prior to its evolution into the Popping scene. He was  a member of the first Soul Train Gang, and toured with the improvisation dancers known as The “Campbellock Dancers” in 1972. He was the originator of the Robot style of rythimic dancing and organized the group, “The Robot Brothers” in the late 1960s’.',
     href: '#Charles_Washington',
     url: '',
-    img: 'others.png',
-    cName: 'nav-link',
+    img: 'charlesrobot.png',
     id: 'Charles_Washington',
   },
   {
@@ -196,7 +177,6 @@ export const pioneers = [
     href: '#Others',
     url: '',
     img: 'others.png',
-    cName: 'nav-link',
     id: 'Others',
   },
 ];
@@ -208,7 +188,6 @@ export const pioneers = [
     desc: '',
     url: '',
     img: '',
-    cName: 'nav-link',
     id: '',
   },
 

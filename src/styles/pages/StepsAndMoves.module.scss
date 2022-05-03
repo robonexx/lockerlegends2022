@@ -1,3 +1,5 @@
+@use '../base/' as*;
+
 .steps_wrapper {
     position: relative;
     margin: 0 auto;
@@ -8,8 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--font);
-    background: var(--color-bg);
+    font-family: $font-base;
+    background: $color-bg;
 
     .container_top {
         margin: 10rem auto 0;
@@ -18,19 +20,21 @@
         
 
         h1 {
-            color: var(--color-text-secondary);
+            color: $color-client-2;
             margin-bottom: 3rem;
-            font-size: 3rem;
+            font-size: $font-size-xl;
         }
 
         h2 {
-            color: var(--color-text-secondary);
+            color: $color-client-2;
+            margin-bottom: 1rem;
+            font-size: $font-size-ml;
         }
 
         h4 {
-            color: var(--color-text-primary);
+            color: $color-client-1;
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: $font-size-m;
             margin-bottom: 5rem;
         }
     }

@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 .sidebar {
     position: fixed;
     top: 100px;
@@ -11,22 +13,25 @@
         height: calc(100% - 8rem);
         padding: 0;
         overflow-y: scroll;
+        li {
+          border-top: 1px solid #888;
+          list-style: none;
+          position: relative;
+          width: 100%;
+          
+          a {
+            display: block;
+            padding: 10px 30px;
+            color: $color-client-1;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: $font-thin;
+            font-size: $font-size-m;
+          }
+        }
       }
       
-      li {
-        border-top: 1px solid #f4f4f8;
-        list-style: none;
-        position: relative;
-        width: 100%;
-      }
       
-      a {
-        display: block;
-        padding: 10px 30px;
-        color: #e5e5dc;
-        text-decoration: none;
-        cursor: pointer;
-      }
   }
 
   @media screen and (max-width: 960px) {
