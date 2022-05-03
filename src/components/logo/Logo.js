@@ -3,6 +3,12 @@ import styles from '../../styles/components/Logo.module.scss';
 
 export default function Logo() {
   return (
-   <div className={styles.logo}>logo</div>
+    <div className={styles.logo}>
+      <img
+        className={styles.logo_img}
+        src='/images/LOGO_TEXT.png'
+        alt='lockerlegends logo'
+      />
+    </div>
   );
 }

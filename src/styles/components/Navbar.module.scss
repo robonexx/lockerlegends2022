@@ -1,17 +1,36 @@
 @use '../base' as *;
 .navbar {
   position: relative;
+  transform: translateY(0);
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  z-index: 1;
+  width: 100%;
+  z-index: 999;
   font-family: $font-base;
   display: block;
   font-size: 1.2rem;
   background-color: rgba(0,0,0,.125);
   border-bottom: 1px solid rgb(185, 185, 185);
   overflow-x: hidden;
+  transition: all 0.4s linear;
 }
+
+
+.hide {
+  width: 100%;
+  z-index: 40;
+  border-bottom: 2px solid #ee4e34;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+  position: fixed;
+  transform: translateY(-54px);
+  transition: all 0.4s ease;
+}
+
+.bg_orange {
+  transition: 0.3s ease;
+  background-color: #ee4e34;
+}
+
 .nav_menu {
   position: relative;
   display: flex;
@@ -54,11 +73,11 @@ a .mobile {
   cursor: pointer;
 }
 
-.navbar ul li a {
+.nav_links {
   font-size: 1.2rem;
-  font-weight: 100;
-  color: var(--color-text-primary);
-  text-decoration: none;
+  font-weight: 400;
+  color: $color-client-1;
+  font-family: $font-base;
   text-transform: uppercase;
   position: relative;
 
@@ -147,16 +166,15 @@ a .mobile {
 @media screen and (max-width: 960px) {
   .navbar {
     position: fixed;
-    top: 0;
+    top: 54px;
     right: 0;
     left: auto;
-    width: 4rem;
+    /* width: 4rem; */
     margin: 0;
     padding: 0;
     z-index: 10;
-    font-family: var(--font);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 1.2rem;
   }
@@ -164,7 +182,7 @@ a .mobile {
 
   .nav_menu {
     position: fixed;
-    top: 0;
+    top: 54px;
     bottom: 0;
     width: 100%;
     min-height: 100vh;
@@ -172,19 +190,19 @@ a .mobile {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateX(110%);
+    /* transform: translateX(110%); */
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 100;
   }
-
+/* 
   .nav_menu.active {
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     transform: translateX(0);
     display: flex;
     flex-direction: column;
@@ -193,7 +211,7 @@ a .mobile {
     background: #242222;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1000;
+    z-index: 10000;
   }
 
   .nav_links {
@@ -218,16 +236,16 @@ a .mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 0.25rem 0.5rem;  */
+  
     border-radius: 50%;
-    /* background-color: black; */
+   
     z-index: 1100;
     cursor: pointer;
   }
 
   .nav_icon {
-    /* padding-top: 0.25rem; */
+    
     color: #fff;
     font-size: 2rem;
-  }
+  } */
 }

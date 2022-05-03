@@ -6,6 +6,7 @@ import styles from '../../styles/components/Navbar.module.scss';
 export default function NavItem(props) {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -22,7 +23,6 @@ export default function NavItem(props) {
     }
   };
 
-  
   const { events } = useRouter();
   const closeMobileMenu = () => setClick(false);
 
@@ -36,9 +36,12 @@ export default function NavItem(props) {
   }, [closeMobileMenu, events]);
 
   return (
-    <li className={styles.nav_item} key={props.title}
+    <li
+      className={styles.nav_item}
+      key={props.title}
       onMouseEnter={onMouseEnter}
-    onMouseLeave={onMouseLeave}>
+      onMouseLeave={onMouseLeave}
+    >
       <a
         href={props.url}
         onClick={closeMobileMenu}

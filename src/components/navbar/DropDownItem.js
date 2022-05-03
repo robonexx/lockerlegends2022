@@ -9,8 +9,7 @@ export default function DropDownItem(props) {
   const { events } = useRouter();
   const closeMobileMenu = () => setClick(false);
 
-    
-    // using useEffect to navigate from nav to a new page
+  // using useEffect to navigate from nav to a new page
   useEffect(() => {
     // subscribe to next/router event
     events.on('routeChangeStart', closeMobileMenu);

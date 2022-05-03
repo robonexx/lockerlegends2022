@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import TopMenu from '../topmenu/TopMenu';
-import Navbar from '../Navbar/Navbar';
 import { AiFillCaretRight, AiFillMail, AiFillCaretDown } from 'react-icons/ai';
 import styles from '../../styles/components/Header.module.scss';
-import styled from '../../styles/components/Navbar.module.scss';
 import Nav from '../navbar/Nav';
 import NavItem from '../navbar/NavItem';
 import DropDown from '../navbar/DropDown';
@@ -39,7 +37,6 @@ export default function Header() {
           title='contact'
           icon={<AiFillCaretRight />}
           url='/contact'
-          className={styled.contact}
         />
       </Nav>
     </div>

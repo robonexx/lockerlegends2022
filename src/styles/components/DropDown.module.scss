@@ -1,15 +1,17 @@
 @use '../../styles//base/' as *;
 
 .dropdown_menu {
-    position: fixed;
-    width: 160px;
-    display: flex;
-    flex-direction: column;
-    top: 5rem;
-    list-style: none;
-    text-align: start;
+   position: fixed;
+   top: 100px;
+   min-width: 200px;
+   margin-left: 0;
+   min-height: fit-content;
+   background-color: $color-bg;
+   border: $box-shadow;
+   border-radius: 4px;
+   overflow: hidden;
+   transition: height 500ms;
     z-index: 1000;
-    height: 100%;
  }
  
  .dropdown_menu li {
@@ -19,7 +21,7 @@
 
  
  .dropdown_menu li:hover {
-    background: #000000;
+    background: $color-client-2;
  }
  
  .dropdown_menu.clicked {

@@ -1,25 +1,14 @@
 .top_menu {
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 54px;
-    background-color: orangered;
-}
-
-.top_menu_logo{
-    position: fixed;
-    z-index: 10000;
-width: 100%;
+    background-color: #1b1b1b;
+    z-index: 1000;
 }
 
 .subtitle {
     color: white;
-}
-
-.details {
-color: green;
-}
-
-.info {
-color: red;
 }

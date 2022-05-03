@@ -1,7 +1,10 @@
 
 .logo {
-    position: absolute;
-    left: 0;
-    top: 10;
-    z-index: 9999;
+    position: relative;
+    width: 300px;
+    object-fit: cover;
+}
+
+.logo_img {
+width: 100%;
 }
