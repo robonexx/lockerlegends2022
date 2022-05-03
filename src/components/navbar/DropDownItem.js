@@ -10,7 +10,7 @@ export default function DropDownItem(props) {
 
   const closeMobileMenu = useCallback(() => {
     setClick(false);
-  }, [click]);
+  }, []);
 
   // using useEffect to navigate from nav to a new page
   useEffect(() => {

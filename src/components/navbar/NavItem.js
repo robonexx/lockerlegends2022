@@ -26,7 +26,7 @@ export default function NavItem(props) {
   const { events } = useRouter();
   const closeMobileMenu = useCallback(() => {
     setClick(false);
-  }, [click]);
+  }, []);
 
   useEffect(() => {
     // subscribe to next/router event
