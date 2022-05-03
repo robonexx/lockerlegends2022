@@ -24,7 +24,7 @@ export default function Nav(props) {
       }
       prevScrollpos = currentScrollPos;
     });
-  }, []);
+  }, [menu]);
 
   return (
     <nav className={styles.navbar} ref={menu}>
