@@ -58,9 +58,12 @@ Then use NEXT and vercel to have the website on.
 - [siteground]
 - [localstorage]
 - [json-server]
-
-[figma]: https://www.figma.com/
-[trello]: https://trello.com/
+</br>
+For design:
+- [figma]
+</br>
+For my Scrumboard, sprints etc
+- [trello]
 
 </br>
 
@@ -95,7 +98,6 @@ I dident like that the page got slow and I decided to switch to
 </br>
 
 
-### TECH
 [vscode]: https://code.visualstudio.com/
 [github]: https://github.com/
 [worpress]: https://wordpress.org/
