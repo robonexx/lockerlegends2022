@@ -1,0 +1,30 @@
+@use '../base' as *;
+
+.contact {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+    background: $color-client-2;
+    border-radius: 2px;
+    border: solid 1px transparent;
+    font-weight: 800;
+    font-size: $font-size-m;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+    .contact_link {
+        text-decoration: none;
+        color: $color-client-1;
+    }
+    
+
+    &:hover {
+        background: $color-client-3;
+        border: solid 1px $color-client-2;
+        border-radius: 50px;
+      }
+}
+  

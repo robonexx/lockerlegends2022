@@ -3,8 +3,8 @@
 .dropdown_menu {
    position: fixed;
    top: 100px;
+   margin-left: -15px;
    min-width: 200px;
-   margin-left: 0;
    min-height: fit-content;
    background-color: $color-bg;
    border: $box-shadow;

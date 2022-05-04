@@ -8,9 +8,13 @@
     height: 54px;
     background-color: #1b1b1b;
     z-index: 1000;
+    
     .subtitle {
         font-family: inherit;
-        color: white;
+        color: rgb(255, 255, 255);
+        font-size: 44px;
+        font-weight: 800;
+        font-family: 'Orbitron';
     }
 
     @media screen and (max-width: 50em){

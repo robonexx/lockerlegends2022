@@ -5,9 +5,9 @@ import DropDown from '../../components/navbar/DropDown';
 import DropDownItem from '../../components/navbar/DropDownItem';
 
 // styles
-import styles from '../../styles/components/Header.module.scss';
+import styles from '../../styles/layout/Header.module.scss';
 
-import { AiFillMail, AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineHome } from 'react-icons/ai';
 import { RiArticleLine } from 'react-icons/ri';
 import { SiMusicbrainz, SiHandshake } from 'react-icons/si';
 import {
@@ -93,7 +93,6 @@ export default function Header() {
           </DropDown>
         </NavItem>
         <NavItem title='editorials' icon={<RiArticleLine />} url='/blog' />
-        <NavItem title='contact' icon={<AiFillMail />} url='/contact' />
       </Nav>
     </div>
   );

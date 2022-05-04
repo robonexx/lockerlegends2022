@@ -87,7 +87,7 @@ a .mobile {
 }
 
 
-.nav_item a:before {
+.nav_item .nav_links:before {
   content: "";
   position: absolute;
   top: 99%;
@@ -129,33 +129,20 @@ a .mobile {
 } */
 
 
-.nav_item a:hover:before {
-  bottom: -3px;
-  left: 1.4rem;
-  right: 0;
-  font-weight: 400;
-
-  >.link_icon {
-    color: $color-client-3;
+.nav_item:hover {
+  background-color: rgba(0,0,0,.125);
+  .nav_links:before {
+    bottom: -3px;
+    left: 1.4rem;
+    right: 0;
+    font-weight: 400;
+  
+    >.link_icon {
+      color: $color-client-3;
+    }
   }
-}
-.navbar ul li:nth-of-type(6) a:hover:before {
- opacity: 0;
-}
-
-.nav_links.contact {
-  background: $color-client-2;
-  border-radius: 25px;
-  font-weight: 800;
-  transition: background 0.4s ease-in-out;
-  margin: 0 2rem;
-}
-.nav_links.contact:hover {
-  background: $color-client-3;
-  color: $color-client-2;
-  border-radius: 25px;
-}
-
+  
+} 
 
 
 @media screen and (max-width: 1440px) {
