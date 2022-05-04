@@ -6,7 +6,7 @@ import styles from '../../styles/components/ResponsiveGrid.module.scss';
 
 export default function GridItem(props) {
   return (
-    <div className={styles.item} key={props.idx}>
+    <div className={styles.item} key={props.id}>
       <div className={styles.title}>{props.title}</div>
       <div className={styles.image}>
         <Image

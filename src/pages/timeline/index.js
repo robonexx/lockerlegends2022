@@ -15,8 +15,8 @@ export default function Timeline() {
           This Page is still Just a test for layouts and grid
         </h1>
         <ResponsiveGrid>
-          {items.map(({ title, img, url }, idx) => (
-            <GridItem title={title} img={img} url={url} idx={idx} />
+          {items.map(({ title, img, url, id }) => (
+            <GridItem title={title} img={img} url={url} id={id} />
           ))}
         </ResponsiveGrid>
         <Section>Section</Section>
