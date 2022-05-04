@@ -14,22 +14,17 @@ export default function Hof() {
             <h2>{name}</h2>
             <div className={styles.image}>
               <Image
-                className={styles.image}
                 src={`/images/${img}`}
-                width="100%"
-                height="100%"
-                layout="responsive"
+                priority
+                layout='fill'
                 objectFit='cover'
                 alt={`image of ${name}`}
-                priority
               />
             </div>
           </div>
 
           <div className={styles.content}>
-            <h1>
-              <b className={styles.og_era}>{aka}</b>
-            </h1>
+            <h1 className={styles.og_era}>{aka}</h1>
             <div className={styles.text}>{desc}</div>
           </div>
         </div>

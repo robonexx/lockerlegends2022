@@ -3,18 +3,14 @@ import Link from 'next/link';
 // styles
 import styles from '../../styles/components/Logo.module.scss';
 
-export default function Logo({ url }) {
+export default function Logo() {
   return (
-    <div className={styles.logo}>
-      <Link href={url} passHref>
-        <Image
-          className={styles.logo_img}
-          width={200}
-          height={46}
-          src='/images/LOGO_TEXT.png'
-          alt='lockerlegends logo'
-        />
-      </Link>
-    </div>
+    <Image
+      src='/images/LOGO_TEXT.png'
+      className={styles.logo_img}
+      width={200}
+      height={46}
+      alt='lockerlegends logo'
+    />
   );
 }

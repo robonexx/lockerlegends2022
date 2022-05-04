@@ -7,7 +7,7 @@ export default function Sidebar() {
   return (
     <>
       <div className={styles.sidebar}>
-        <ul>
+        <ul >
           {pioneers.map(({ id, name, href }) => (
             <li key={id}>
               <a href={href} className={styles.sidebar_link}>

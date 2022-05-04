@@ -31,71 +31,15 @@
       text-transform: uppercase;
       color: var(--color-text-secondary);
     }
-    
-      /* #main-doc header {
-        text-align: left;
-        font-size: 1.4em;
-        font-weight: thin;
-        text-transform: uppercase;
-      } */
-      
-}
-      /* .main-section {
-        margin-top: 5rem;
-        padding: 5rem 0;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-row: 1fr auto;
-
-        >.left-side {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
-          flex-direction: column;
-          padding: 5rem 3rem 3rem;
-          font-weight: 800;   
-          
-          .image {
-            margin: 2rem 0;
-            width: 380px;
-            height: 300px;
-            background-position: center;
-            object-fit: cover;
-            object-position: center;
-          }
   }
-
-  .content {
-    max-width: 800px;
-    padding: 8rem 4rem 2rem 0;
-
-  .og-era {
-      color: var(--color-txtSnd);
-      font-weight: 800;
-      
-      
-    }
-
-    .text {
-      margin-top: 2rem;
-      font-size: 1.2rem;
-      font-weight: 200;
-    }
-
-    
-    
-    section li {
-      margin: 15px 0px 0px 20px;
-     
-    }
-  } */
-
      
 
       
       
       @media only screen and (max-width: 960px) {
         .hof {
+          margin-top: 4rem;
+          
           .hof_title {
             font-size: 3rem;
             margin: 2rem auto;
