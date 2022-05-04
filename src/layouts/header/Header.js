@@ -60,10 +60,7 @@ export default function Header() {
             />
           </DropDown>
         </NavItem>
-        <NavItem
-          title='knowledge'
-          icon={<SiMusicbrainz />}
-        >
+        <NavItem title='knowledge' icon={<SiMusicbrainz />}>
           <DropDown>
             <DropDownItem
               title='Pioneers'
