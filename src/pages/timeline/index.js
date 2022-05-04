@@ -10,15 +10,15 @@ import { items } from '../../content/items';
 export default function Timeline() {
   return (
     <div>
-          <PageLayout>
-              <h1 style={{fontSize: '3rem', color: 'white'}}>This Page is still Just a test for layouts and grid</h1>
+      <PageLayout>
+        <h1 style={{ fontSize: '3rem', color: 'white' }}>
+          This Page is still Just a test for layouts and grid
+        </h1>
         <ResponsiveGrid>
           {items.map(({ title, img, url }, i) => (
-            <ul>
-              <li key={i}>
-                <GridItem title={title} img={img} url={url} />
-              </li>
-            </ul>
+            <li key={i}>
+              <GridItem title={title} img={img} url={url} />
+            </li>
           ))}
         </ResponsiveGrid>
         <Section>Section</Section>

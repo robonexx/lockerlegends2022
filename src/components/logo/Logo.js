@@ -6,7 +6,7 @@ import styles from '../../styles/components/Logo.module.scss';
 export default function Logo({ url }) {
   return (
     <div className={styles.logo}>
-      <Link href={url}>
+      <Link href={url} passHref>
         <Image
           className={styles.logo_img}
           width={200}
