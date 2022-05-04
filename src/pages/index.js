@@ -6,7 +6,7 @@ import {
 } from '../lib/posts/get-posts';
 import { formatDate } from '../utils/functions';
 import Link from 'next/link';
-import Hero from '../components/hero/Hero';
+import Hero from '../layouts/hero/Hero';
 
 import styles from '../styles/pages/Home.module.scss';
 

@@ -9,7 +9,7 @@ export default function Blog({ posts }) {
   return (
     <>
       <Head>
-        <title>Blog - LL</title>
+        <title>Editorials</title>
         <meta content='Read my latest blog posts' name='description' />
       </Head>
 

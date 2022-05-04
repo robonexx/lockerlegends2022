@@ -1,6 +1,6 @@
 import React from 'react';
-import PageLayout from '../../components/pagelayout/PageLayout';
-import Section from '../../components/pagelayout/Section';
+import PageLayout from '../../layouts/pagelayout/PageLayout';
+import Section from '../../layouts/pagelayout/Section';
 
 export default function Contact() {
   return (

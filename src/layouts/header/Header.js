@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import TopMenu from '../topmenu/TopMenu';
-import Nav from '../navbar/Nav';
-import NavItem from '../navbar/NavItem';
-import DropDown from '../navbar/DropDown';
-import DropDownItem from '../navbar/DropDownItem';
+import TopMenu from '../../components/topmenu/TopMenu';
+import Nav from '../../components/navbar/Nav';
+import NavItem from '../../components/navbar/NavItem';
+import DropDown from '../../components/navbar/DropDown';
+import DropDownItem from '../../components/navbar/DropDownItem';
 
 // styles
 import styles from '../../styles/components/Header.module.scss';
@@ -37,7 +36,7 @@ export default function Header() {
             <DropDownItem
               title='History Of Locking'
               icon={<SiMusicbrainz />}
-              url='/lockinghistory'
+              url='/history'
             />
             <DropDownItem
               title='Memorial Page'

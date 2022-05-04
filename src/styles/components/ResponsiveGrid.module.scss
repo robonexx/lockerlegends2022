@@ -1,3 +1,4 @@
+@use '../base' as *;
 
 .responsiveGrid{
   display:flex;
@@ -8,10 +9,17 @@
   .item{
     transition:0.5s;
     margin: 10px;
-    height:100%;
+    max-width: 400px;
+    min-width: 200px;
+    min-height: 300px;
+    max-height: 100%;
+    margin: 20px;
+    background:rgba(0, 0, 0, 0.671);
+    box-shadow: 0 4px 6px rgba(0,0,0,.4);
+    transition:0.5s;
 
     .title{
-      color: #121212;
+      color: $color-client-1;
       font-size: 1.5rem;
       text-align:center;
       text-transform:uppercase;
@@ -32,35 +40,23 @@
         transition:0.5s;
       }
     }
-  }
-  
-  .itemData{
-    max-width: 350px;
-    min-width: 200px;
-    min-height: 300px;
-    max-height: 100%;
-    margin: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,.4);
-    transition:0.5s;
 
     &:hover {
+      cursor: pointer;
         border-radius: 10px;
-        background:rgba(0, 0, 0, 0.671);
+        background: $color-client-2;
+        
         .item{
             position: relative;
              
           
           .title{
                 position: relative;
-                background:#000;
-                color:#fff;
-                z-index: 10;
-               
+                
+                z-index: 10; 
           }
           img{
             border-radius: 10px;
-            
-            
           }
         }
         

@@ -16,11 +16,11 @@ export default function Nav(props) {
       let currentScrollPos = window.pageYOffset;
 
       if (prevScrollpos > currentScrollPos) {
-        menu.current.classList.add(`${styles.navbar && styles.bg_orange}`);
+        menu.current.classList.add(`${styles.navbar && styles.bgorange}`);
         menu.current.classList.remove(`${styles.hide}`);
       } else {
         menu.current.classList.add(`${styles.hide}`);
-        menu.current.classList.remove(`${styles.navbar && styles.bg_orange}`);
+        menu.current.classList.remove(`${styles.navbar && styles.bgorange}`);
       }
       prevScrollpos = currentScrollPos;
     });

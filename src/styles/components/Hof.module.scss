@@ -15,9 +15,23 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-row: 1fr auto;
+  
+  h2 {
+      color: $color-client-1;
+      text-shadow: 0 4px 3px rgba(0,0,0,.825);
+      font-size: $font-size-l;
+      font-weight: $font-thin;
+  }
+  
+  .image {
+    margin: 2rem 0;
+    width: 380px;
+    height: 300px;
+    background-position: center;
+  }
 
-  header {
-      text-align: left;
+  h1 {
+    text-align: left;
       font-size: $font-size-ml;
       text-transform: uppercase;
       font-weight: $font-thin;
@@ -31,21 +45,6 @@
     padding: 5rem 8rem 3rem;
     font-weight: 800;   
 
-    h2 {
-        color: $color-client-1;
-        text-shadow: 0 4px 3px rgba(0,0,0,.825);
-        font-size: $font-size-l;
-        font-weight: $font-thin;
-    }
-    
-    .image {
-      margin: 2rem 0;
-      width: 380px;
-      height: 300px;
-      background-position: center;
-      object-fit: cover;
-      object-position: center;
-    }
 }
 
 .content {

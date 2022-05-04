@@ -1,6 +1,6 @@
 import ScrollToTop from '../../utils/scrollToTop/ScrollToTop';
 import Footer from '../footer/Footer';
-import Header from '../header/Header';
+import Header from '../../layouts/header/Header';
 
 export default function Layout({ children }) {
   return (

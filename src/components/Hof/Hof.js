@@ -12,21 +12,24 @@ export default function Hof() {
         <div className={styles.main_section} id={id} key={id}>
           <div className={styles.left_side}>
             <h2>{name}</h2>
-            <Image
-              className={styles.image}
-              src={`/images/${img}`}
-              width={380}
-              height={300}
-              alt={`image of ${name}`}
-              priority
-            />
+            <div className={styles.image}>
+              <Image
+                className={styles.image}
+                src={`/images/${img}`}
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit='cover'
+                alt={`image of ${name}`}
+                priority
+              />
+            </div>
           </div>
 
           <div className={styles.content}>
-            <header>
+            <h1>
               <b className={styles.og_era}>{aka}</b>
-            </header>
-
+            </h1>
             <div className={styles.text}>{desc}</div>
           </div>
         </div>
