@@ -16,7 +16,9 @@ export default function Timeline() {
         </h1>
         <ResponsiveGrid>
           {items.map(({ title, img, url, id }) => (
-            <GridItem title={title} img={img} url={url} id={id} />
+            <React.Fragment key={id}>
+              <GridItem title={title} img={img} url={url} />
+            </React.Fragment>
           ))}
         </ResponsiveGrid>
         <Section>Section</Section>
