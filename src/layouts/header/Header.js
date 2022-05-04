@@ -62,7 +62,7 @@ export default function Header() {
         </NavItem>
         <NavItem
           title='knowledge'
-          icon={<SiMusicbrainz />} /* url='/knowledge' */
+          icon={<SiMusicbrainz />}
         >
           <DropDown>
             <DropDownItem
