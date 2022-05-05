@@ -6,30 +6,50 @@
     display: block;
     padding: 0 3rem;
     max-width: 1000px;
+    width: 100%;
     height: 90vh;
-
-    @media screen and (max-width: 40em) {
-        margin-top: 50vh;
-    }
     
   
     > .pre_title {
-      font-size: 3rem;
+      font-size: $font-size-l;
       font-weight: 400;
       color: $color-client-1;
     }
     .headline {
       padding: 3rem 0;
       font-family: $font-alt;
-      font-size: 5.5rem;
+      font-size: $font-size-xxl;
       color: $color-client-2;
       text-shadow: 1px 1px 1px white;
       text-transform: uppercase;
     }
   
       .subtitle {
-        font-size: 3rem;
+        font-size: $font-size-l;
         font-weight: 400;
         color: white;
       }
+      @media screen and (max-width: 40em) {
+        margin-top: 50vh;
+
+        > .pre_title {
+          font-size: $font-size-m;
+          font-weight: 400;
+          color: $color-client-1;
+        }
+        .headline {
+          padding: 3rem 0;
+          font-family: $font-alt;
+          font-size: $font-size-l;
+          color: $color-client-2;
+          text-shadow: 1px 1px 1px white;
+          text-transform: uppercase;
+        }
+      
+          .subtitle {
+            font-size: $font-size-m;
+            font-weight: 400;
+            color: white;
+          }
+    }
   }

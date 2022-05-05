@@ -1,32 +1,58 @@
+@use '../base/' as *;
 
 .blog_slug_main {
     margin: 0 auto;
-    color: var(--color-text-primary);
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
     padding: 15rem 5rem;
     padding-bottom: 2rem;
+    font-family: $font-base;
+
+    .date {
+      color: $color-dimmed;
+      padding: 1rem 0;
+    }
+
+    .blog_title {
+      color: $color-client-1;
+      font-size: $font-size-base;
+      padding: 1rem 0;
+      font-weight: $font-thin;
+  }
+
+  .post_wrapper {
+
+    h1 {
+      color: $color-client-2;
+      font-size: $font-size-l;
+      text-shadow: 1px 1px 1px white;
+      padding: 1rem 0;
+    }
     p {
-      font-size: 21px;
+      &:nth-child(1) {
+        padding: 1rem 0;
+      }
+      color: $color-client-1;
+      font-size: $font-size-m;
       &:last-of-type {
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
     }
-    h1 {
-      font-size: 48px;
-      line-height: 1.2;
-    }
     h2 {
-      font-size: 30px;
+      font-size: $font-size-ml;
     }
     figure {
       margin: 0;
     }
-    img {
+    .image {
       width: 100%;
       height: auto;
       border-radius: 5px;
     }
+
+  }
+    
+     
     pre {
       position: relative;
       padding: 0.8rem 1rem;
@@ -63,16 +89,25 @@
 
 .blog_related {
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 
+}
+
+.more {
+  margin: 1rem 0;
+  font-size: $font-size-ml;
+  color: $color-client-1;
+  font-weight: $font-thin;
 }
 
 .blog_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 1rem 5rem;
+    margin-bottom: 10rem;
     @media (max-width: 768px) {
       grid-template-columns: 100%;
     }
@@ -82,7 +117,7 @@
       justify-content: space-between;
       position: relative;
       padding: 20px;
-      background-color: #fff;
+      background-color: $color-client-2;
       background-clip: padding-box;
       border: solid 5px transparent;
       border-radius: 10px;
@@ -107,9 +142,12 @@
         height: 100%;
         width: 100%;
         text-decoration: none;
+        color: $color-client-1;
       }
       h3 {
         margin-bottom: 20px;
+        font-size: $font-size-m;
+        color: $color-client-1;
       }
     }
 }

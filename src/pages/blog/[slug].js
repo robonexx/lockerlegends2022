@@ -61,23 +61,30 @@ export default function Blog({ blog, blogs }) {
           </Head>
 
           <div className={styles.blog_slug_main}>
-            <span style={{ fontWeight: '500' }}>{formatDate(blog.date)}</span>
-            <h1 style={{ marginTop: '0px' }}>{blog.title}</h1>
-            {blog.featuredImage && (
-              <Image
-                src={blog.featuredImage.node.sourceUrl}
-                height={blog.featuredImage.node.mediaDetails.height}
-                width={blog.featuredImage.node.mediaDetails.width}
-                alt='Hero image'
-                priority
-              />
-            )}
-            <div style={{ marginBottom: '0px' }}>
+            <span className={styles.date}>{formatDate(blog.date)}</span>
+              <h1 className={styles.blog_title}>{blog.title}</h1>
+              
+          
+              {blog.featuredImage && (
+                <Image
+                  src={blog.featuredImage.node.sourceUrl}
+                  /* height={blog.featuredImage.node.mediaDetails.height}
+                width={blog.featuredImage.node.mediaDetails.width} */
+                  layout='fill'
+                  objectFit='cover'
+                  alt='blog post image'
+                  priority
+                />
+              )}
+              
+            <div className={styles.post_wrapper}>
               {parse(blog.content, replaceImage)}
             </div>
-          </div>
+            </div>
+            
           <div className={styles.blog_related}>
-            <h2 style={{ marginBottom: '1rem' }}>More to read</h2>
+            <h2 className={styles.more}>More to read</h2>
+
             <div className={styles.blog_grid}>
               {blogs.map(({ node }) => {
                 return (
