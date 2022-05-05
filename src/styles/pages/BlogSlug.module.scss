@@ -49,6 +49,9 @@
       height: auto;
       border-radius: 5px;
     }
+    li, strong, b, i, h3, h4, h5, h6 {
+      color: $color-client-1;
+    }
 
   }
     
