@@ -11,16 +11,22 @@
     background: $color-client-2;
     border-radius: 2px;
     border: solid 1px transparent;
-    font-weight: 800;
-    font-size: $font-size-m;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
 
     
 
     .contact_link {
+        font-family: $font-base;
+        font-weight: 400;
+        font-size: $font-size-m;
         text-decoration: none;
         color: $color-client-1;
+
+        @media screen and (max-width: 50em) {
+            font-size: $font-size-base;
+            font-weight: $font-base;
+        }
     }
     
 
@@ -33,10 +39,8 @@
       @media screen and (max-width: 50em){
           display: block;
           justify-content: center;
-        font-size: $font-size-s;
-        font-weight: $font-base;
         width: 100px;
-        padding: 0.25rem 0.5rem;
+        
 
         .contact_link {
             span {

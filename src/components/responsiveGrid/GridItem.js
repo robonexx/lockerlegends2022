@@ -11,14 +11,26 @@ export default function GridItem(props) {
       <div className={styles.image}>
         <Image
           src={`/images/${props.img}`}
-          width={400}
-          height={300}
-          alt='item images'
+          priority
+          layout='fill'
+          objectFit='cover'
+          alt={`image of ${props.title}`}
         />
       </div>
-      <Link className={styles.link} href={props.url}>
-        Read More...
-      </Link>
+      <div className={styles.info}>
+        <div>
+          <Link
+            aria-label={props.title}
+            className={styles.link}
+            href={props.url}
+            passHref
+          >
+            <span>Read more...</span>
+          </Link>
+        </div>
+
+        <p className={styles.date}>{props.date}</p>
+      </div>
     </div>
   );
 }

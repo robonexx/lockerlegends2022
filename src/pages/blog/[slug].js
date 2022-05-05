@@ -41,9 +41,7 @@ export default function Blog({ blog, blogs }) {
             width={attribs.width}
             height={attribs.height}
             alt={
-              attribs.alt
-                ? attribs.alt
-                : 'Image - this image does not have an alt text, please let me know.'
+              attribs.alt ? attribs.alt : 'This image is missing an alt text'
             }
           />
         );

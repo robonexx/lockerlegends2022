@@ -1,14 +1,14 @@
 import React from 'react';
+import Content_container from '../../layouts/pagelayout/Content_container';
 import PageLayout from '../../layouts/pagelayout/PageLayout';
-import Section from '../../layouts/pagelayout/Section';
 
 export default function Terminology() {
   return (
     <div>
       <PageLayout>
-        <Section>
+        <Content_container>
           <h1>Street Terminology</h1>
-        </Section>
+        </Content_container>
       </PageLayout>
     </div>
   );
