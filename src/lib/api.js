@@ -1,4 +1,4 @@
-const URL = process.env.NEXT_PUBLIC_WP_ENDPOINT;
+const URL = process.env.NEXT_PUBLIC_WP_ENDPOINT_2022;
 
 export async function fetchAPI(query, { variables } = {}) {
   const headers = { 'Content-Type': 'application/json' };

@@ -1,0 +1,35 @@
+@use '../base/' as *;
+
+.section_top {
+    position: relative;
+    margin: 30vh auto 0;
+    display: block;
+    padding: 0 3rem;
+    max-width: 1000px;
+    height: 90vh;
+
+    @media screen and (max-width: 40em) {
+        margin-top: 50vh;
+    }
+    
+  
+    > .pre_title {
+      font-size: 3rem;
+      font-weight: 400;
+      color: $color-client-1;
+    }
+    .headline {
+      padding: 3rem 0;
+      font-family: $font-alt;
+      font-size: 5.5rem;
+      color: $color-client-2;
+      text-shadow: 1px 1px 1px white;
+      text-transform: uppercase;
+    }
+  
+      .subtitle {
+        font-size: 3rem;
+        font-weight: 400;
+        color: white;
+      }
+  }
