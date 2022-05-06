@@ -25,13 +25,13 @@ export default function Home({ posts, interviews }) {
             initial={{ opacity: 0 }}
             className={styles.title}
           >
-            <p style={{color: 'white', fontSize: '1.2rem', backgroundColor: 'tomato', padding: '8px'}}>This is just for testing, posts will be from lockerlegends at final release</p>
+            <p>This is just for testing, posts will be from lockerlegends at final release</p>
             <h1>Editorials (Blogs) </h1>
           </motion.div>
-          <h2 className={styles.sub_title}>
+          <p>
             Read about locking, culture, interviews and more...
-          </h2>
-          <h1 className={styles.blog_row_title}>Latest Posts:</h1>
+          </p>
+          <h3 className={styles.blog_row_title}>Latest Posts:</h3>
           <div className={styles.home_grid}>
             {posts.map(({ node }) => {
               return (

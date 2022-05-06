@@ -1,4 +1,4 @@
-
+$layout-max-width: 1000px;
 // font-size (rfs)
 // overrides defaults
 $font-bound-min:   320px; 
@@ -36,9 +36,22 @@ $font-lock-max: 1000px !default;
 //  strip units helper function
 @function num($input){  @return $input/($input * 0 + 1); }
 
-
-
-
+// fluit typo
+@mixin fluid-typography($minFont,$maxFont,$minBreakpoint,$maxBreakpoint) {
+  $maxLessOne: $maxBreakpoint - 1;
+  $avg: ($maxFont + $minFont) / 2;
+  font-size: #{$minFont}px;
+  
+  @media (min-width: #{$minBreakpoint}px) and (max-width: #{$maxLessOne}px) {
+    font-size: #{$avg}px;
+    font-size: calc(#{$minFont}px + (#{$maxFont} - #{$minFont}) * (100vw - #{$minBreakpoint}px) / (#{$maxBreakpoint} - #{$minBreakpoint}))
+    
+  }
+  
+  @media (min-width: #{$maxBreakpoint}px) {
+    font-size: #{$maxFont}px;
+  }
+}
 
 // scrollbar
 @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, rgb(27, 27, 27),  50%)) {

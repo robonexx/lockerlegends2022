@@ -84,3 +84,70 @@ input{
   border-radius: 0;
 }
 
+
+// h1 
+h1 {
+font-size: 3.5rem;
+
+@media screen and (max-width: 1185px) {
+  font-size: 2.5rem;
+}
+
+  @media screen and (max-width: 960px) {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 40em) {
+  font-size: 1.6rem;
+}
+}
+
+
+
+
+
+
+  // h2 
+
+  h2 {
+    font-family: $font-base;
+    font-size: 2rem;
+    padding: 5rem 0;
+
+    @media screen and (max-width: 960px) {
+      font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 40em) {
+    font-size: 1rem;
+  }
+}
+
+  // h3 
+
+  h3 {
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 960px) {
+     
+  }
+  @media screen and (max-width: 40em) {
+    font-size: 1rem;
+  }
+  }
+
+  // paragraph 
+  p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    @media screen and (max-width: 960px) {
+     font-size: 1rem;
+    }
+
+    @media screen and (max-width: 40em) {
+      font-size: 0.8rem;
+          line-height: 1.2rem;
+       
+  }
+  }
