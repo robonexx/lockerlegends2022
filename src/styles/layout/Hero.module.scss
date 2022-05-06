@@ -44,7 +44,7 @@
       
     
       > .hero_pretitle {
-        font-size: clamp($font-size-m, 3vw, $font-size-xl);
+        font-size: $font-size-xl;
         font-weight: 400;
         color: $color-client-2;
         text-shadow: 0 2px 1px rgba(0,0,0,.825);
@@ -52,16 +52,14 @@
       .hero_title {
         padding: 3rem 0;
         font-family: $font-alt;
-        font-size: clamp($font-size-m, 5vw, $font-size-xxxl);
-        /* @include font-size($font-size-l, $font-size-xxxl); */
+        font-size: $font-size-xxxl;
         color: $color-client-1;
         font-weight: $font-bold;
         text-shadow: 0 4px 1px rgba(0,0,0,.825);
       }
     
         .hero_subtitle {
-          /* @include font-size($font-size-base, $font-size-l); */
-          font-size: clamp($font-size-m, 2.5vw, $font-size-xl);
+          font-size: $font-size-xl;
           font-weight: 400;
           color: white;
           text-shadow: 0 2px 1px rgba(0,0,0,.825);
@@ -79,16 +77,16 @@
          padding: 0 5rem;
         > .hero-pretitle {
           margin-top: 30vh;
-         /*  font-size: $font-size-l; */
+         font-size: $font-size-l;
           
         }
         .hero_title {
-          /* font-size: $font-size-xl; */
+          font-size: $font-size-xl;
         }
       
           .hero_subtitle {
-            /* font-size: $font-size-l; */
-            font-weight: 400;
+            font-size: $font-size-ml
+          
           }
       }
     }
@@ -104,16 +102,15 @@
       
         > .hero_pretitle {
           margin-top: 20vh;
-          /* font-size: $font-size-base; */
+          font-size: $font-size-ml;
         }
         .hero_title {
           padding: 2rem 0;
-          /* font-size: $font-size-l; */
+          font-size: $font-size-l * 1.1;
         }
       
           .hero_subtitle {
-            /* font-size: $font-size-base; */
-            font-weight: $font-normal;
+          font-size: $font-size-m;
           }
       }
     }

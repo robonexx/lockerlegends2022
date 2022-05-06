@@ -7,27 +7,32 @@ export default function Nav(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  const menu = React.createRef();
+  const navRef = useRef();
 
   useEffect(() => {
     let prevScrollpos = window.pageYOffset;
 
-    window.addEventListener('scroll', () => {
+    const handleScroll = () => {
       let currentScrollPos = window.pageYOffset;
 
       if (prevScrollpos > currentScrollPos) {
-        menu.current.classList.add(`${styles.navbar && styles.bgorange}`);
-        menu.current.classList.remove(`${styles.hide}`);
+        navRef.current.classList.add(`${styles.navbar && styles.bgorange}`);
+        navRef.current.classList.remove(`${styles.hide}`);
       } else {
-        menu.current.classList.add(`${styles.hide}`);
-        menu.current.classList.remove(`${styles.navbar && styles.bgorange}`);
+        navRef.current.classList.add(`${styles.hide}`);
+        navRef.current.classList.remove(`${styles.navbar && styles.bgorange}`);
       }
       prevScrollpos = currentScrollPos;
-    });
-  }, [menu]);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className={styles.navbar} ref={menu}>
+    <nav className={styles.navbar} ref={navRef}>
       <div className={styles.menu_icon} onClick={handleClick}>
         <div>
           {click ? (
