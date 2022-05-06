@@ -7,6 +7,9 @@
     padding: 15rem 5rem;
     padding-bottom: 2rem;
     font-family: $font-base;
+    @media screen and (max-width: 40em) {
+      padding: 8rem 2rem;
+    }
 
     .date {
       color: $color-dimmed;
@@ -27,13 +30,16 @@
       font-size: $font-size-l;
       text-shadow: 1px 1px 1px white;
       padding: 1rem 0;
+      @media screen and (max-width: 40em) {
+        font-size: $font-size-m;
+      }
     }
     p {
       &:nth-child(1) {
         padding: 1rem 0;
       }
       color: $color-client-1;
-      font-size: $font-size-m;
+      
       &:last-of-type {
         margin-bottom: 10px;
       }
@@ -117,17 +123,22 @@
     margin-bottom: 10rem;
     @media (max-width: 768px) {
       grid-template-columns: 100%;
+      padding: 1rem 2rem;
+    }
+    @media (max-width: 460px) {
+      grid-template-columns: 100%;
+      padding: 1rem 1rem;
     }
     .post_card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-      padding: 20px;
-      background-color: $color-client-2;
+      padding: 2rem;
+      background-color: $color-client-3;
       background-clip: padding-box;
       border: solid 5px transparent;
-      border-radius: 10px;
+      border-radius: 4px;
       &:before {
         content: '';
         position: absolute;
@@ -138,7 +149,7 @@
         z-index: -1;
         margin: -5px;
         border-radius: inherit;
-        background: linear-gradient(to bottom right, #000, #fff);
+        background: linear-gradient(to bottom right, #1b1b1b, #121212);
       }
       a {
         position: absolute;

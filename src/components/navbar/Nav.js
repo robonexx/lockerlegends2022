@@ -7,7 +7,7 @@ export default function Nav(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  const menu = React.createRef(null);
+  const menu = React.createRef();
 
   useEffect(() => {
     let prevScrollpos = window.pageYOffset;
