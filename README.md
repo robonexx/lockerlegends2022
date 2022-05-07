@@ -21,7 +21,7 @@ Its my exam so I have to use the different subjects we had during this education
 
 Web development techniques, UX and working methodologies.
 
-## The problem
+## The problem to solve
 
 Well the website has not been updated the past probably 10 years, it´s done in wordpress and has a lot of bugs in it that needs to be fixed.
 It´s hard to navigate and read due to a lot of contect being plain text with out sepration of any kind. 
@@ -80,6 +80,8 @@ I dident like that the page got slow and I decided to switch to
 - importing images, solved with the help of ... 
 
 - Nav not closing in NEXT due to it being serverside rendered
+
+Next.js images, links, useEffect problems with useRef, got it working eventually
 
 </br>
 
