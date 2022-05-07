@@ -3,19 +3,21 @@ import { motion } from 'framer-motion';
 import {
   getLatestPosts,
   getPostCategoryInterviews,
+  getPostCategoryStreetdance,
 } from '../lib/posts/get-posts';
 import { formatDate } from '../utils/functions';
 import Link from 'next/link';
 import Hero from '../layouts/hero/Hero';
 import Image from 'next/image';
 import styles from '../styles/pages/Home.module.scss';
+import Slider from '../components/Carousel/Slider';
+import SliderItem from '../components/Carousel/sliderItem';
 
 /* const myLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
 }; */
 
-export default function Home({ posts, interviews }) {
-  console.log(interviews);
+export default function Home({ posts, interviews, streetdance }) {
   return (
     <>
       <Head lang='en'>
@@ -92,6 +94,16 @@ export default function Home({ posts, interviews }) {
                 }
               )}
             </div>
+            <h3 className={styles.blog_row_title}>Streetdance:</h3>
+            <Slider>
+              {streetdance.map(({ node }, idx) => {
+                return (
+                  <div key={idx}>
+                    <SliderItem props={node} />
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
           <div className={styles.content_section}>
             <div className={styles.home_article}>
@@ -148,8 +160,13 @@ export default function Home({ posts, interviews }) {
 export async function getStaticProps() {
   const posts = await getLatestPosts();
   const interviews = await getPostCategoryInterviews();
+  const streetdance = await getPostCategoryStreetdance();
 
   return {
-    props: { posts: posts.edges, interviews: interviews.edges },
+    props: {
+      posts: posts.edges,
+      interviews: interviews.edges,
+      streetdance: streetdance.edges,
+    },
   };
 }

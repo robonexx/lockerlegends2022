@@ -1,38 +1,41 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { formatDate } from '../../utils/functions';
 
-const AlternateImg = `/images/interview.webp`
+import styles from '../../styles/components/Slider.module.scss';
 
-export default function sliderItem({title, slug, date, featuredImage}) {
+export default function SliderItem({
+  props: {
+    featuredImage: {
+      node: { sourceUrl },
+    },
+    slug,
+    title,
+    date,
+  },
+}) {
   return (
-      <div className={styles.slider_item}>
-                    <div className={styles.item} key={slug}>
-                      <div className={styles.image}>
-                        {featuredImage === null ? (
-                          <Image
-                            src={AlternateImg}
-                            layout='fill'
-                            objectFit='cover'
-                            alt='blog post image'
-                            priority
-                          />
-                        ) : (
-                          <Image
-                            src={featuredImage.node.sourceUrl}
-                            layout='fill'
-                            objectFit='contain'
-                            alt='blog post image'
-                            priority
-                          />
-                        )}
-                      </div>
-                      <h3>{title}</h3>
-                      <span>{formatDate(date)}</span>
-                      <Link href={`/blog/` + slug} passHref>
-                        <a aria-label={title}></a>
-                      </Link>
-                    </div>
-                  )
-    </div>
-  )
+    <motion.div className={styles.slider_item}>
+      <Image
+        src={sourceUrl}
+        layout='fill'
+        objectFit='cover'
+        objectPosition='top center'
+        alt='blog post image'
+        priority
+      />
+
+      <h3 className={styles.slider_title}>{title}</h3>
+      <div className={styles.slider_item_info}>
+        {slug ? (
+          <Link href={`/blog/` + slug} passHref>
+            <a aria-label={title}></a>
+          </Link>
+        ) : null}
+        <span>{formatDate(date)}</span>
+      </div>
+    </motion.div>
+  );
 }

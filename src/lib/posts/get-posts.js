@@ -113,44 +113,51 @@ export async function getPostCategoryInterviews() {
 }
 
 // cateogory culture
-
 export async function getPostCategoryCulture() {
   const data = await fetchAPI(`
     {
         posts(where: {categoryName: "culture"}, first: 5) {
-            nodes {
-              title
-              categories(where: {orderby: TERM_ORDER}) {
-                nodes {
-                  id
-                  name
-                  databaseId
+            edges {
+                node {
+                    title
+                    slug
+                    date
+
+                    featuredImage {
+                        node {
+                            sourceUrl
+                        }
+                    }
+                    
                 }
-              }
             }
           }
-  }
+        }
       `);
   return data?.posts;
 }
-// cateogory streetdance
 
+// cateogory streetdance
 export async function getPostCategoryStreetdance() {
   const data = await fetchAPI(`
     {
         posts(where: {categoryName: "streetdance"}, first: 5) {
-            nodes {
-              title
-              categories(where: {orderby: TERM_ORDER}) {
-                nodes {
-                  id
-                  name
-                  databaseId
+            edges {
+                node {
+                    title
+                    slug
+                    date
+
+                    featuredImage {
+                        node {
+                            sourceUrl
+                        }
+                    }
+                    
                 }
-              }
             }
           }
-  }
+        }
       `);
   return data?.posts;
 }

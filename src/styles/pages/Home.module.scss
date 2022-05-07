@@ -3,10 +3,14 @@
   position: relative;
     width: 100%;
     height: 100%;
-    background: var(--color-bg);
+    background: $color-bg;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    @media screen and (max-width: 680px) {
+      margin: 0 auto;
+    }
 
 }
 
@@ -18,13 +22,22 @@
 
     @media screen and (max-width: 680px) {
       height: 100%;
+      flex-direction: column;
     }
+    
 
 
 .blog_section {
   box-sizing: border-box;
     width: 50%;
     padding: 2rem;
+    @media screen and (max-width: 680px) {
+      margin: 0 auto;
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+    }
+    
 
     p {
       color: white;
@@ -71,8 +84,11 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
   width: 100%;
+
   @media (max-width: 768px) {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 2rem;
   }
   .post_card {
           position: relative;
@@ -89,6 +105,14 @@
           cursor: pointer;
           background: #000;
           border: 1px solid #888;
+
+          @media screen and (max-width: 680px) {
+            margin: 0 auto;
+            width: 100%;
+            flex-direction: column;
+            
+          }
+          
   
     &:hover {
         background: rgba(10, 10, 10, 0.712);
@@ -140,22 +164,37 @@
    
     padding: 2rem 3rem;
 
+    @media screen and (max-width: 680px) {
+      margin: 0 auto;
+      max-width: 100%;
+      width: 90%;
+      flex-direction: column;
+      padding: 0;
+    }
+    
+
     .home_article {
         position: relative;
         margin: 10rem auto 10rem;
         max-width: 1000px;
-        font-family: var(--font);
+        font-family: $font-base;
+
+        @media screen and (max-width: 680px) {
+          margin: 2rem auto 10rem;
+          width: 100%;
+          flex-direction: column;
+        }
       
         
         h2 {
           font-size: 2rem;
           padding: 5rem 0;
-          color: var(--color-text-primary);
+          color: $color-client-1;
         }
       
         h3 {
           font-size: 1.5rem;
-          color: var(--color-text-secondary);
+          color: $color-client-2;
           font-weight: 800;
           font-style: italic;
         }

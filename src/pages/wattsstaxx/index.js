@@ -1,12 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../../styles/pages/Wattsstaxx.module.scss';
-import { getPostCategoryInterviews } from '../../lib/posts/get-posts';
+import {
+  getAllPostSlugs,
+  getPostCategoryInterviews,
+} from '../../lib/posts/get-posts';
 import Image from 'next/image';
 import { formatDate } from '../../utils/functions';
+import Slider from '../../components/Carousel/Slider';
+import SliderItem from '../../components/Carousel/sliderItem';
 
 export default function index({ interviews }) {
-  const [index, setIndex] = useState();
+  /*  const [index, setIndex] = useState();
   const [width, setWidth] = useState(0);
 
   const slider = useRef();
@@ -21,7 +26,7 @@ export default function index({ interviews }) {
     setWidth(slider.current.scrollWidth + 30 - slider.current.offsetWidth);
   }, []);
 
-  console.log(images);
+  console.log(images); */
   return (
     <div className={styles.wattsstaxx}>
       <div className={styles.inner}>
@@ -29,7 +34,16 @@ export default function index({ interviews }) {
           Slider
         </motion.h1>
       </div>
-      <motion.div className={styles.slider} ref={slider}>
+      <Slider>
+        {interviews.map(({ node }, idx) => {
+          return (
+            <div key={idx}>
+              <SliderItem props={node} />
+            </div>
+          );
+        })}
+      </Slider>
+      {/*  <motion.div className={styles.slider} ref={slider}>
         <motion.div
           drag='x'
           dragConstraints={{ right: 0, left: -width }}
@@ -38,7 +52,6 @@ export default function index({ interviews }) {
           dragSnapToOrigin={false}
           className={styles.inner_slider}
         >
-          {/* {images.map((image) => ( */}
           {interviews.map(({ node: { featuredImage, title, date } }) => (
             <motion.div className={styles.slider_item} key={title}>
               <Image
@@ -54,7 +67,7 @@ export default function index({ interviews }) {
             </motion.div>
           ))}
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }
