@@ -38,7 +38,7 @@ export default function Home({ posts, interviews }) {
               initial={{ opacity: 0 }}
               className={styles.title}
             >
-              <h1>Editorials (Blogs) </h1>
+              <h1>Editorials</h1>
             </motion.div>
             <p>Read about locking, culture, interviews and more...</p>
             <h3 className={styles.blog_row_title}>Latest Posts:</h3>
@@ -55,7 +55,7 @@ export default function Home({ posts, interviews }) {
                 );
               })}
             </div>
-            <h1 className={styles.blog_row_title}>Interviews:</h1>
+            <h3 className={styles.blog_row_title}>Interviews:</h3>
             <div className={styles.home_grid}>
               {interviews.map(({ node: { title, slug, date } }) => {
                 return (

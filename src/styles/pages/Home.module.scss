@@ -31,7 +31,7 @@
     }
     h1 {
      margin: 1rem auto;
-     color: $color-client-3;
+     color: $color-client-1;
     /*  font-size: 3.5rem; */
      text-align: center;
      text-transform: uppercase;
@@ -46,16 +46,21 @@
     
     h3 {
      color: $color-client-1;
-     font-weight: 100;
+     font-weight: 400;
      margin: 2rem auto;
     }
     
     .blog_row_title {
      color: $color-client-1;
-     text-transform: uppercase;
+     text-transform: lowercase;
      letter-spacing: 2px;
      align-self: flex-start;
      margin-bottom: 2rem;
+     border-bottom: #888 1px solid;
+
+     &::first-letter {
+      text-transform: capitalize;
+     }
     }
 
 }    

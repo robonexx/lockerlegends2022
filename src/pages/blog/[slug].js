@@ -9,7 +9,8 @@ import {
 } from '../../lib/posts/get-posts';
 
 import { formatDate, metaDescription, removeTags } from '../../utils/functions';
-import parse, { domToReact } from 'html-react-parser';
+import parse from 'html-react-parser';
+import { replaceImage } from '../../utils/functions';
 /* import Html2react from '../components/html2react'; */
 
 import styles from '../../styles/pages/BlogSlug.module.scss';
@@ -28,7 +29,7 @@ export default function Blog({ blog, blogs }) {
     return excerpt;
   }
 
-  const replaceImage = {
+  /* const replaceImage = {
     replace: ({ name, attribs, children }) => {
       if (name === 'figure' && /wp-block-image/.test(attribs.class)) {
         return <>{domToReact(children, replaceImage)}</>;
@@ -41,13 +42,13 @@ export default function Blog({ blog, blogs }) {
             width={attribs.width}
             height={attribs.height}
             alt={
-              attribs.alt ? attribs.alt : 'This image is missing an alt text'
+              attribs.alt ? attribs.alt : 'This image is missing an alt text please include one in your wp'
             }
           />
         );
       }
     },
-  };
+  }; */
 
   return (
     <>
@@ -62,26 +63,27 @@ export default function Blog({ blog, blogs }) {
 
           <div className={styles.blog_slug_main}>
             <span className={styles.date}>{formatDate(blog.date)}</span>
-              <h1 className={styles.blog_title}>{blog.title}</h1>
-              
-          
-              {blog.featuredImage && (
-                <Image
-                  src={blog.featuredImage.node.sourceUrl}
-                  /* height={blog.featuredImage.node.mediaDetails.height}
+            <h1 className={styles.blog_title}>{blog.title}</h1>
+
+            {blog.featuredImage && (
+              <Image
+                src={blog.featuredImage.node.sourceUrl}
+                /* height={blog.featuredImage.node.mediaDetails.height}
                 width={blog.featuredImage.node.mediaDetails.width} */
-                  layout='fill'
-                  objectFit='cover'
-                  alt='blog post image'
-                  priority
-                />
-              )}
-              
+                layout='fill'
+                objectFit='cover'
+                alt='blog post image'
+                priority
+              />
+            )}
+
             <div className={styles.post_wrapper}>
+              {/* using the replace image function here and parse from html-react-parser */}
+              {/* Using this method instead of dangerously set inner html */}
               {parse(blog.content, replaceImage)}
             </div>
-            </div>
-            
+          </div>
+
           <div className={styles.blog_related}>
             <h2 className={styles.more}>More to read</h2>
 

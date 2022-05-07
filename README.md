@@ -56,6 +56,7 @@ Then use NEXT and vercel to have the website on.
 - [scss]
 - [framer-motion]
 - [siteground]
+- [html-react-parser]
 - [localstorage]
 - [json-server]
 
@@ -115,3 +116,4 @@ I dident like that the page got slow and I decided to switch to
 [json-server]: https://newbedev.com/javascript-how-to-install-json-server-in-vscode-code-example
 [figma]: https://www.figma.com/
 [trello]: https://trello.com/
+[html-react-parser]: https://www.npmjs.com/package/html-react-parser

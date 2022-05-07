@@ -1,5 +1,7 @@
 import { fetchAPI } from '../api';
 
+// get all posts
+
 export async function getAllPosts() {
   const data = await fetchAPI(`
       {
@@ -30,6 +32,7 @@ export async function getAllPosts() {
   return data?.posts.edges;
 }
 
+// get post slugs
 export async function getAllPostSlugs() {
   const data = await fetchAPI(`
        {
@@ -44,6 +47,8 @@ export async function getAllPostSlugs() {
       `);
   return data?.posts;
 }
+
+// get latest posts
 
 export async function getLatestPosts() {
   const data = await fetchAPI(`
@@ -75,6 +80,9 @@ export async function getLatestPosts() {
   return data?.posts;
 }
 
+// get post by category
+// interviews
+
 export async function getPostCategoryInterviews() {
   const data = await fetchAPI(`
     {
@@ -105,6 +113,8 @@ export async function getPostCategoryInterviews() {
   return data?.posts;
 }
 
+// cateogory culture
+
 export async function getPostCategoryCulture() {
   const data = await fetchAPI(`
     {
@@ -124,10 +134,35 @@ export async function getPostCategoryCulture() {
       `);
   return data?.posts;
 }
+// cateogory streetdance
+
+export async function getPostCategoryStreetdance() {
+  const data = await fetchAPI(`
+    {
+        posts(where: {categoryName: "streetdance"}, first: 5) {
+            nodes {
+              title
+              categories(where: {orderby: TERM_ORDER}) {
+                nodes {
+                  id
+                  name
+                  databaseId
+                }
+              }
+            }
+          }
+  }
+      `);
+  return data?.posts;
+}
+
+// get posts and more posts
+// having the frament inside could have just serparted it and will do so at a later state, not in the mvp of this website
 
 export async function getPostAndMorePosts(slug) {
   const data = await fetchAPI(
     `
+
       fragment PostFields on Post {
           title
           excerpt

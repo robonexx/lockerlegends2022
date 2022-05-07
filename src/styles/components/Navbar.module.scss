@@ -38,7 +38,9 @@
   text-align: center;
   width: 100%;
   height: 46px;
+  align-items: center;
   justify-content: center;
+
 }
 
 .nav_item {
@@ -46,7 +48,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 1.25rem;
 }
 
 .link_icon {
@@ -94,7 +96,7 @@ a .mobile {
   bottom: 0;
   /* left: 100%; */
   right: 100%;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   background: $color-client-3;
   border-radius: 25px;
 }
@@ -130,9 +132,10 @@ a .mobile {
 
 
 .nav_item:hover {
-  background-color: rgba(0,0,0,.125);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.863);
   .nav_links:before {
-    bottom: -3px;
+    bottom: -1px;
     left: 1.4rem;
     right: 0;
     font-weight: 400;
