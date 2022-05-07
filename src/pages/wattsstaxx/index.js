@@ -6,18 +6,19 @@ import Image from 'next/image';
 import { formatDate } from '../../utils/functions';
 
 export default function index({ interviews }) {
+  const [index, setIndex] = useState();
   const [width, setWidth] = useState(0);
 
   const slider = useRef();
 
   const images = [];
 
-  interviews.map(({ node: { featuredImage, title, date } }) => {
+  interviews.map(({ node: { featuredImage } }) => {
     images.push(featuredImage.node.sourceUrl);
   });
 
   useEffect(() => {
-    setWidth(slider.current.scrollWidth - slider.current.offsetWidth);
+    setWidth(slider.current.scrollWidth + 20 - slider.current.offsetWidth);
   }, []);
 
   console.log(images);
@@ -32,7 +33,9 @@ export default function index({ interviews }) {
         <motion.div
           drag='x'
           dragConstraints={{ right: 0, left: -width }}
-          whileDrag={{ scale: 0.9 }}
+                  whileDrag={{ scale: 0.9 }}
+                  dragElastic={0.2}
+                  dragSnapToOrigin={false}
           className={styles.inner_slider}
         >
           {/* {images.map((image) => ( */}
