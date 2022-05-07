@@ -28,14 +28,11 @@ export default function SliderItem({
       />
 
       <h3 className={styles.slider_title}>{title}</h3>
-      <div className={styles.slider_item_info}>
-        {slug ? (
-          <Link href={`/blog/` + slug} passHref>
-            <a aria-label={title}></a>
-          </Link>
-        ) : null}
+        <Link href={`/blog/` + slug} passHref>
+           <a aria-label={title}></a>
+          {/* <span>Read more...</span> */}
+        </Link>
         <span>{formatDate(date)}</span>
-      </div>
     </motion.div>
   );
 }

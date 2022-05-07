@@ -6,6 +6,7 @@ const nextConfig = {
     domains: [
       process.env.WP_IMG,
       process.env.WP_R_IMG,
+      process.env.WP_LL_IMAGES,
       process.env.WP_LL_IMG,
       process.env.WP_LH_IMG,
     ],

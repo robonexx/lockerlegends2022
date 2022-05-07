@@ -13,18 +13,17 @@ export default function Slider(props) {
   }, []);
 
   return (
-
-      <motion.div className={styles.slider} ref={slider}>
-        <motion.div
-          drag='x'
-          dragConstraints={{ right: 0, left: -width }}
-          whileDrag={{ scale: 0.9 }}
-          dragElastic={0.2}
-          dragSnapToOrigin={false}
-          className={styles.inner_slider}
-        >
-          {props.children}
-        </motion.div>
+    <motion.div className={styles.slider} ref={slider}>
+      <motion.div
+        drag='x'
+        dragConstraints={{ right: 0, left: -width }}
+        whileDrag={{ scale: 0.95 }}
+        dragElastic={0.2}
+        dragSnapToOrigin={false}
+        className={styles.inner_slider}
+      >
+        {props.children}
       </motion.div>
+    </motion.div>
   );
 }

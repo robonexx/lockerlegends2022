@@ -1,8 +1,10 @@
+@use '../base/' as *;
 
 .slider {
+    border: 10solid #000;
     background-color: black;
     width: 600px;
-    padding: 20px;
+    height: 350px;
     cursor: grab;
     overflow: hidden;
     
@@ -16,6 +18,7 @@
     .inner_slider {
         display: flex;
         background-color: black;
+        height: 100%;
     }
     
     .slider_item {
@@ -25,9 +28,9 @@
         min-height: 340px;
         margin-right: 40px;
     
-        @media screen and (max-width: 460px) {
+        @media screen and (max-width: 768px) {
             max-width: 90vw;
-            height: 260px;
+            min-height: 260px;
             
         }
     
@@ -47,24 +50,27 @@
     padding: 5px 10px;
     }
 
-    .slider_item_info {
-        position: absolute;
-        bottom: 10%;
-        right: 0%;
-
+       
+        
         a {
-            color: white;
-            pointer-events: none;
-            padding: 5px 10px;
-            background-color: rgba(0, 0, 0, 0.788);
-            float: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
+                z-index: 2;
+
         }
         span {
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
             float: right;
             color: white;
             pointer-events: none;
             padding: 5px 10px;
             background-color: rgba(0, 0, 0, 0.788);
         }
-    }
     }
