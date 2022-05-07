@@ -18,9 +18,9 @@ export default function Home({ posts, interviews }) {
   console.log(interviews);
   return (
     <>
-      <Head lang="en">
+      <Head lang='en'>
         <title>LockerLegends</title>
-       {/*  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        {/*  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1'

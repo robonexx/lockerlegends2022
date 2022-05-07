@@ -18,7 +18,7 @@ export default function index({ interviews }) {
   });
 
   useEffect(() => {
-    setWidth(slider.current.scrollWidth + 20 - slider.current.offsetWidth);
+    setWidth(slider.current.scrollWidth + 30 - slider.current.offsetWidth);
   }, []);
 
   console.log(images);
@@ -33,9 +33,9 @@ export default function index({ interviews }) {
         <motion.div
           drag='x'
           dragConstraints={{ right: 0, left: -width }}
-                  whileDrag={{ scale: 0.9 }}
-                  dragElastic={0.2}
-                  dragSnapToOrigin={false}
+          whileDrag={{ scale: 0.9 }}
+          dragElastic={0.2}
+          dragSnapToOrigin={false}
           className={styles.inner_slider}
         >
           {/* {images.map((image) => ( */}
