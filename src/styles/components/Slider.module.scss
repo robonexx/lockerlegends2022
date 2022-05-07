@@ -4,13 +4,13 @@
     border: 10solid #000;
     background-color: black;
     width: 600px;
-    height: 350px;
+    height: 400px;
     cursor: grab;
     overflow: hidden;
     
     @media screen and (max-width: 460px) {
         width: 100vw;
-        height: 280px;
+        height: 380px;
         padding: 10px;
     }
     }
@@ -25,12 +25,12 @@
         position: relative;
         display: block;
         min-width: 400px;
-        min-height: 340px;
+        min-height: 380px;
         margin-right: 40px;
     
         @media screen and (max-width: 768px) {
             max-width: 90vw;
-            min-height: 260px;
+            min-height: 360px;
             
         }
     
@@ -42,12 +42,14 @@
     
     .slider_title {
     position: absolute;
-    top: 0%;
+    top: 50%;
     left: 0%;
     color: white;
     pointer-events: none;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
     padding: 5px 10px;
+    font-weight: $font-normal;
     font-size: $font-size-base;
     text-transform: uppercase;
     }
@@ -75,7 +77,7 @@
             color: white;
             pointer-events: none;
             padding: 5px 10px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
             font-size: $font-size-s;
         }
     }

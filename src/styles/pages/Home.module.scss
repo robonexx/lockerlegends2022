@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font-base;
 
     @media screen and (max-width: 680px) {
       margin: 0 auto;
@@ -41,6 +42,9 @@
 
     p {
       color: white;
+      @media screen and (max-width: 680px) {
+        text-align: center;
+      }
     }
     h1 {
      margin: 1rem auto;
@@ -48,7 +52,7 @@
     /*  font-size: 3.5rem; */
      text-align: center;
      text-transform: uppercase;
-     text-shadow: 2px 2px 1px #ee4e34;
+     text-shadow: 2px 2px 1px black;
     
      @media screen and (max-width: 680px) {
        /* font-size: 1.6rem; */
@@ -76,7 +80,7 @@
      }
 
      @media screen and (max-width: 768px) {
-      padding-left: 0.5rem;
+      padding-left: 2rem;
      }
     }
 
@@ -98,7 +102,7 @@
           position: relative;
           display: flex;
           flex-direction: column;
-          background-clip: padding-box;
+          justify-content: center;
           box-sizing: border-box;
           padding: 2rem;
           width: 100%;
@@ -146,11 +150,13 @@
       z-index: 2;
     }
     h3 {
+      margin: 0;
       margin-bottom: 20px;
       color: $color-client-1;
       text-align: left;
       font-weight: $font-normal;
-      text-shadow: 1px 1px 1px $color-client-2;
+      text-shadow: 1px 1px 1px black;
+      text-transform: uppercase;
       z-index: 2;
     }
     span {

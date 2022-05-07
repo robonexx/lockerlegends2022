@@ -1,6 +1,7 @@
 @use '../base/' as*;
 
 .steps_wrapper {
+    font-family: $font-base;
     position: relative;
     margin: 0 auto;
     padding: 0;
