@@ -49,6 +49,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0 1.25rem;
+ ; height: 100%
 }
 
 .link_icon {
@@ -105,22 +106,13 @@ a .mobile {
 
 .nav_item:hover {
 
-  .nav_links {
-    color: $color-client-2;
-
-    :before {
+    &:before {
       bottom: -1px;
       left: 1.4rem;
       right: 0;
       font-weight: 400;
-      >.link_icon {
-        color: $color-client-3;
-      }
-    }
-  }
-  
-  
-  
+     
+    }  
 } 
 
 
@@ -208,6 +200,7 @@ a .mobile {
     }
     .nav_item {
       left: 40vw;
+      height: fit-content;
     }
 
     .nav_links {

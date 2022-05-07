@@ -10,7 +10,6 @@ import Hero from '../layouts/hero/Hero';
 import Image from 'next/image';
 import styles from '../styles/pages/Home.module.scss';
 
-
 /* const myLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
 }; */
@@ -19,9 +18,9 @@ export default function Home({ posts, interviews }) {
   console.log(interviews);
   return (
     <>
-      <Head>
+      <Head lang="en">
         <title>LockerLegends</title>
-        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+       {/*  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1'
@@ -29,7 +28,7 @@ export default function Home({ posts, interviews }) {
         <meta
           name='description'
           content='Learn and read about the dance style locking, important information, history, locking curriculum, streetdance, culture, all in one place'
-        />
+        /> */}
       </Head>
       <div className={styles.home_main}>
         <Hero />
@@ -67,22 +66,20 @@ export default function Home({ posts, interviews }) {
                         {featuredImage === null ? (
                           <Image
                             src={`/images/interview.webp`}
-                            /* height={featuredImage.node.mediaDetails.height}
-                          width={featuredImage.node.mediaDetails.width} */
                             layout='fill'
                             objectFit='cover'
                             alt='blog post image'
                             priority
                           />
-                        ) :  <Image
-                        src={featuredImage.node.sourceUrl}
-                        /* height={featuredImage.node.mediaDetails.height}
-                      width={featuredImage.node.mediaDetails.width} */
-                        layout='fill'
-                        objectFit='contain'
-                        alt='blog post image'
-                        priority
-                      />}
+                        ) : (
+                          <Image
+                            src={featuredImage.node.sourceUrl}
+                            layout='fill'
+                            objectFit='contain'
+                            alt='blog post image'
+                            priority
+                          />
+                        )}
                       </div>
 
                       <h3>{title}</h3>
