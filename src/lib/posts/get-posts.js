@@ -59,6 +59,11 @@ export async function getLatestPosts() {
                   title
                   slug
                   date
+                  author{
+                    node {
+                      name
+                    }
+                  }
 
                   featuredImage {
                     node {
@@ -98,17 +103,11 @@ export async function getPostCategoryInterviews() {
                             sourceUrl
                         }
                     }
-                    categories {
-                        nodes {
-                            name
-                            slug
-                        }
-                    }
                     
                 }
             }
           }
-  }
+        }
       `);
   return data?.posts;
 }

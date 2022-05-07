@@ -8,8 +8,8 @@ export default function Layout({ children }) {
       <Header />
       <ScrollToTop>
         <main>{children}</main>
-        <Footer />
       </ScrollToTop>
+      <Footer />
     </>
   );
 }

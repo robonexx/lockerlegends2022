@@ -7,14 +7,16 @@ import {
 import { formatDate } from '../utils/functions';
 import Link from 'next/link';
 import Hero from '../layouts/hero/Hero';
-
+import Image from 'next/image';
 import styles from '../styles/pages/Home.module.scss';
+
 
 /* const myLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
 }; */
 
 export default function Home({ posts, interviews }) {
+  console.log(interviews);
   return (
     <>
       <Head>
@@ -43,21 +45,7 @@ export default function Home({ posts, interviews }) {
             <p>Read about locking, culture, interviews and more...</p>
             <h3 className={styles.blog_row_title}>Latest Posts:</h3>
             <div className={styles.home_grid}>
-              {posts.map(({ node }) => {
-                return (
-                  <div className={styles.post_card} key={node.slug}>
-                    <h3>{node.title}</h3>
-                    <span>{formatDate(node.date)}</span>
-                    <Link href={`/blog/` + node.slug} passHref>
-                      <a aria-label={node.title}></a>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-            <h3 className={styles.blog_row_title}>Interviews:</h3>
-            <div className={styles.home_grid}>
-              {interviews.map(({ node: { title, slug, date } }) => {
+              {posts.map(({ node: { title, slug, date } }) => {
                 return (
                   <div className={styles.post_card} key={slug}>
                     <h3>{title}</h3>
@@ -68,6 +56,44 @@ export default function Home({ posts, interviews }) {
                   </div>
                 );
               })}
+            </div>
+            <h3 className={styles.blog_row_title}>Interviews:</h3>
+            <div className={styles.home_grid}>
+              {interviews.map(
+                ({ node: { title, slug, date, featuredImage } }) => {
+                  return (
+                    <div className={styles.post_card} key={slug}>
+                      <div className={styles.post_image}>
+                        {featuredImage === null ? (
+                          <Image
+                            src={`/images/interview.webp`}
+                            /* height={featuredImage.node.mediaDetails.height}
+                          width={featuredImage.node.mediaDetails.width} */
+                            layout='fill'
+                            objectFit='cover'
+                            alt='blog post image'
+                            priority
+                          />
+                        ) :  <Image
+                        src={featuredImage.node.sourceUrl}
+                        /* height={featuredImage.node.mediaDetails.height}
+                      width={featuredImage.node.mediaDetails.width} */
+                        layout='fill'
+                        objectFit='contain'
+                        alt='blog post image'
+                        priority
+                      />}
+                      </div>
+
+                      <h3>{title}</h3>
+                      <span>{formatDate(date)}</span>
+                      <Link href={`/blog/` + slug} passHref>
+                        <a aria-label={title}></a>
+                      </Link>
+                    </div>
+                  );
+                }
+              )}
             </div>
           </div>
           <div className={styles.content_section}>

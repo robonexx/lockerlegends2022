@@ -100,50 +100,26 @@ a .mobile {
   background: $color-client-3;
   border-radius: 25px;
 }
-/* 
-.nav_item:nth-of-type(1) a:before {
-  
-  border-radius: 25px;
-}
-.nav_item:nth-of-type(2) a:before {
-  
-  border-radius: 25px;
-}
-.nav_item:nth-of-type(3) a:before {
-  
-  border-radius: 25px;
-}
-.nav_item:nth-of-type(4) a:before {
- 
-  border-radius: 25px;
-}
-.nav_item:nth-of-type(5) a:before {
-  background: $color-client-2;
-  border-radius: 25px;
-}
-.nav_item:nth-of-type(6) a:before {
-  background: $color-client-2;
-  border-radius: 25px;
-}
-.nav_item:nth-of-type(7) a:before {
-  background: transparent;
-  border-radius: 25px;
-} */
+
 
 
 .nav_item:hover {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.863);
-  .nav_links:before {
-    bottom: -1px;
-    left: 1.4rem;
-    right: 0;
-    font-weight: 400;
-  
-    >.link_icon {
-      color: $color-client-3;
+
+  .nav_links {
+    color: $color-client-2;
+
+    :before {
+      bottom: -1px;
+      left: 1.4rem;
+      right: 0;
+      font-weight: 400;
+      >.link_icon {
+        color: $color-client-3;
+      }
     }
   }
+  
+  
   
 } 
 

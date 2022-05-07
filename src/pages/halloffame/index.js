@@ -6,7 +6,7 @@ import styles from '../../styles/pages/HallOfFame.module.scss';
 
 // get content for page
 
-export const Halloffame = () => {
+export const Pioneers = () => {
   return (
     <div className={styles.hof}>
       <Sidebar />
@@ -18,4 +18,4 @@ export const Halloffame = () => {
   );
 };
 
-export default Halloffame;
+export default Pioneers;

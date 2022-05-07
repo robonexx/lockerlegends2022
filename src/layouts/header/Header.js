@@ -65,7 +65,7 @@ export default function Header() {
             <DropDownItem
               title='Pioneers'
               icon={<MdOutlineGroups />}
-              url='/halloffame'
+              url='/pioneers'
             />
             <DropDownItem
               title='Timeline of Locking'

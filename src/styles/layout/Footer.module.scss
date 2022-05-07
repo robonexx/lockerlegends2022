@@ -1,5 +1,7 @@
 .footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,4 +13,5 @@
     color: white;
     background-color: #0000004b;
     z-index: 1000;
+    visibility: hidden;
 }

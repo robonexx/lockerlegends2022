@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
+/* import Image from 'next/image'; */
 import ErrorPage from 'next/error';
 import { useRouter } from 'next/router';
 import {
@@ -65,19 +65,19 @@ export default function Blog({ blog, blogs }) {
             <span className={styles.date}>{formatDate(blog.date)}</span>
             <h1 className={styles.blog_title}>{blog.title}</h1>
 
-            {blog.featuredImage && (
+            {/* {blog.featuredImage && (
               <Image
                 src={blog.featuredImage.node.sourceUrl}
-                /* height={blog.featuredImage.node.mediaDetails.height}
-                width={blog.featuredImage.node.mediaDetails.width} */
+                height={blog.featuredImage.node.mediaDetails.height}
+                width={blog.featuredImage.node.mediaDetails.width}
                 layout='fill'
                 objectFit='cover'
                 alt='blog post image'
                 priority
               />
-            )}
+            )} */}
 
-            <div className={styles.post_wrapper}>
+          <div className={styles.post_wrapper}>
               {/* using the replace image function here and parse from html-react-parser */}
               {/* Using this method instead of dangerously set inner html */}
               {parse(blog.content, replaceImage)}
