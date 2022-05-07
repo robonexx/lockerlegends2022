@@ -9,6 +9,8 @@
     flex-direction: column;
     font-family: $font-base;
     background-color: gray;
+    display: flex;
+    align-items: center;
 
     .inner {
         margin-top: 10rem;
@@ -24,9 +26,48 @@
 }
 
 .slider {
-
+background-color: black;
+width: 600px;
+height: 360px;
+padding: 10px;
+cursor: grab;
+overflow: hidden;
 }
 
 .inner_slider {
+    display: flex;
+    background-color: black;
+}
+
+.slider_item {
+    position: relative;
+    display: block;
+    min-width: 400px;
+    height: 340px;
+    padding: 10px;
+    margin-right: 40px;
+
     
+.slider_item img{
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.slider_title {
+position: absolute;
+top: 5%;
+left: 0%;
+color: white;
+pointer-events: none;
+background-color: black;
+padding: 5px 10px;
+}
+span {
+    position: absolute;
+bottom: 10%;
+right: 0%;
+color: white;
+pointer-events: none;
+padding: 5px 10px;
+}
 }
