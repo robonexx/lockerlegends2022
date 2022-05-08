@@ -5,6 +5,7 @@
   position: relative;
     padding: 0;
     background: transparent;
+    max-width: 100vw;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -33,7 +34,7 @@
       margin: 0;
       padding: 0;
       object-fit: cover;
-      background-color: rgba(0, 0, 0, 0.397);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.651) 20%, transparent 50%,rgba(0, 0, 0, 0.952) 80%);
       z-index: 2;
     }
     .hero_wrapper {
@@ -78,10 +79,11 @@
          padding: 0 5rem;
         > .hero-pretitle {
           margin-top: 30vh;
-         font-size: $font-size-l;
+          font-size: $font-size-l;
           
         }
         .hero_title {
+          max-width: 100%;
           font-size: $font-size-xl;
         }
       
@@ -96,7 +98,9 @@
     @media screen and (max-width: 768px) {
 
       .hero {
+        width: 100%;
         .hero_wrapper {
+          max-width: 100%;
 
           > .hero_pretitle {
             font-size: $font-size-ml;
@@ -115,23 +119,52 @@
   @media screen and (max-width: 460px) {
   
     .hero { 
+      width: 100%;
       .hero_wrapper {
         position: relative;
+        padding: 0;
         display: block;
-        padding: 0 2rem;
-        height: 65vh;
+        height: 65%;
       
         > .hero_pretitle {
           margin-top: 20vh;
           font-size: $font-size-m;
         }
         .hero_title {
-          padding: 2rem 0;
+          padding: 2rem;
+          font-size: $font-size-l;
+        }
+      
+          .hero_subtitle {
+            padding: 0 2rem;
+          font-size: $font-size-m;
+          width: 100%;
+          }
+      }
+    }
+    }
+  @media screen and (max-width: 360px) {
+  
+    .hero { 
+      width: 100%;
+      .hero_wrapper {
+        position: relative;
+        padding: 0;
+        display: block;
+        height: 65%;
+      
+        > .hero_pretitle {
+          margin-top: 20vh;
+          font-size: $font-size-base;
+        }
+        .hero_title {
+          padding: 2rem;
           font-size: $font-size-ml;
         }
       
           .hero_subtitle {
-          font-size: $font-size-m;
+            padding: 0 2rem;
+          font-size: $font-size-base;
           width: 100%;
           }
       }
