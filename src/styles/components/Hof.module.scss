@@ -6,6 +6,8 @@
   img {
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
+      object-fit: cover;
+      object-position: center;
   }
   
   .main_section {
@@ -36,7 +38,6 @@
       margin: 2rem 0;
       width: 380px;
       height: 300px;
-      background-position: center;
     }
   
   }
@@ -117,7 +118,7 @@
   
  }
 
- @media screen and (max-width: 40em) {
+ @media screen and (max-width: 460px) {
 
   .hof_wrapper {
       position: absolute;
@@ -147,7 +148,8 @@
               height: 200px;
 
               img {
-                height: 80%;
+                height: 100%;
+                object-position: center;
               }
             }
       }

@@ -17,7 +17,7 @@ export default function Hof() {
                 src={`/images/${img}`}
                 priority
                 layout='fill'
-                objectFit='cover'
+                /* objectFit='cover' */
                 alt={`image of ${name}`}
               />
             </div>
