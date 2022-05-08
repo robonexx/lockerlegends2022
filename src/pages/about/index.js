@@ -19,12 +19,12 @@ const About = () => {
 
       <article className={styles.about_article}>
         <h2>How it started...</h2>
-        <h3>
-          Back in XXXX when we decided to create Lockerlegends, back when we saw
+        <p>
+          Back in 2003 when we decided to create Lockerlegends, back when we saw
           a need in a then growing new locking community for education and the
           understanding of the importance of the historical history, concerning
           our wonderful world of Locking.
-        </h3>
+        </p>
         <br />
         <p>
           <span className={styles.we}>We</span> realized that many stories, and

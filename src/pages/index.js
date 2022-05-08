@@ -12,6 +12,7 @@ import Image from 'next/image';
 import styles from '../styles/pages/Home.module.scss';
 import Slider from '../components/Carousel/Slider';
 import SliderItem from '../components/Carousel/sliderItem';
+import { AiFillCaretRight } from 'react-icons/ai'
 
 /* const myLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
@@ -94,17 +95,22 @@ export default function Home({ posts, interviews, streetdance }) {
                 }
               )}
             </div>
-            <h3 className={styles.blog_row_title}>Streetdance:</h3>
-            <Slider>
-              {streetdance.map(({ node }, idx) => {
-                return (
-                  <div key={idx}>
-                    <SliderItem props={node} />
-                  </div>
-                );
-              })}
-            </Slider>
+
+            <div className={styles.section}>
+              <h3 className={styles.blog_row_title}>Streetdance:</h3>
+              <Slider>
+                {streetdance.map(({ node }, idx) => {
+                  return (
+                    <div key={idx}>
+                      <SliderItem props={node} />
+                    </div>
+                  );
+                })}
+              </Slider>
+              <p className={styles.swipe}>Swipe <AiFillCaretRight /></p>
+            </div>
           </div>
+
           <div className={styles.content_section}>
             <div className={styles.home_article}>
               <h2>EDUCATE B4U RECREATE</h2>

@@ -92,6 +92,26 @@
       }
     }
     }
+
+    @media screen and (max-width: 768px) {
+
+      .hero {
+        .hero_wrapper {
+
+          > .hero_pretitle {
+            font-size: $font-size-ml;
+          }
+            .hero_title {
+              font-size: $font-size-l;
+            }
+            .hero_subtitle {
+              font-size: $font-size-m;
+              width: 70%;
+              }
+        }
+      }
+
+    }
   @media screen and (max-width: 40em) {
   
     .hero { 
@@ -107,7 +127,7 @@
         }
         .hero_title {
           padding: 2rem 0;
-          font-size: $font-size-l * 1.1;
+          font-size: $font-size-ml;
         }
       
           .hero_subtitle {

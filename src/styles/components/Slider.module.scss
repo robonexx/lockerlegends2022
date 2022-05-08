@@ -7,10 +7,20 @@
     height: 400px;
     cursor: grab;
     overflow: hidden;
+
+    @media screen and (max-width: 1185px) {
+        height: 400px;
+        padding: 10px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        height: 380px;
+        padding: 10px;
+    }
     
     @media screen and (max-width: 460px) {
         width: 100vw;
-        height: 380px;
+        height: 340px;
         padding: 10px;
     }
     }
@@ -31,6 +41,11 @@
         @media screen and (max-width: 768px) {
             max-width: 90vw;
             min-height: 360px;
+            
+        }
+        @media screen and (max-width: 460px) {
+            max-width: 90vw;
+            min-height: 320px;
             
         }
     

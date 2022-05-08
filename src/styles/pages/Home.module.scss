@@ -18,12 +18,24 @@
 .home_section {
     width: 100%;
     margin: 0 auto;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
 
     @media screen and (max-width: 680px) {
       height: 100%;
       flex-direction: column;
+    }
+
+    .section {
+      width: 100%;
+      overflow-x: hidden;
+
+      .swipe {
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
     }
     
 

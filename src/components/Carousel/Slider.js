@@ -17,7 +17,6 @@ export default function Slider(props) {
       <motion.div
         drag='x'
         dragConstraints={{ right: 0, left: -width }}
-        whileDrag={{ scale: 0.95 }}
         dragElastic={0.2}
         dragSnapToOrigin={false}
         className={styles.inner_slider}

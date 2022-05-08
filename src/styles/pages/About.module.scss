@@ -1,4 +1,5 @@
 @use '../base/' as *;
+
 .about_main {
   box-sizing: border-box;
   padding: 0;
@@ -7,61 +8,31 @@
   display: flex;
   flex-direction: column;
   font-family: $font-base;
-/* 
-  .about_section_top {
-    position: relative;
-    margin: 8rem auto 0;
-    display: block;
-    padding: 0 3rem;
-    max-width: 1000px;
-    height: 90vh;
-    
   
-    > .pre_title {
-      margin-top: 20vh;
-      font-size: 3rem;
-      font-weight: 400;
-      color: $color-client-1;
-    }
-    .headline {
-      padding: 3rem 0;
-      font-family: $font-alt;
-      font-size: 5.5rem;
-      color: $color-client-2;
-      text-shadow: 1px 1px 1px white;
-    }
-  
-      .sub_header {
-        font-size: 3rem;
-        font-weight: 400;
-        color: white;
-      }
-  } */
   
   .about_article {
     position: relative;
     margin: 0 auto 10rem;
     padding: 0 3rem;
     max-width: 1000px;
+
+    .we {
+      color: $color-client-2;
+      font-weight: bold;
+    }
   
     
-    h2 {
-      font-size: 2rem;
-      margin: 5rem auto 5rem;
+    > h2 {
+      font-size: $font-size-l;
+      margin: 0 auto 2rem;
       color: #fff;
     }
   
-    h3 {
-      font-size: 1.5rem;
-      color: var(--color-text-secondary);
-      font-weight: 800;
-      font-style: italic;
-    }
   
     p {
       color: #fff;
       font-size: 1.2rem;
-      line-height: 2rem;
+      line-height: 1.4rem;
       font-weight: 400;
     }
   }
@@ -72,25 +43,11 @@
 
   .about_main {
 
-    .about_section {    
-      margin: 8rem auto 0;
+    .about_article {    
+      margin: 0 auto 10rem;
       display: block;
        padding: 0 3rem;
-      > h3 {
-        margin-top: 30vh;
-        font-size: 1.8rem;
-        
-      }
-      .headline {
-        font-size: 4rem;
-        padding: 2rem 0;
-      }
-    
-        .sub_header {
-          font-size: 1.8rem;
-          font-weight: 400;
-        }
-    }
+
   
     .about_article {
       position: relative;
@@ -101,51 +58,27 @@
     }
   }
   }
+}
 @media screen and (max-width: 40em) {
 
   .about_main {
-
-    .about_section {
-      position: relative;
-      display: block;
-    
-      
-      > h3 {
-        margin-top: 20vh;
-        font-size: 1.4rem;
-        font-weight: 100;
-      }
-      .headline {
-        margin: 1rem auto;
-        font-size: 1.6rem;
-        letter-spacing: 0.1rem;
-      }
-    
-        .sub_header {
-          font-size: 1rem;
-          font-weight: 100;
-        }
-    }
+        
     
     .about_article {
       position: relative;
-      margin: 1rem auto 1rem;
+      margin: 0 auto 1rem;
       padding: 1rem 3rem;
     
       
       h2 {
-        margin: 2rem auto 5rem;
+        margin: 0 auto 1rem;
         color: #fff;
       }
     
-      h3 {
-        font-size: 0.9rem;
-        font-weight: 800;
-      }
     
       p {
         color: #fff;
-        font-size: 0.8rem;
+        font-size: $font-size-base;
         line-height: 1.2rem;
         font-weight: 400;
       }
@@ -153,3 +86,4 @@
   
   }
   }
+

@@ -2,15 +2,16 @@
 
 .section_top {
     position: relative;
-    margin: 35vh auto 0;
-    display: block;
-    padding: 0 3rem;
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 1000px;
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 100px);
     
   
-    > .pre_title {
+   .pre_title {
       font-size: $font-size-l;
       font-weight: 400;
       color: $color-client-1;
@@ -29,9 +30,22 @@
         font-weight: 400;
         color: white;
       }
-      @media screen and (max-width: 40em) {
-        margin-top: 50vh;
 
+      @media screen and (max-width: 1185px) {
+        .headline {
+          font-size: $font-size-xl;
+        }
+      }
+
+
+      @media screen and (max-width: 768px) {
+        .headline {
+          font-size: $font-size-l;
+        }
+      }
+      @media screen and (max-width: 40em) {
+        height:60vh;
+          
         > .pre_title {
           font-size: $font-size-m;
           font-weight: 400;
@@ -40,7 +54,7 @@
         .headline {
           padding: 3rem 0;
           font-family: $font-alt;
-          font-size: $font-size-l;
+          font-size: $font-size-ml;
           color: $color-client-2;
           text-shadow: 1px 1px 1px white;
           text-transform: uppercase;
