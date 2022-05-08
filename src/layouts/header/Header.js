@@ -15,7 +15,7 @@ import {
   MdOutlineAnnouncement,
   MdOutlineGroups,
 } from 'react-icons/md';
-import { GiPeaceDove, GiFist } from 'react-icons/gi';
+import { GiPeaceDove, GiFist, GiPlantRoots } from 'react-icons/gi';
 import { WiTrain } from 'react-icons/wi';
 import { FiMusic } from 'react-icons/fi';
 import { FaRecordVinyl } from 'react-icons/fa';
@@ -69,7 +69,7 @@ export default function Header() {
             />
             <DropDownItem
               title='Timeline of Locking'
-              icon={<GiFist />}
+              icon={<GiPlantRoots />}
               url='/timeline'
             />
             <DropDownItem
