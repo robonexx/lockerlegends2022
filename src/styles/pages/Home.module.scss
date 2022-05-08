@@ -123,7 +123,7 @@
           max-height: 20rem;
           margin: 0;
           cursor: pointer;
-          background: #000;
+          background: $color-card-bg;
           border: 1px solid #888;
 
           @media screen and (max-width: 680px) {
@@ -201,7 +201,7 @@
 
     .home_article {
         position: relative;
-        margin: 10rem auto 10rem;
+        margin: 0rem auto 10rem;
         max-width: 1000px;
         font-family: $font-base;
 
@@ -214,15 +214,15 @@
         
         h2 {
           font-size: 2rem;
-          padding: 5rem 0;
+          padding: 2rem 0 2rem;
           color: $color-client-1;
         }
       
         h3 {
           font-size: 1.5rem;
-          color: $color-client-2;
-          font-weight: 800;
-          font-style: italic;
+          color: $color-client-1;
+          font-weight: 400;
+
         }
       
         p {
