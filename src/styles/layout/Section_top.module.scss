@@ -49,7 +49,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 2rem;
+        padding: 0;
         margin-bottom: 4rem;
           
         > .pre_title {
@@ -60,7 +60,7 @@
         .headline {
           padding: 3rem 0;
           font-family: $font-alt;
-          font-size: $font-size-ml;
+          font-size: $font-size-l;
           color: $color-client-2;
           text-shadow: 1px 1px 1px white;
           text-transform: uppercase;
