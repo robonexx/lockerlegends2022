@@ -12,7 +12,7 @@ const About = () => {
         <span className={styles.sub_header}>15 year Review & Purpose!</span>
       </section> */}
       <Section_top
-        pretitle='About'
+        pretitle='...'
         headline='lockerlegends'
         subtitle='15 year Review & Purpose!'
       />

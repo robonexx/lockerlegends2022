@@ -12,9 +12,9 @@
   
   .about_article {
     position: relative;
-    margin: 0 auto 10rem;
-    padding: 0 3rem;
+    margin: 0rem auto 10rem;
     max-width: 1000px;
+    font-family: $font-base;
 
     .we {
       color: $color-client-2;
@@ -62,12 +62,14 @@
 @media screen and (max-width: 40em) {
 
   .about_main {
-        
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
     
     .about_article {
       position: relative;
       margin: 0 auto 1rem;
-      padding: 1rem 3rem;
+      padding: 0;
     
       
       h2 {
