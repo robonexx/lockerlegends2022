@@ -59,6 +59,19 @@ export default function Home({ posts, interviews, streetdance }) {
                 );
               })}
             </div>
+            <div className={styles.section}>
+              <h3 className={styles.blog_row_title}>Streetdance:</h3>
+              <Slider>
+                {streetdance.map(({ node }, idx) => {
+                  return (
+                    <div key={idx}>
+                      <SliderItem props={node} />
+                    </div>
+                  );
+                })}
+              </Slider>
+              <p className={styles.swipe}>Swipe <AiFillCaretRight /></p>
+            </div>
             <h3 className={styles.blog_row_title}>Interviews:</h3>
             <div className={styles.home_grid}>
               {interviews.map(
@@ -95,20 +108,9 @@ export default function Home({ posts, interviews, streetdance }) {
                 }
               )}
             </div>
-
-            <div className={styles.section}>
-              <h3 className={styles.blog_row_title}>Streetdance:</h3>
-              <Slider>
-                {streetdance.map(({ node }, idx) => {
-                  return (
-                    <div key={idx}>
-                      <SliderItem props={node} />
-                    </div>
-                  );
-                })}
-              </Slider>
-              <p className={styles.swipe}>Swipe <AiFillCaretRight /></p>
-            </div>
+            <p className={styles.blog_info}>More editorials on the editorial(blog) page,
+              read about the history, culture and dance of the artform locking
+            </p>
           </div>
 
           <div className={styles.content_section}>
