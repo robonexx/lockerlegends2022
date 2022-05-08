@@ -1,0 +1,85 @@
+
+.navBtn {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    padding: 0.5rem 0.5rem;
+    margin-right: 2rem;
+    z-index: 1000;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+
+.line {
+    position: absolute;
+    left: 0.75rem;
+    width: 1.5rem;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s cubic-bezier(0.75, 0.2, 0.05, 1);
+    filter: drop-shadow(1px 1px 1px black);
+
+}
+.line::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-.5rem) translateX(-.25rem);
+    
+
+}
+.line::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(.5rem) translateX(-1.25rem);
+}
+
+.navBtn.open {
+    margin-left: auto;
+    margin-right: 2rem;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.navBtn.open .line {
+    width: inherit;
+    position: absolute;
+    background-color: transparent;   
+    left: 0.5rem; 
+}
+.navBtn.open .line::before {
+    width: 2rem;
+    transform: rotate(45deg);
+    animation: line2 0.4s ease;
+}
+.navBtn.open .line::after {
+    width: 2rem;
+    transform: rotate(-45deg);
+    animation: line3 0.4s ease;
+}
+
+@keyframes line2 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}
+@keyframes line3 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-135deg);
+
+    }
+}

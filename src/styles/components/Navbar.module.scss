@@ -140,7 +140,22 @@ a .mobile {
     background-color: none;
   }
   .menu_icon {
-    top: 54px;
+    bottom: 2rem;
+    right: 2rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    cursor: pointer;
+    padding: 1.25rem 0.25rem;
+    border-radius: 50%;
+    background-color: #ee4e34;
+    outline: none;
+    border: none;
+  }
+  /* .menu_icon {
+    top: 100px;
     right: 0px;
     position: fixed;
     display: flex;
@@ -150,7 +165,7 @@ a .mobile {
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     background-color: rgba(0,0,0,.225);
-  }
+  } */
   .nav_icon {
     color: #fff;
     font-size: 2rem;
@@ -212,24 +227,7 @@ a .mobile {
   .nav_item a:before {
    opacity: 0;  
   }
-/* 
-  .nav_links {
-    margin: 2rem auto;
-    width: 100%;
-    display: block;
-  }
 
-  .nav_links:hover {
-    background-color: transparent;
-    border-radius: 0;
-  }
-
-  .navbar ul li a:hover:before {
-    bottom: -1px;
-    left: 45%;
-    right: 45%;
-  }
-*/
 }
 
 @media screen and (max-width: 460px) {

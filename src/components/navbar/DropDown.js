@@ -1,6 +1,3 @@
-import React, { useState } from 'react';
-
-import Link from 'next/link';
 
 // styles
 import styles from '../../styles/components/DropDown.module.scss';
