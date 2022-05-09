@@ -13,4 +13,9 @@
         margin: 0 auto;
         width: 90%;
     }
+    @media screen and (max-width: 768px) {
+        margin: 5rem auto 0;
+        min-height: 30vh;
+        width: 90%;
+    }
 }

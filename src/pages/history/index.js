@@ -18,14 +18,14 @@ export default function History() {
               THIS IS A HISTORY OF THE ORIGINAL FOUNDATION OF A STREET DANCE
               CALLED ”LOCKING”
             </h2>
-            <p>
+            {/* <p>
               You can click on the images to go that specific page and read more
-            </p>
+            </p> */}
           </div>
         </Content_container>
         <LeftSide>
           <div className={styles.left_container}>
-            <p className={styles.para_color}>
+            <p style={{color: '#ee4e34'}}>
               :as seen through the eyes of some of the original pioneers
             </p>
             <p>
@@ -66,7 +66,7 @@ export default function History() {
             </p>
           </div>
         </LeftSide>
-        
+
         <RightSide>
           <div className={styles.right_container}>
             <p>
