@@ -33,6 +33,7 @@
 
     }
   }
+ 
   .row {
     display: flex;
     flex-flow: row wrap;
@@ -67,6 +68,15 @@
         border-bottom: 1px solid #888;
         margin: 0;
       }
+
+      img {
+        display: flex;
+        margin: 0 auto;
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        filter: drop-shadow(1px 1px 1px #ee4e34) grayscale(1);
+      }
       .row_headline {
         font-size: 0.875rem;
         color: #eeeeee;
@@ -76,19 +86,7 @@
         margin: 0 auto 1rem;
         display: block;
       }
-      img {
-        display: flex;
-        margin: 0 auto;
-        width: 150px;
-        height: 200px;
-        object-fit: cover;
-        filter: drop-shadow(1px 1px 2px black) grayscale(1);
-
-        @media screen and (max-width: 680px) {
-          filter: drop-shadow(1px 1px 1px #ee4e34);
-        }
-
-      }
+      
       .info {
         width: 100%;
         text-align: left;
