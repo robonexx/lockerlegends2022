@@ -152,10 +152,11 @@
 
         .hero_logo {
           transform: scale(0.85);
+          margin-top: 0;
         }
       
         > .hero_pretitle {
-          margin-top: 20vh;
+          margin-top: 10vh;
           font-size: $font-size-m;
         }
         .hero_title {
@@ -167,6 +168,7 @@
           padding: 0 2rem;
           font-size: $font-size-base;
           width: 80%;
+          margin-bottom: 4rem;
           }
       }
     }
