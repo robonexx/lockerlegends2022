@@ -50,7 +50,7 @@ export default function Home({ posts, interviews, streetdance }) {
               {posts.map(({ node: { title, slug, date } }) => {
                 return (
                   <div className={styles.post_card} key={slug}>
-                    <h3>{title}</h3>
+                    <h4>{title}</h4>
                     <span>{formatDate(date)}</span>
                     <Link href={`/blog/` + slug} passHref>
                       <a aria-label={title}></a>
@@ -83,7 +83,6 @@ export default function Home({ posts, interviews, streetdance }) {
                           <Image
                             src={`/images/interview.webp`}
                             layout='fill'
-                            objectFit='cover'
                             alt='blog post image'
                             priority
                           />
@@ -91,14 +90,13 @@ export default function Home({ posts, interviews, streetdance }) {
                           <Image
                             src={featuredImage.node.sourceUrl}
                             layout='fill'
-                            objectFit='contain'
                             alt='blog post image'
                             priority
                           />
                         )}
                       </div>
 
-                      <h3>{title}</h3>
+                      <h4>{title}</h4>
                       <span>{formatDate(date)}</span>
                       <Link href={`/blog/` + slug} passHref>
                         <a aria-label={title}></a>

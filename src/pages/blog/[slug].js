@@ -63,7 +63,7 @@ export default function Blog({ blog, blogs }) {
 
           <div className={styles.blog_slug_main}>
             <span className={styles.date}>{formatDate(blog.date)}</span>
-            <h1 className={styles.blog_title}>{blog.title}</h1>
+            <h4 className={styles.blog_title}>Editorial: {blog.title}</h4>
 
             {/* {blog.featuredImage && (
               <Image

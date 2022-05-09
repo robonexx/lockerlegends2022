@@ -43,7 +43,7 @@
 
     @media screen and (max-width: 680px) {
       flex-direction: column;
-      padding: 0;
+      padding: 0rem;
     }
     .card {
       box-sizing: border-box;
@@ -51,7 +51,7 @@
       border-radius: 2px;
       padding: 40px;
       cursor: pointer;
-      background-image: linear-gradient(180deg, #121212, #000);
+      background-image: linear-gradient(180deg, #202020 40%, rgb(0, 0, 0));
       max-width: 30rem;
       width: 25rem;
       max-height: 30rem;
@@ -65,6 +65,7 @@
         height: auto;
         clip-path: none;
         border-bottom: 1px solid #888;
+        margin: 0;
       }
       .row_headline {
         font-size: 0.875rem;

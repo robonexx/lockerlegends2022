@@ -18,18 +18,21 @@
     }
 
     .blog_title {
-      color: $color-client-1;
+      color: $color-dimmed;
       font-size: $font-size-base;
       padding: 1rem 0;
-      font-weight: $font-thin;
+      font-weight: $font-normal;
   }
 
   .post_wrapper {
 
     h1 {
+      text-transform: uppercase;
       color: $color-client-2;
+      text-align: center;
       font-size: $font-size-l;
       padding: 1rem 0;
+
 
       @media screen and (max-width: 40em) {
         font-size: $font-size-m;
@@ -39,10 +42,10 @@
     }
     p {
       &:nth-child(1) {
-        padding: 1rem 0;
+        padding:0;
       }
       color: $color-client-1;
-      
+      padding: 2rem 0;
       &:last-of-type {
         margin-bottom: 10px;
       }
@@ -67,7 +70,6 @@
     }
 
   }
-    
      
     pre {
       position: relative;
@@ -145,15 +147,15 @@
       border-radius: 10px;
 
       &:before {
-        content: 'READ MORE';
+        content: '';
         position: absolute;
         font-weight: 800;
         font-size: 1.8rem;
         opacity: 0.1;
-        top: 5px;
+        top: 0;
         right: 0;
         bottom: 0;
-        left: 5px;
+        left: 0;
         z-index: 1;
         margin: -5px;
         border-radius: inherit;
