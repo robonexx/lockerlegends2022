@@ -21,7 +21,11 @@ export default function History() {
           </div>
         </Content_container>
         <section>
-          <LeftSide>Left</LeftSide>
+          <LeftSide>
+            <div className={styles.left_container}>
+            <p>:as seen through the eyes of some of the original pioneers</p>
+            </div>
+          </LeftSide>
           <RightSide>Right</RightSide>
         </section>
       </PageLayout>
