@@ -13,8 +13,8 @@ export default function History() {
         <Content_container>
           {' '}
           <div className={styles.info_container}>
-            <h1>History Page</h1>
-            <h2>Here you can see an overview of all the history pages</h2>
+            <h1>OUR STORY OF THE HISTORY OF LOCKING</h1>
+            <h2>THIS IS A HISTORY OF THE ORIGINAL FOUNDATION OF A STREET DANCE CALLED ”LOCKING”</h2>
             <p>
               You can click on the images to go that specific page and read more
             </p>

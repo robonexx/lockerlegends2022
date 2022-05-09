@@ -50,6 +50,15 @@
         max-width: 1000px;
         height: 260px;
         object-fit: cover;
+        >span {
+          margin: 0;
+          >img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+          }
+        }
+
       }
       
     
@@ -88,8 +97,7 @@
          justify-content: flex-start;
 
          .hero_logo {
-          object-fit: cover;
-          transform: scale(0.95);
+          transform: scale(0.90);
         }
         > .hero-pretitle {
           margin-top: 30vh;
@@ -102,7 +110,7 @@
       
           .hero_subtitle {
             font-size: $font-size-ml;
-            margin-left: 1rem;
+           padding: 0 2.5rem;
           
           }
       }
@@ -117,8 +125,8 @@
           width: 100%;
 
           .hero_logo {
-            object-fit: cover;
-            transform: scale(0.9);
+            margin-top: 2rem;
+            transform: scale(0.85);
           }
 
           > .hero_pretitle {
@@ -128,9 +136,9 @@
               font-size: $font-size-l;
             }
             .hero_subtitle {
-              padding: 0 1rem;
+              padding: 0 3rem;
               font-size: $font-size-m;
-              width: 70%;
+              width: 80%;
               }
         }
       }
@@ -141,20 +149,13 @@
     .hero { 
       width: 100%;
       .hero_wrapper {
-        padding: 2rem;
-        position: relative;
-        display: block;
-        height: 65%;
-        width: 100%;
-        margin-bottom: 2rem;
 
         .hero_logo {
-          object-fit: cover;
           transform: scale(0.85);
         }
       
         > .hero_pretitle {
-          margin-top: 10vh;
+          margin-top: 20vh;
           font-size: $font-size-m;
         }
         .hero_title {
@@ -163,7 +164,7 @@
         }
       
           .hero_subtitle {
-          padding: 0 1rem;
+          padding: 0 2rem;
           font-size: $font-size-base;
           width: 80%;
           }
@@ -176,14 +177,6 @@
       padding: 0;
       width: 100%;
       .hero_wrapper {
-        position: relative;
-        display: block;
-        height: 65%;
-
-        .hero_logo {
-          object-fit: cover;
-          transform: scale(1.5);
-        }
       
         > .hero_pretitle {
           margin-top: 10vh;
@@ -195,7 +188,7 @@
         }
       
           .hero_subtitle {
-          padding: 0;
+          padding: 0 1rem;
           font-size: $font-size-base;
           width: 100%;
           }

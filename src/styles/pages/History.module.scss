@@ -1,8 +1,6 @@
 @use '../base/' as *;
 
 .info_container {
-    width: 80%;
-    margin: 0 0 0 2rem;
     display: block;
     align-self: center;
     text-align: left;
@@ -10,14 +8,12 @@
     font-family: $font-base;
 
     h1 {
-        font-size: 3rem;
-        margin: 0.5rem 0;
-        font-family: $font-alt;
+       color: $color-client-1;
+       padding: 1rem 0;
     }
 
     h2 {
-        font-weight: 100;
-        font-size: 2rem;
-        margin: 0.5rem 0;
+        font-weight: 400;
+        padding: 1rem 0;
     }
 }
