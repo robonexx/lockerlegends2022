@@ -215,11 +215,20 @@
         }
       
         
-        h2 {
-          font-size: 2rem;
-          padding: 2rem 0 2rem;
+        h1 {
+          margin: 1rem auto;
           color: $color-client-1;
-        }
+         /*  font-size: 3.5rem; */
+          text-align: center;
+          text-transform: uppercase;
+          text-shadow: 2px 2px 1px black;
+         
+          @media screen and (max-width: 680px) {
+            /* font-size: 1.6rem; */
+            padding: 0.25rem 0.5rem;
+          }
+         
+         }
       
         h3 {
           font-size: 1.5rem;
@@ -229,19 +238,16 @@
         }
       
         p {
-          color: #fff;
-          font-size: 1.2rem;
-          line-height: 1.4rem;
-          font-weight: 400;
+          color: $color-client-1;
         }
+
         @media screen and (max-width: 960px) {
             position: relative;
-            /* margin: 5rem 0 5rem;
-            padding: 1rem 5rem; */
+            
         }
         @media screen and (max-width: 40em) {
             position: relative;
-            /* padding: 0 3rem; */
+           
             h2 {
               font-size: 1.6rem;
               padding: 5rem 0 3rem;
@@ -251,13 +257,6 @@
             h3 {
               font-size: $font-size-base;
               
-            }
-          
-            p {
-              color: #fff;
-              font-size: 0.8rem;
-              line-height: 1.2rem;
-              font-weight: 400;
             }
         }
       }

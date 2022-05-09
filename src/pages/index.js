@@ -113,11 +113,11 @@ export default function Home({ posts, interviews, streetdance }) {
 
           <div className={styles.content_section}>
             <div className={styles.home_article}>
-              <h2>EDUCATE B4U RECREATE</h2>
-              <h3>
-                OVER 15 years Lockerlegends have served your Locking educational
+              <h1>EDUCATE B4U RECREATE</h1>
+              <p>
+                Over 15 years Lockerlegends have served your Locking educational
                 need
-              </h3>
+              </p>
               <br />
               <p>
                 THE ART-FORM & CULTURE OF A STREET DANCE IS MUCH MORE THAN THE

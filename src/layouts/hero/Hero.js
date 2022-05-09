@@ -10,7 +10,7 @@ export default function Hero() {
         <source src='/video/la.webm' type='video/webm' />
       </video>
       <section className={styles.hero_wrapper}>
-        <h3 className={styles.hero_pretitle}></h3>
+       {/*  <h3 className={styles.hero_pretitle}></h3> */}
        {/*  <h1 className={styles.hero_title}>LOCKERLEGENDS</h1> */}
         <div className={styles.hero_logo}>
           <Image src='/svg/LOGO_TEXT.svg'

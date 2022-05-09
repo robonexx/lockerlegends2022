@@ -4,10 +4,9 @@ import { FiX } from 'react-icons/fi';
 
 import NavBtn from '../navBtn/NavBtn';
 
-
 // styles
 import styles from '../../styles/components/Navbar.module.scss';
-import styled from '../../styles/components/NavBtn.module.scss'
+import styled from '../../styles/components/NavBtn.module.scss';
 
 export default function Nav(props) {
   const [click, setClick] = useState(false);
