@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import styles from '../../styles/layout/Hero.module.scss';
 
 export default function Hero() {
@@ -10,7 +11,14 @@ export default function Hero() {
       </video>
       <section className={styles.hero_wrapper}>
         <h3 className={styles.hero_pretitle}></h3>
-        <h1 className={styles.hero_title}>LOCKERLEGENDS</h1>
+       {/*  <h1 className={styles.hero_title}>LOCKERLEGENDS</h1> */}
+        <div className={styles.hero_logo}>
+          <Image src='/svg/LOGO_TEXT.svg'
+            
+            layout='fill'
+            alt='logo'
+          ></Image>
+        </div>
 
         <h3 className={styles.hero_subtitle}>
           Official “LOCKING” pioneers website of the street dance pioneers

@@ -6,7 +6,7 @@ import styles from '../../styles/components/Logo.module.scss';
 export default function Logo() {
   return (
     <Image
-      src='/images/LOGO_TEXT.png'
+      src='/svg/LOGO_TEXT.svg'
       className={styles.logo_img}
       width={200}
       height={46}

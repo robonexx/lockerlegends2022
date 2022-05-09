@@ -85,7 +85,7 @@ input{
 }
 
 
-// h1 
+
 h1 {
 font-size: 3.5rem;
 
@@ -103,12 +103,6 @@ font-size: 3.5rem;
 }
 
 
-
-
-
-
-  // h2 
-
   h2 {
     font-family: $font-base;
     font-size: 2rem;
@@ -122,8 +116,7 @@ font-size: 3.5rem;
   }
 }
 
-  // h3 
-
+  
   h3 {
     font-size: 1.5rem;
 
@@ -135,7 +128,7 @@ font-size: 3.5rem;
   }
   }
 
-  // paragraph 
+  
   p {
     font-size: 1.2rem;
     line-height: 1.4rem;
@@ -146,8 +139,8 @@ font-size: 3.5rem;
     }
 
     @media screen and (max-width: 40em) {
-      font-size: 0.8rem;
-          line-height: 1.2rem;
+        font-size: $font-size-base;
+        line-height: 1.2rem;
        
   }
   }
