@@ -7,9 +7,11 @@
 }
 
 .logo_img {
-
+display: block;
+position: relative;
+margin-right: 0.5rem;
 cursor: pointer;
 @media screen and (max-width: 50em){
-    transform: scale(0.8);
+   
 }
 }

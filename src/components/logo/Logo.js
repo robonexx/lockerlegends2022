@@ -5,12 +5,15 @@ import styles from '../../styles/components/Logo.module.scss';
 
 export default function Logo() {
   return (
-    <Image
-      src='/svg/LOGO_TEXT.svg'
-      className={styles.logo_img}
-      width={200}
-      height={46}
-      alt='lockerlegends logo'
-    />
+    <div className={styles.logo_img}>
+      <Image
+        src='/svg/SVG_LOGO_TEXT.svg'
+        height='52'
+        width='500'
+        alt='lockerlegends logo'
+        objectFit='cover'
+        priority
+      />
+    </div>
   );
 }
