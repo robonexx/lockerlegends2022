@@ -8,7 +8,7 @@ const AutoPlayvideo = () => {
   <div
     dangerouslySetInnerHTML={{
       __html: (
-        <video autoPlay loop muted playsInline className={styles.hero_video}>
+        <video autoPlay loop muted playsInline>
           <source src='/video/la.webm' type='video/webm' />
         </video>
       ),
@@ -20,7 +20,9 @@ export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.hero_overlay}></div>
-      <AutoPlayvideo />
+      <div className={styles.hero_video}>
+        <AutoPlayvideo />
+      </div>
       <section className={styles.hero_wrapper}>
         {/*  <h3 className={styles.hero_pretitle}></h3> */}
         {/*  <h1 className={styles.hero_title}>LOCKERLEGENDS</h1> */}
