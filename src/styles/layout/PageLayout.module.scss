@@ -1,9 +1,18 @@
 @use '../base/' as *;
 
 .page_layout {
+    position: relative;
     width: 100vw;
     min-height: 100vh;
     height: 100%;
     margin-top: 100px;
     background-color: $color-bg;
+
+    @media screen and (max-width: 960px) {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

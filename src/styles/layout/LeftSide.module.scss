@@ -1,8 +1,18 @@
 .leftside {
+    position: relative;
     width: 50%;
-    min-height: 100vh;
     height: 100%;
     float: left;
-    background-color: purple;
+    /* background-color: purple; */
     padding: 2rem;
+    /* overflow: hidden; */
+
+    @media screen and (max-width: 960px) {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        min-height: unset;
+        height: 100%;
+        padding: 0;
+    }
 }
