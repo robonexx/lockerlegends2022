@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.hero_overlay}></div>
-      <video autoPlay loop muted className={styles.hero_video}>
+      <video autoPlay loop muted playsInline className={styles.hero_video}>
         <source src='/video/la.webm' type='video/webm' />
       </video>
       <section className={styles.hero_wrapper}>
