@@ -230,7 +230,7 @@ a .mobile {
 
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 460px) {
    
   .nav_menu {
 
@@ -239,10 +239,8 @@ a .mobile {
     }
 
     .nav_links {
-      font-size: $font-size-s;
-      padding: 1rem 2rem 1rem 0rem;
-      border-radius: 2px;
-      display: block;
+      font-size: $font-size-base;
+      
     }
 
     .nav_links:hover {
@@ -254,8 +252,10 @@ a .mobile {
   }
 }
 @media screen and (max-width: 360px) {
+
    
   .nav_menu {
+
 
     .nav_item {
       left: 2vw;
@@ -263,9 +263,11 @@ a .mobile {
 
     .nav_links {
       font-size: $font-size-s;
-      padding: 1rem 2rem 1rem 0rem;
+      padding: 1rem 0rem 1rem 0rem;
       border-radius: 2px;
-      display: block;
+      display: inline;
+      text-align: left;
+      width: 120px;
     }
 
     .nav_links:hover {

@@ -75,8 +75,34 @@
  
 
  }
+ @media screen and (max-width: 768px) {
+    
+.dropdown_menu {
+   position: absolute;
+   top: 0;
+   min-width: 200px;
+   margin-left: 10rem;
+   .dropdown_link {
+     position: relative;
+     display: flex;
+     align-items: center;
+     padding: 12px;
+   }
+   .link_icon {
+     display: none;
+  }
+ }
+ .link_title {
+   text-transform: uppercase;
+   font-size: $font-size-base;
+   padding: 3px;
+   /* float: left; */
+   color: $color-client-1;
+}
 
- @media screen and (max-width: 40em) {
+ }
+
+ @media screen and (max-width: 460px) {
    
 .dropdown_menu {
    position: absolute;
@@ -90,9 +116,6 @@
  .dropdown_link {
    display: flex;
    justify-content: flex-end;
-   width: 100%;
-   height: 100%;
-   text-decoration: none;
    padding: 8px;
 
    .link_icon {
@@ -103,8 +126,10 @@
       text-transform: uppercase;
       font-size: $font-size-s;
       padding: 3px;
-      /* float: left; */
       color: $color-client-1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
    }
  }
  }
