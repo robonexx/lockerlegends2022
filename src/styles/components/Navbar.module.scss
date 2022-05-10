@@ -230,12 +230,35 @@ a .mobile {
 
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 40em) {
    
   .nav_menu {
 
     .nav_item {
       left: 10vw;
+    }
+
+    .nav_links {
+      font-size: $font-size-s;
+      padding: 1rem 2rem 1rem 0rem;
+      border-radius: 2px;
+      display: block;
+    }
+
+    .nav_links:hover {
+      background-color: $color-client-3;
+    }
+  }
+  .nav_item a:before {
+   opacity: 0;  
+  }
+}
+@media screen and (max-width: 360px) {
+   
+  .nav_menu {
+
+    .nav_item {
+      left: 2vw;
     }
 
     .nav_links {

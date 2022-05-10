@@ -81,25 +81,29 @@
 .dropdown_menu {
    position: absolute;
    top: 0;
+   left: 0;
+   right: auto;
    min-width: 100px;
-   margin-left: 8rem;
+   max-width: fit-content;
+   /* margin-left: 8rem; */
  }
  .dropdown_link {
-   display: block;
+   display: flex;
+   justify-content: flex-end;
    width: 100%;
    height: 100%;
    text-decoration: none;
    padding: 8px;
 
    .link_icon {
-      opacity: 0;
+      display: none;
    }
 
    .link_title {
       text-transform: uppercase;
       font-size: $font-size-s;
       padding: 3px;
-      float: left;
+      /* float: left; */
       color: $color-client-1;
    }
  }
