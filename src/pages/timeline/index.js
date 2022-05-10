@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../layouts/pagelayout/PageLayout';
+
 import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
 import GridItem from '../../components/responsiveGrid/GridItem';
 import { items } from '../../content/items';
@@ -7,7 +7,6 @@ import { items } from '../../content/items';
 export default function Timeline() {
   return (
     <div>
-      <PageLayout>
         <h1 style={{ fontSize: '3rem', color: 'white' }}>
           This Page is still Just a test for layouts and grid
         </h1>
@@ -18,7 +17,6 @@ export default function Timeline() {
             </React.Fragment>
           ))}
         </ResponsiveGrid>
-      </PageLayout>
     </div>
   );
 }

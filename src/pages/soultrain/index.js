@@ -1,172 +1,65 @@
-import React from 'react';
 import Image from 'next/image';
-import Content_container from '../../layouts/pagelayout/Content_container';
-import PageLayout from '../../layouts/pagelayout/PageLayout';
-import LeftSide from '../../layouts/pagelayout/LeftSide';
-import RightSide from '../../layouts/pagelayout/RightSide';
+
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 // styles
-import styles from '../../styles/pages/Soultrain.module.scss';
+import styles from '../../styles/layout/Parallax.module.scss';
 
-export default function index() {
+export default function Terminology() {
   return (
-    <div className={styles.soultrain}>
-      <PageLayout>
-        <Content_container>
-          <div className={styles.info_container}>
+    <motion.div className={styles.parallax_page}>
+      <section className={styles.parallax}>
+        <div className={styles.container}>
+          <div>
             <h1>Soul Train</h1>
             <h2>“say it loud i’m black and i’m proud“</h2>
             <p>LOCKING AND SOUL TRAIN GO HAND IN HAND.</p>
           </div>
-        </Content_container>
-        <LeftSide>
-          <div className={styles.left_container}>
-            <div className={styles.image}>
-              <Image
-                src='/images/soultrain.png'
-                width='100'
-                height='100'
-                layout='responsive'
-                objectFit='cover'
-                objectPosition='center'
-                priority
-              />
-            </div>
-          </div>
-        </LeftSide>
-        <RightSide>
-          <div className={styles.right_container}>
-            <p style={{ textTransform: 'lowercase' }}>
-              ON SOUL TRAINS, MOST INFLUENTIAL SHOW WHICH DEFINED THE PRIDE OF A
-              NEW GENERATION, GUEST ARTIST JAMES BROWN, PERFORMED SOME OF HIS
-              MOST INSPIRATIONAL LYRICS WHICH SPEARHEADED PRIDE IN THE CIVIL
-              RIGHTS MOVEMENT…THER SOME OF THE MOST WELL KNOWN STREETDANCE
-              LEGENDS DISPLAY THE CAMPBELLOCK DANCE STYLE. ON THIS CLIP.. YOU
-              WILL FIND.. OG SKEETER RABBIT, TONY GOGO, BUDDY GOGO,GREG
-              CAMPBELLOCK JR. FRED “MR. PENGUIN” BERRY, SCOOBY DOO, THE ORIGINAL
-              CAPTAIN CRUNCH, FLUKY LUKE,ALPHA ANDERSON, CHARLES ROBOT and The
-              first Lady of Locking DAMITA JO FREEMAN along with many others.
-            </p>
-            <p>
-              when Locking became extreamly popular Don “Campbellock” Campbell
-              asked to be paid to dance on the show. because of this request he
-              was banned from the show for a period of time but as you see
-              locking lived on when Dancers like Mike “Peekaboo” Frenke, F&M,
-              Bishop CoCo Hall, Alpha Anderson, Guy Evans and others continued
-              on even though the show attempted to refrain from spotlighting the
-              dance styles Campbellocking introduced by Don Campbell & Damita Jo
-              Freeman And The Robot, Introduced by Charles and Angie ‘Robot”
-              <br />
-            </p>
-            <p>
-              Contrary to what many think from its Hollywood Image. Soul Train
-              actually premiered in Chicago on August 17, 1970 as a local daily
-              program.The ability to have a Afro American based dance show.
-              attracted the attention of the Johnson’s Product Company, a Black
-              owned company and the manufacturers of the Afro Sheen line of
-              hair-care products who agreed to sponsor the program’s expansion
-              into syndication. Soul Train. when we think of that era in
-              streetdance we think of bright clothing and extravagant hats , but
-              this was the first time that an Afro American owned company ,
-              which produced a product for an exclusive market. had the
-              opportunity to sponsor and advertise on a national ethnic based
-              show, Many have asked why were there no hats worn on the early
-              shows . Well here is the reason.
-            </p>
-          </div>
-        </RightSide>
+          <Image1 speed={0} />
+        </div>
+
+        <Content1 speed={-2} />
+        <Image2 speed={-1} />
+        <Content2 />
         <div className={styles.container}>
+          <Image3 speed={1} />
+          <Content3 speed={0.5} />
+        </div>
+        <div className={styles.content}>
+          <p>
+            Don Cornelius was the shows producer and host a tall, statuesque man
+            with a barrelling deep voice and wearing a high Afro natural hair
+            style. he exemplified the the success of the social movement of the
+            1960s. For the first time the nation was able to look into the night
+            club party style scene of the Afro American community.and they saw
+            the signature Soul Train Line , which was reminiscent of the old
+            cake walk from the baseball negro leagues and second line dancing
+            from the south.
+            <br />
+          </p>
           <p>
             <br />
-            Johnson’s Products who was the sponsor wanted to expose the hair
-            styles that would advertise their products. The show began airing
-            from in selected cities across the United States, on a weekly basis,
-            on October 2, 1971. When it moved into syndication, the program’s
-            home base was also shifted to Los Angeles,California and KTTV
-            Studios and the Hollywood era began. Some of the dancers were
-            selected but many were chosen from park auditions, They were
-            selected from long soul train line style tryouts by talent
-            coordinators such as Pam Brown
+            In the early days. Soul Train drew a tremendous diverse viewing
+            audience, with people tuning in nation wide to view the latest
+            fashions or dance moves. here is where new styles were born The show
+            not only spotlighted dancers but it was a place where both up and
+            comming and established musical talent could be showcased and
+            interviewed, however they were not simply interview about their
+            musical careers , but sensitive social issues,
           </p>
+          <div className={styles.image}>
+            <Image
+              src='/images/soultrain2.png'
+              width='100'
+              height='100'
+              layout='responsive'
+              objectFit='cover'
+              objectPosition='center'
+              priority
+            />
+          </div>
         </div>
-        <LeftSide>
-          <div className={styles.left_container}>
-            <h2>THE SOUL TRAIN LINE</h2>
-            <p>
-              The Cultural fashion and dance scene was already in partial bloom
-              in Los Angeles with Dance Shows Like “The Real Don Steel show”,
-              “Hulla Baloo” and the National syndicated show “American
-              Bandstand”. But the roll of African American Dancers on these show
-              were usually limited. and Afro American Couples were often
-              separated or not allowed to dance next to each other. even with
-              these restrictions some of the first streetdance legends were born
-              with dancers like, Doozer Raye who sparked interest as he showed
-              the world his rendition of the high kicking “Funky Chicken” on the
-              Real Don Steels dance spotlight. A rivalry quickly developed
-              between the new Show, Soul Train and the old established shows
-              like American Bandstand, As dancers became popular on Soul Train
-              they were often forbidden to be seen on the competitors shows. As
-              the older shows and segregated clubs now realized the value of the
-              African American dancers creativity. They began to now welcome the
-              exposure of these now popular dancers.
-            </p>
-          </div>
-        </LeftSide>
-        <RightSide>
-          <div className={styles.right_container}>
-            <div className={styles.image}>
-              <Image
-                src='/gif/soultrainline.gif'
-                width='100'
-                height='100'
-                layout='responsive'
-                objectFit='cover'
-                objectPosition='center'
-                priority
-              />
-            </div>
-          </div>
-        </RightSide>
-        {/* Kopiera resten om parallax blir ok :D */}
-        <LeftSide>
-          <div className={styles.right_container}>
-            <p>
-              Don Cornelius was the shows producer and host a tall, statuesque
-              man with a barrelling deep voice and wearing a high Afro natural
-              hair style. he exemplified the the success of the social movement
-              of the 1960s. For the first time the nation was able to look into
-              the night club party style scene of the Afro American
-              community.and they saw the signature Soul Train Line , which was
-              reminiscent of the old cake walk from the baseball negro leagues
-              and second line dancing from the south.
-              <br />
-              <br />
-              In the early days. Soul Train drew a tremendous diverse viewing
-              audience, with people tuning in nation wide to view the latest
-              fashions or dance moves. here is where new styles were born The
-              show not only spotlighted dancers but it was a place where both up
-              and comming and established musical talent could be showcased and
-              interviewed, however they were not simply interview about their
-              musical careers , but sensitive social issues,
-            </p>
-          </div>
-        </LeftSide>
-        <LeftSide>
-          <div className={styles.left_container}>
-            <div className={styles.image}>
-              <Image
-                src='/images/soultrain2.png'
-                width='100'
-                height='100'
-                layout='responsive'
-                objectFit='cover'
-                objectPosition='center'
-                priority
-              />
-            </div>
-          </div>
-        </LeftSide>
-        <div className={styles.container}>
+        <div className={styles.content}>
           <p>
             This cultural and social influence was never more evident than in
             the James Brown live Soul Train performance of 1972. in what may
@@ -180,9 +73,18 @@ export default function index() {
             of purpose and substance. the african american educational process
             continued , as the soul train scramble board contest was the source
             for education on prominent african americans from all walks of life.
-            <br />
-            <br />
-            Don Cornilius retired as host in 1993, and the show used guest host
+          </p>
+          <Image
+            src='/images/soultrainlogo.png'
+            width='100'
+            height='100'
+            layout='responsive'
+            objectFit='cover'
+            objectPosition='center'
+            priority
+          />
+          <p>
+            Don Cornelius retired as host in 1993, and the show used guest host
             from that time until 1997, comedian Mystro Clark hosted for
             two-years. Clark , and was then replaced by actor Shemor Moore in
             1999. In 2003, There was another change when actor Dorian Gregory,
@@ -191,8 +93,11 @@ export default function index() {
             final two seasons. But Locking and other creative dance style
             continued to be exposed.featuring many great dancers and musical
             artist.
-            <br />
-            <br />
+          </p>
+        </div>
+        <div className={styles.container}>
+          <p>
+            {' '}
             The show is known for its tremendous sense of pride it bestowed on
             the African American community with its influence of new dances and
             fashions, In the earlier years it was the stripped sox and wild
@@ -222,19 +127,9 @@ export default function index() {
             conclusion of the 2005-06 season, this was the show’s 35th year of
             production. From 2006 to 2007, the program aired archived episodes
             and the show was called, “The Best of Soul Train”.
-            <br />
-            <br />
           </p>
-          <Image
-            src='/images/soultrainlogo.png'
-            width='100'
-            height='100'
-            layout='responsive'
-            objectFit='cover'
-            objectPosition='center'
-            priority
-          />
-
+        </div>
+        <div className={styles.container}>
           <p>
             The future of Soul Train was uncertain with the announced closing of
             Tribune Entertainment’s syndication division on December 18,
@@ -280,46 +175,43 @@ export default function index() {
             <br />
           </p>
         </div>
-        <LeftSide>
-          <div className={styles.left_container}>
-            <div className={styles.image}>
-              <Image
-                src='/images/jodyjeffrey.png'
-                width='100'
-                height='100'
-                layout='responsive'
-                objectFit='cover'
-                objectPosition='center'
-                priority
-              />
-            </div>
+        <div className={styles.content_2_col}>
+          <div className={styles.image}>
+            <Image
+              src='/images/jodyjeffrey.png'
+              width='100'
+              height='100'
+              layout='responsive'
+              objectFit='cover'
+              objectPosition='center'
+              priority
+            />
           </div>
-        </LeftSide>
-        <RightSide>
-          <div className={styles.right_container}>
-            <p>
-              Two former dancers, Jody Watley and Jeffery Daniel, enjoyed years
-              of success as members of the singing group Shalamar, after they
-              were tabbed by Soul Train talent booker/record promoter Dick
-              Griffey to replace the group’s original session singers in 1977.
-              The show introduced many groups and dancers, Tyrone Proctor, Gary
-              Keyes, Little Jo Chisim, Lynn Picket, Pat Davis, Sharon Hill,
-              Fredi Maxie, Lenny Jones, Thelma Davis ,Perry Brown and many many
-              others formed groups like “Something” Special from the Original
-              Soul Train Gang,
-              <br />
-              <br />
-              and Dances that still exist and being taught today Like “Waacking”
-              were introduced on the show. Many also believe that Waacking was
-              part of the Locking explosion,But it was not. although it was
-              introduced during the same era. it evolved from the social parties
-              of the Gay community. and was later confused as a part of locking
-              from its exposure in movies such as “Breaking” The term Punking
-              (which was a derogatory term used to discribe the gay people) was
-              added to the dance as strait dancers mimicked the waacking style.
-            </p>
-          </div>
-        </RightSide>
+          <p>
+            Two former dancers, Jody Watley and Jeffery Daniel, enjoyed years of
+            success as members of the singing group Shalamar, after they were
+            tabbed by Soul Train talent booker/record promoter Dick Griffey to
+            replace the group’s original session singers in 1977. The show
+            introduced many groups and dancers, Tyrone Proctor, Gary Keyes,
+            Little Jo Chisim, Lynn Picket, Pat Davis, Sharon Hill, Fredi Maxie,
+            Lenny Jones, Thelma Davis ,Perry Brown and many many others formed
+            groups like “Something” Special from the Original Soul Train Gang,
+            <br />
+          </p>
+        </div>
+        <div className={styles.container}>
+          <p>
+            <br />
+            and Dances that still exist and being taught today Like “Waacking”
+            were introduced on the show. Many also believe that Waacking was
+            part of the Locking explosion,But it was not. although it was
+            introduced during the same era. it evolved from the social parties
+            of the Gay community. and was later confused as a part of locking
+            from its exposure in movies such as “Breaking” The term Punking
+            (which was a derogatory term used to discribe the gay people) was
+            added to the dance as strait dancers mimicked the waacking style.
+          </p>
+        </div>
         <div className={styles.container}>
           <p>
             The soul train gang tour, with Gary Keyes, Don Campbell, Mr X,Tyrone
@@ -342,8 +234,12 @@ export default function index() {
             and SOUL!” Much thanks to Soul Train and Don Cornilius without them
             the world may have never known the passion of a people James Brown.
           </p>
-          <h2>The Damita Jo Freeman Foundation</h2>
-          <h2>Soul Train Dancers speak</h2>
+        </div>
+        <div className={styles.container}>
+          <h1 style={{ color: '#ee4e34' }}>The Damita Jo Freeman Foundation</h1>
+          <h1>Soul Train Dancers speak</h1>
+        </div>
+        <div className={styles.container}>
           <p>
             many of you have watched the soul train awards and wondered where
             are the real stars of that show “THE ORIGINAL DANCERS” well we are
@@ -371,7 +267,180 @@ export default function index() {
             international web presence for both locking and Soul Train
           </p>
         </div>
-      </PageLayout>
-    </div>
+      </section>
+    </motion.div>
   );
 }
+
+const Image1 = ({ speed }) => {
+  const { scrollYProgress } = useViewportScroll();
+  const yValue = useTransform(scrollYProgress, [0, 1], [0, 500 * speed]);
+  return (
+    <motion.div
+      className={styles.image}
+      initial={{ opacity: 0, y: 300 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      style={{ y: yValue }}
+    >
+      <Image
+        src='/images/soultrain.png'
+        width='100'
+        height='100'
+        layout='responsive'
+        objectFit='cover'
+        objectPosition='center'
+        priority
+      />
+    </motion.div>
+  );
+};
+const Content1 = ({ speed }) => {
+  const { scrollYProgress } = useViewportScroll();
+  const yValue = useTransform(scrollYProgress, [0, 1], [0, 50 * speed]);
+  return (
+    <motion.div
+      className={`${styles.content}`}
+      initial={{ opacity: 0, y: 200 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      style={{ y: yValue }}
+    >
+      <p style={{ textTransform: 'lowercase' }}>
+        ON SOUL TRAINS, MOST INFLUENTIAL SHOW WHICH DEFINED THE PRIDE OF A NEW
+        GENERATION, GUEST ARTIST JAMES BROWN, PERFORMED SOME OF HIS MOST
+        INSPIRATIONAL LYRICS WHICH SPEARHEADED PRIDE IN THE CIVIL RIGHTS
+        MOVEMENT…THER SOME OF THE MOST WELL KNOWN STREETDANCE LEGENDS DISPLAY
+        THE CAMPBELLOCK DANCE STYLE. ON THIS CLIP.. YOU WILL FIND.. OG SKEETER
+        RABBIT, TONY GOGO, BUDDY GOGO,GREG CAMPBELLOCK JR. FRED “MR. PENGUIN”
+        BERRY, SCOOBY DOO, THE ORIGINAL CAPTAIN CRUNCH, FLUKY LUKE,ALPHA
+        ANDERSON, CHARLES ROBOT and The first Lady of Locking DAMITA JO FREEMAN
+        along with many others.
+      </p>
+      <p>
+        when Locking became extreamly popular Don “Campbellock” Campbell asked
+        to be paid to dance on the show. because of this request he was banned
+        from the show for a period of time but as you see locking lived on when
+        Dancers like Mike “Peekaboo” Frenke, F&M, Bishop CoCo Hall, Alpha
+        Anderson, Guy Evans and others continued on even though the show
+        attempted to refrain from spotlighting the dance styles Campbellocking
+        introduced by Don Campbell & Damita Jo Freeman And The Robot, Introduced
+        by Charles and Angie ‘Robot”
+        <br />
+      </p>
+      <p>
+        Contrary to what many think from its Hollywood Image. Soul Train
+        actually premiered in Chicago on August 17, 1970 as a local daily
+        program.The ability to have a Afro American based dance show. attracted
+        the attention of the Johnson’s Product Company, a Black owned company
+        and the manufacturers of the Afro Sheen line of hair-care products who
+        agreed to sponsor the program’s expansion into syndication.
+      </p>
+    </motion.div>
+  );
+};
+const Content2 = () => (
+  <div className={styles.container}>
+    <p>
+      Soul Train, when we think of that era in streetdance we think of bright
+      clothing and extravagant hats, but this was the first time that an Afro
+      American owned company, which produced a product for an exclusive market
+      had the opportunity to sponsor and advertise on a national ethnic based
+      show. Many have asked why were there no hats worn on the early shows .
+      Well here is the reason.
+      <br />
+      <br />
+      Johnson’s Products who was the sponsor wanted to expose the hair styles
+      that would advertise their products. The show began airing from in
+      selected cities across the United States, on a weekly basis, on October 2,
+      1971. When it moved into syndication, the program’s home base was also
+      shifted to Los Angeles,California and KTTV Studios and the Hollywood era
+      began. Some of the dancers were selected but many were chosen from park
+      auditions, They were selected from long soul train line style tryouts by
+      talent coordinators such as Pam Brown
+    </p>
+  </div>
+);
+
+const Image2 = ({ speed }) => {
+  const { scrollYProgress } = useViewportScroll();
+  const yValue = useTransform(scrollYProgress, [1, 0], [1, 50 * speed]);
+
+  return (
+    <motion.div
+      className={styles.image}
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      style={{ y: yValue }}
+    >
+      <Image
+        src='/images/soultrain2.png'
+        width='100%'
+        height='100%'
+        layout='responsive'
+        objectFit='cover'
+        objectPosition='center'
+        priority
+      />
+    </motion.div>
+  );
+};
+
+const Content3 = ({ speed }) => {
+  const { scrollYProgress } = useViewportScroll();
+  const yValue = useTransform(scrollYProgress, [1, 0], [0, 150 * speed]);
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      animate={{ opacity: 1, y: -100 }}
+      exit={{ y: 200 }}
+      transition={{ duration: 1 }}
+      style={{ y: yValue }}
+    >
+      <div>
+        <h2>THE SOUL TRAIN LINE</h2>
+        <p>
+          The Cultural fashion and dance scene was already in partial bloom in
+          Los Angeles with Dance Shows Like “The Real Don Steel show”, “Hulla
+          Baloo” and the National syndicated show “American Bandstand”. But the
+          roll of African American Dancers on these show were usually limited.
+          and Afro American Couples were often separated or not allowed to dance
+          next to each other. even with these restrictions some of the first
+          streetdance legends were born with dancers like, Doozer Raye who
+          sparked interest as he showed the world his rendition of the high
+          kicking “Funky Chicken” on the Real Don Steels dance spotlight. A
+          rivalry quickly developed between the new Show, Soul Train and the old
+          established shows like American Bandstand, As dancers became popular
+          on Soul Train they were often forbidden to be seen on the competitors
+          shows. As the older shows and segregated clubs now realized the value
+          of the African American dancers creativity. They began to now welcome
+          the exposure of these now popular dancers.
+        </p>
+      </div>
+    </motion.div>
+  );
+};
+
+const Image3 = ({ speed }) => {
+  const { scrollYProgress } = useViewportScroll();
+  const yValue = useTransform(scrollYProgress, [0, 1], [0, 450 * speed]);
+
+  return (
+    <motion.div
+      className={styles.image}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      style={{ y: yValue }}
+    >
+      <Image
+        src='/gif/soultrainline.gif'
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+        priority
+      />
+    </motion.div>
+  );
+};
