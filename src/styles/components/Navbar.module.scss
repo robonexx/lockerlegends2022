@@ -18,7 +18,7 @@
 .hide {
   width: 100%;
   z-index: 40;
-  border-bottom: 2px solid #ee4e34;
+  border-bottom: 10px solid #ee4e34;
   box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
   position: fixed;
   transform: translateY(-54px);
@@ -105,7 +105,6 @@ a .mobile {
 
 
 .nav_item:hover {
-
     &:before {
       bottom: -1px;
       left: 1.4rem;
@@ -154,18 +153,7 @@ a .mobile {
     outline: none;
     border: none;
   }
-  /* .menu_icon {
-    top: 100px;
-    right: 0px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1100;
-    cursor: pointer;
-    padding: 0.25rem 0.5rem;
-    background-color: rgba(0,0,0,.225);
-  } */
+  
   .nav_icon {
     color: #fff;
     font-size: 2rem;
@@ -238,9 +226,12 @@ a .mobile {
       left: 10vw;
     }
 
+    .nav_item:nth-child(1) {
+      margin-top: 8rem;
+    }
+
     .nav_links {
       font-size: $font-size-base;
-      
     }
 
     .nav_links:hover {
@@ -253,12 +244,15 @@ a .mobile {
 }
 @media screen and (max-width: 360px) {
 
-   
   .nav_menu {
 
 
     .nav_item {
-      left: 2vw;
+      left: 1vw;
+    }
+
+    .nav_item:nth-child(1) {
+      margin-top: 4rem;
     }
 
     .nav_links {
@@ -276,5 +270,8 @@ a .mobile {
   }
   .nav_item a:before {
    opacity: 0;  
+  }
+  .nav_menu.active {
+
   }
 }
