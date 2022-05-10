@@ -78,21 +78,6 @@ export default function index() {
         <div className={styles.container}>
           <p>
             <br />
-            Contrary to what many think from its Hollywood Image. Soul Train
-            actually premiered in Chicago on August 17, 1970 as a local daily
-            program.The ability to have a Afro American based dance show.
-            attracted the attention of the Johnson’s Product Company, a Black
-            owned company and the manufacturers of the Afro Sheen line of
-            hair-care products who agreed to sponsor the program’s expansion
-            into syndication. Soul Train. when we think of that era in
-            streetdance we think of bright clothing and extravagant hats , but
-            this was the first time that an Afro American owned company , which
-            produced a product for an exclusive market. had the opportunity to
-            sponsor and advertise on a national ethnic based show, Many have
-            asked why were there no hats worn on the early shows . Well here is
-            the reason.
-            <br />
-            <br />
             Johnson’s Products who was the sponsor wanted to expose the hair
             styles that would advertise their products. The show began airing
             from in selected cities across the United States, on a weekly basis,
@@ -142,22 +127,8 @@ export default function index() {
             </div>
           </div>
         </RightSide>
+        {/* Kopiera resten om parallax blir ok :D */}
         <LeftSide>
-          <div className={styles.left_container}>
-            <div className={styles.image}>
-              <Image
-                src='/images/soultrain2.png'
-                width='100'
-                height='100'
-                layout='responsive'
-                objectFit='cover'
-                objectPosition='center'
-                priority
-              />
-            </div>
-          </div>
-        </LeftSide>
-        <RightSide>
           <div className={styles.right_container}>
             <p>
               Don Cornelius was the shows producer and host a tall, statuesque
@@ -179,7 +150,22 @@ export default function index() {
               musical careers , but sensitive social issues,
             </p>
           </div>
-        </RightSide>
+        </LeftSide>
+        <LeftSide>
+          <div className={styles.left_container}>
+            <div className={styles.image}>
+              <Image
+                src='/images/soultrain2.png'
+                width='100'
+                height='100'
+                layout='responsive'
+                objectFit='cover'
+                objectPosition='center'
+                priority
+              />
+            </div>
+          </div>
+        </LeftSide>
         <div className={styles.container}>
           <p>
             This cultural and social influence was never more evident than in
