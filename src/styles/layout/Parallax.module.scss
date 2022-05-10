@@ -34,10 +34,6 @@
         padding: 0 2rem;
     }
 
-    div {
-        padding: 2rem;
-    }
-
     h1 {
        color: $color-client-1;
        padding: 1rem 0;
@@ -62,7 +58,7 @@
             justify-content: center;
             margin: 0;
             margin-bottom: 4rem;
-            padding: 1rem;
+            padding: 0 1rem;
             gap: 40px;
 
         
@@ -70,12 +66,16 @@
             @media screen and (max-width: 960px) {
                 display: grid;
                 grid-template-columns: 1fr;
+                
             }
       
             p {
-            padding: 2rem 1rem;
             color: $color-client-1;
             z-index: 2;
+            @media screen and (max-width: 960px) {
+               
+                
+            }
             }
         }
         .content_2_col {
