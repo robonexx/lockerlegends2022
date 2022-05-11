@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import Content_container from '../../layouts/pagelayout/Content_container';
 
 // styles
 import styles from '../../styles/layout/PageLayout.module.scss';
@@ -20,10 +19,15 @@ export default function Terminology({ speed }) {
   return (
     <motion.div className={styles.pagelayout}>
       <section>
-        <header>
-          <h1>Soul Train</h1>
-          <h2>“say it loud i’m black and i’m proud“</h2>
-        </header>
+        <motion.header
+        initial={{y: -200, opacity: 0}} animate={{y:0, opacity: 1}} transition={{duration: 0.4}}>
+          <motion.h1 initial={{x: -200, opacity: 0}} animate={{x:0, opacity: 1}} transition={{delay: 0.4, duration: 0.4}}>
+            Soul Train
+          </motion.h1>
+          <motion.h2 initial={{x: 200, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.4}}>
+            “say it loud i’m black and i’m proud“
+          </motion.h2>
+        </motion.header>
 
         <motion.div
           className={styles.image}
