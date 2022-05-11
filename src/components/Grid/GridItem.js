@@ -18,14 +18,26 @@ export default function GridItem({
 }) {
   return (
     <motion.div className={styles.grid_item}>
-      <Image
+      {/*  <Image
         src={sourceUrl}
         layout='fill'
         objectFit='cover'
         objectPosition='top center'
         alt='blog post image'
         priority
-      />
+      /> */}
+
+      {/* Checking if there is an featured image for the post otherwise insert an other photo */}
+      {sourceUrl === null ? (
+        <Image
+          src={`/images/interview.webp`}
+          layout='fill'
+          alt='blog post image'
+          priority
+        />
+      ) : (
+        <Image src={sourceUrl} layout='fill' alt='blog post image' priority />
+      )}
 
       <h3 className={styles.grid_title}>{title}</h3>
       <Link href={`/blog/` + slug} passHref>

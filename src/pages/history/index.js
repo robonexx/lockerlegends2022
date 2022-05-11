@@ -5,7 +5,6 @@ import Image from 'next/image';
 import styles from '../../styles/layout/PageLayout.module.scss';
 
 export default function History() {
-
   return (
     <div className={styles.pagelayout}>
       <section>
@@ -35,8 +34,10 @@ export default function History() {
             existence. But there is only ONE Original era, which was seen
             through the many eyes that experienced it, which all came together
             to produce its foundation <br /> <br />
-           </p>
-          <p style={{ backgroundColor: 'transparent', color: 'white' }}>...Read and Enjoy</p>
+          </p>
+          <p style={{ backgroundColor: 'transparent', color: 'white' }}>
+            ...Read and Enjoy
+          </p>
         </div>
 
         <div className={styles.image}>
@@ -169,6 +170,10 @@ export default function History() {
             Quinones. The Dance style of Locking went from just a style to a
             performance artform, and was NOW revealed to the world.
             <br />
+          </p>
+        </div>
+        <div>
+          <p>
             <br />
             During the Original groups existence, in the early 70’s. Other OG
             dancers such as Tony Go-Go and “The Original Skeeter Rabbit” (James
@@ -199,7 +204,19 @@ export default function History() {
             members under the assumption they were dancing with “THE ORIGINAL
             LOCKERS” BEWARE of all of those claiming to have been there !
             <br />
-            <br />
+          </p>
+        </div>
+        <div className={styles.image}>
+          <Image
+            src='/images/lockerslate70s.png'
+            width='100%'
+            height='100'
+            layout='responsive'
+            objectFit='cover'
+          />
+        </div>
+        <div className={styles.wrapper_2_col}>
+          <p>
             Also, during the early to mid 70s period other urban groups such as
             33RPM and the Ghetto Dancers were also formed (see acknowledgement
             page). These were comprised of various combinations of other old
@@ -223,6 +240,20 @@ export default function History() {
             the Foundation to simply imitate the moves as they thought they saw
             them, they were known by the real street sub-culture simply as “SLOP
             lockers”.
+          </p>
+          <div className={styles.image}>
+            <Image
+              src='/images/33rpm.png'
+              width='100%'
+              height='100%'
+              layout='responsive'
+              objectFit='cover'
+              objectPosition='center'
+            />
+          </div>
+        </div>
+        <div>
+          <p>
             <br />
             <br />
             Note: Many of these groups and individules quickly clammered to
@@ -320,7 +351,7 @@ export default function History() {
             <br />
           </p>
           <p>
-            Any Questions.. please send us an email at info@lockerlegends.net .
+            Any Questions.. please send us an email at info@lockerlegends.net
           </p>
         </div>
       </section>

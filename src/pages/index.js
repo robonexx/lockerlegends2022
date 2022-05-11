@@ -12,10 +12,10 @@ import Image from 'next/image';
 import styles from '../styles/pages/Home.module.scss';
 import Slider from '../components/Carousel/Slider';
 import SliderItem from '../components/Carousel/sliderItem';
-import { AiFillCaretRight } from 'react-icons/ai'
+import { AiFillCaretRight } from 'react-icons/ai';
 
 import GridItem from '../components/Grid/GridItem';
-import Grid from '../components/Grid/Grid'
+import Grid from '../components/Grid/Grid';
 
 /* const myLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
@@ -49,64 +49,40 @@ export default function Home({ posts, interviews, streetdance }) {
             </motion.div>
             <p>Read about locking, culture, interviews and more...</p>
             <h3 className={styles.blog_row_title}>Latest Posts:</h3>
-            <Grid >
+            <Grid>
               {posts.map(({ node }, idx) => {
                 return (
                   <div key={idx}>
-                  <GridItem props={node} />
-                </div>
+                    <GridItem props={node} />
+                  </div>
                 );
               })}
             </Grid>
-            
-              <h3 className={styles.blog_row_title}>Streetdance:</h3>
-              <Grid >
+
+            <h3 className={styles.blog_row_title}>Streetdance:</h3>
+            <Grid>
               {streetdance.map(({ node }, idx) => {
                 return (
                   <div key={idx}>
-                  <GridItem props={node} />
-                </div>
+                    <GridItem props={node} />
+                  </div>
                 );
               })}
             </Grid>
-              <p className={styles.swipe}>Swipe <AiFillCaretRight /></p>
-           
-            <h3 className={styles.blog_row_title}>Interviews:</h3>
-            <div className={styles.home_grid}>
-              {interviews.map(
-                ({ node: { title, slug, date, featuredImage } }) => {
-                  return (
-                    <div className={styles.post_card} key={slug}>
-                      <div className={styles.post_image}>
-                        {featuredImage === null ? (
-                          <Image
-                            src={`/images/interview.webp`}
-                            layout='fill'
-                            alt='blog post image'
-                            priority
-                          />
-                        ) : (
-                          <Image
-                            src={featuredImage.node.sourceUrl}
-                            layout='fill'
-                            alt='blog post image'
-                            priority
-                          />
-                        )}
-                      </div>
 
-                      <h4>{title}</h4>
-                      <span>{formatDate(date)}</span>
-                      <Link href={`/blog/` + slug} passHref>
-                        <a aria-label={title}></a>
-                      </Link>
-                    </div>
-                  );
-                }
-              )}
-            </div>
-            <p className={styles.blog_info}>More editorials on the editorial(blog) page,
-              read about the history, culture and dance of the artform locking
+            <h3 className={styles.blog_row_title}>Interviews:</h3>
+            <Grid>
+              {interviews.map(({ node }, idx) => {
+                return (
+                  <div key={idx}>
+                    <GridItem props={node} />
+                  </div>
+                );
+              })}
+            </Grid>
+            <p className={styles.blog_info}>
+              More editorials on the editorial(blog) page, read about the
+              history, culture and dance of the artform locking
             </p>
           </div>
 

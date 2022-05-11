@@ -81,6 +81,39 @@
     }
     .wrapper_2_col{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        p {
+            margin: 2rem 0;
+        }
+        @media screen and (min-width: 968px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        
+            h2 {
+                color: $color-client-2;
+                padding-right: 0.5rem;
+            }
+        }
+        > .image {
+            position: relative;
+            display: block;
+            border-radius: 0;
+                min-width: 500px;
+                min-height: 300px;
+                max-width: 100%;
+                padding: 2rem;
+
+                @media screen and (min-width: 968px) {
+                    min-width: 50%;
+                    min-height: 300px;
+                    max-width: 100%;
+                    padding: 2rem;
+                    
+                    
+                }
+        }
     }
 }
 
