@@ -55,6 +55,7 @@
 
     h1 {
         margin: 1rem 0;
+        color: $color-client-1;
     }
 
     h2 {
@@ -126,7 +127,7 @@
     position: relative;
     display: block;
     border-radius: 0;
-        min-width: 300px;
+        min-width: 90%;
         min-height: 300px;
         max-width: 100%;
         padding: 2rem;
@@ -139,12 +140,13 @@
         @media screen and (min-width: 960px) {
             margin: 0 auto;
             min-height: 600px;
-            max-width: 600px;
+            max-width: 560px;
         }
 
         @media screen and (min-width: 1440px) {
             margin: 0 auto;
             min-height: 100%;
             max-width: 680px;
+            min-width: 560px;
         }
 }

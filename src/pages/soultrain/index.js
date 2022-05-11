@@ -417,21 +417,4 @@ export default function Terminology({ speed }) {
   );
 }
 
-/* 
-const Image2 = ({ speed }) => {
-  const { scrollYProgress } = useViewportScroll();
-  const yValue = useTransform(scrollYProgress, [1, 0], [1, 50 * speed]);
 
-  return (
-    
-  );
-};
- */
-/* const Image3 = ({ speed }) => {
-  const { scrollYProgress } = useViewportScroll();
-  const yValue = useTransform(scrollYProgress, [0, 1], [0, 450 * speed]);
-
-  return (
-    
-  );
-}; */
