@@ -45,6 +45,10 @@
     
             h2 {
                 color: $color-client-3;
+                font-size: $font-size-m;
+                @media screen and (min-width: 1185px) {
+                    font-size: $font-size-ml;
+                }
             }
         }
     }
@@ -100,13 +104,14 @@
             position: relative;
             display: block;
             border-radius: 0;
-                min-width: 500px;
+                min-width: 100%;
                 min-height: 300px;
                 max-width: 100%;
                 padding: 2rem;
 
                 @media screen and (min-width: 968px) {
-                    min-width: 50%;
+                   
+                    min-width: 500px;
                     min-height: 300px;
                     max-width: 100%;
                     padding: 2rem;
