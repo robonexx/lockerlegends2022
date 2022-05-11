@@ -14,15 +14,15 @@ export default function Groups() {
           transition={{ duration: 0.4 }}
         >
           <motion.h1
-            initial={{ x: -200, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: -200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.4 }}
           >
             GROUPS & DANCERS
           </motion.h1>
           <motion.h2
-            initial={{ x: 200, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: 200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.4 }}
           >
             “Old school" ACKNOWLEDGEMENT ROOM
@@ -71,12 +71,7 @@ export default function Groups() {
         </p>
 
         <h2>Ghetto Dancers</h2>
-        <motion.div
-          className={styles.image}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.div className={styles.image}>
           <Image
             src='/images/ghettodancers.png'
             width='100%'
@@ -121,12 +116,7 @@ export default function Groups() {
         </motion.div>
 
         <div className={styles.wrapper_col_2}>
-          <motion.div
-            className={styles.image}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}
-          >
+          <motion.div className={styles.image}>
             <Image
               src='/images/33rpm2.png'
               layout='responsive'
@@ -148,7 +138,7 @@ export default function Groups() {
             pictured is manager and alternate dancer Cameron “Cam” Walker
           </p>
         </div>
-        <h2 >The Alphabet Kids</h2>
+        <h2>The Alphabet Kids</h2>
         <div className={styles.wrapper_2_col}>
           <p>
             This group was formed by Haywood “Tito” Collins Pictured (on the far
@@ -172,9 +162,7 @@ export default function Groups() {
             />
           </div>
         </div>
-        <h2>
-          “THE SOMETHING SPECIAL” dance group
-        </h2>
+        <h2>“THE SOMETHING SPECIAL” dance group</h2>
         <p>
           A unique group of soul train dancers which featured early Locking
           icons Jimmy “Scooby Doo Foster ” & Pat Davis, although this group was

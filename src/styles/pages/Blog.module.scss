@@ -1,9 +1,44 @@
-
+@use '../base/' as *;
 .blog_main {
     position: relative;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+
+    > header {
+      display: grid;
+      place-content: center;
+      margin: 56px auto 3rem;
+      width: 100%;
+      max-height: 400px;
+      min-height: 200px;
+      padding: 2rem 10%;
+      background-color: $color-client-2;
+     
+
+      @media screen and (min-width: 960px) {
+        margin: 100px auto 5rem;
+          text-align: center;
+      }
+
+      h1 {
+          font-size: 2rem;
+          color: $color-client-1;
+          margin-bottom: 1rem;
+
+          @media screen and (min-width: 1185px) {
+              font-size: 6rem;
+          }
+      }
+
+      h2 {
+          color: $color-client-3;
+          font-size: $font-size-m;
+          @media screen and (min-width: 1185px) {
+              font-size: $font-size-ml;
+          }
+      }
+  }
 
     .blog_wrapper {
         padding: 10rem 0 0;

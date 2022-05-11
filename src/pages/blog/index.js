@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { formatDate } from '../../utils/functions';
 import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
 import GridItem from '../../components/responsiveGrid/GridItem';
+import { motion } from 'framer-motion'
 
 import styles from '../../styles/pages/Blog.module.scss';
 
@@ -21,6 +22,14 @@ export default function Blog({ posts }) {
       </Head>
 
       <div className={styles.blog_main}>
+      <header>
+          <div>
+            <h1>Editorials (Blog) </h1>
+            <h2>
+              Read the latest Editorials (posts) related to the artform of locking and culture...
+            </h2>
+          </div>
+        </header>
         <div className={styles.blog_wrapper}>
           <ResponsiveGrid>
             {posts?.map(({ node }) => {

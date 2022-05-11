@@ -13,15 +13,15 @@ export default function index() {
           transition={{ duration: 0.4 }}
         >
           <motion.h1
-            initial={{ x: -200, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: -200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.4 }}
           >
             WATTSSTAXX
           </motion.h1>
           <motion.h2
-            initial={{ x: 200, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: 200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.4 }}
           >
             “WATTSTAX FESTIVAL & CONCERT“
@@ -56,12 +56,7 @@ export default function index() {
         </p>
 
         <h1>The concert</h1>
-        <motion.div
-          className={styles.image}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.div className={styles.image}>
           <Image
             src='/images/wattsfist.png'
             width='100%'
@@ -103,12 +98,7 @@ export default function index() {
              known as locking, were in the film.
           </p>
         </div>
-        <motion.div
-          className={styles.image}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
-        >
+        <motion.div className={styles.image}>
           <Image
             src='/images/wattshandshake.png'
             layout='responsive'
@@ -119,15 +109,7 @@ export default function index() {
             priority
           />
         </motion.div>
-        <motion.div
-          className={styles.wrapper}
-          /*   speed={1.5}
-      initial={{ opacity: 0, y: 200 }}
-      animate={{ opacity: 1, y: -100 }}
-      exit={{ y: 200 }}
-      transition={{ duration: 1 }}
-      style={{ y: yValue }} */
-        >
+        <motion.div className={styles.wrapper}>
           <h2>The handshake of brotherhood</h2>
           <p>
             Later during an interview with Staxx records owner Al Bell ,the

@@ -4,10 +4,10 @@ import { motion, useViewportScroll, useTransform } from 'framer-motion';
 // styles
 import styles from '../../styles/layout/PageLayout.module.scss';
 
-export default function Terminology({ speed }) {
-  const { scrollYProgress } = useViewportScroll();
+export default function Terminology() {
+  /* const { scrollYProgress } = useViewportScroll();
   const yValue = useTransform(scrollYProgress, [0, 1], [0, 500 * speed]);
-
+ */
   /* 
   initial={{ opacity: 0, y: 200 }}
       animate={{ opacity: 1, y: 0 }}
@@ -20,11 +20,22 @@ export default function Terminology({ speed }) {
     <motion.div className={styles.pagelayout}>
       <section>
         <motion.header
-        initial={{y: -200, opacity: 0}} animate={{y:0, opacity: 1}} transition={{duration: 0.4}}>
-          <motion.h1 initial={{x: -200, opacity: 0}} animate={{x:0, opacity: 1}} transition={{delay: 0.4, duration: 0.4}}>
+          initial={{ opacity: 0, y: -200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <motion.h1
+            initial={{ y: -200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
+          >
             Soul Train
           </motion.h1>
-          <motion.h2 initial={{x: 200, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{delay: 0.6, duration: 0.4}}>
+          <motion.h2
+            initial={{ y: 200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.4 }}
+          >
             “say it loud i’m black and i’m proud“
           </motion.h2>
         </motion.header>
@@ -34,7 +45,6 @@ export default function Terminology({ speed }) {
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: -100 }}
           transition={{ duration: 1 }}
-          style={{ y: yValue }}
         >
           <Image
             src='/images/soultrain.png'
@@ -81,13 +91,7 @@ export default function Terminology({ speed }) {
           </p>
         </div>
 
-        <motion.div
-          className={styles.image}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          style={{ y: yValue }}
-        >
+        <motion.div className={styles.image}>
           <Image
             src='/images/soultrain2.png'
             width='100%'
@@ -119,13 +123,7 @@ export default function Terminology({ speed }) {
             coordinators such as Pam Brown
           </p>
         </div>
-        <motion.div
-          className={styles.image}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
-          style={{ y: yValue }}
-        >
+        <motion.div className={styles.image}>
           <Image
             src='/gif/soultrainline.gif'
             layout='responsive'
@@ -136,15 +134,7 @@ export default function Terminology({ speed }) {
             priority
           />
         </motion.div>
-        <motion.div
-          className={styles.wrapper}
-          /*   speed={1.5}
-      initial={{ opacity: 0, y: 200 }}
-      animate={{ opacity: 1, y: -100 }}
-      exit={{ y: 200 }}
-      transition={{ duration: 1 }}
-      style={{ y: yValue }} */
-        >
+        <motion.div className={styles.wrapper}>
           <h2>THE SOUL TRAIN LINE</h2>
           <p>
             The Cultural fashion and dance scene was already in partial bloom in
@@ -416,5 +406,3 @@ export default function Terminology({ speed }) {
     </motion.div>
   );
 }
-
-

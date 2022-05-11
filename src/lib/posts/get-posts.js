@@ -5,7 +5,7 @@ import { fetchAPI } from '../api';
 export async function getAllPosts() {
   const data = await fetchAPI(`
       {
-          posts(first: 1000) {
+          posts(first: 100) {
               edges {
                   node {
                       title
