@@ -61,7 +61,7 @@ export default function Blog({ blog, blogs }) {
             <meta content={makeExcerpt(blog.excerpt)} name='description' />
           </Head>
 
-          <div className={styles.blog_slug_main}>
+          <article className={styles.blog_slug_main}>
             <span className={styles.date}>{formatDate(blog.date)}</span>
             <h4 className={styles.blog_title}>Editorial: {blog.title}</h4>
 
@@ -77,12 +77,12 @@ export default function Blog({ blog, blogs }) {
               />
             )} */}
 
-          <div className={styles.post_wrapper}>
+            <div className={styles.post_wrapper}>
               {/* using the replace image function here and parse from html-react-parser */}
               {/* Using this method instead of dangerously set inner html */}
               {parse(blog.content, replaceImage)}
             </div>
-          </div>
+          </article>
 
           <div className={styles.blog_related}>
             <h2 className={styles.more}>More to read</h2>

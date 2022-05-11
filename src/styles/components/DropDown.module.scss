@@ -77,26 +77,20 @@
  }
  @media screen and (max-width: 768px) {
     
-.dropdown_menu {
-   position: absolute;
-   top: 0;
-   min-width: 200px;
-   margin-left: 10rem;
+.dropdown_menu {   
+
    .dropdown_link {
-     position: relative;
-     display: flex;
-     align-items: center;
-     padding: 12px;
+     padding: 8px;
    }
    .link_icon {
      display: none;
   }
  }
  .link_title {
+   font-size: $font-size-s;
    text-transform: uppercase;
-   font-size: $font-size-base;
-   padding: 3px;
-   /* float: left; */
+   
+   padding: 2px;
    color: $color-client-1;
 }
 

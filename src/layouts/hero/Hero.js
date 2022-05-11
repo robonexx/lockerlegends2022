@@ -15,7 +15,12 @@ export default function Hero() {
         {/*  <h3 className={styles.hero_pretitle}></h3> */}
         {/*  <h1 className={styles.hero_title}>LOCKERLEGENDS</h1> */}
         <div className={styles.hero_logo}>
-          <Image src='/svg/SVG_LOGO_TEXT.svg' layout='fill' alt='logo'></Image>
+          <Image
+            src='/svg/SVG_LOGO_TEXT.svg'
+            layout='fill'
+            alt='logo'
+            priority
+          ></Image>
         </div>
 
         <h3 className={styles.hero_subtitle}>

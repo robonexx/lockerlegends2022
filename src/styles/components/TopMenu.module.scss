@@ -18,7 +18,11 @@
         font-weight: 800;
         font-family: $font-alt;
 
-        @media screen and (max-width: 1185px){
+        @media screen and (max-width: 1560px){
+            font-size: $font-size-l;
+        }
+
+        @media screen and (max-width: 1440px){
             font-size: $font-size-ml;
         }
 

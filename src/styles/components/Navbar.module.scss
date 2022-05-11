@@ -152,6 +152,7 @@ a .mobile {
     background-color: #ee4e34;
     outline: none;
     border: none;
+    box-shadow: 0 0 2px 2px rgba(8, 8, 8, 0.205);
   }
   
   .nav_icon {
@@ -218,7 +219,7 @@ a .mobile {
 
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
    
   .nav_menu {
 
