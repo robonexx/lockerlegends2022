@@ -14,6 +14,9 @@ import Slider from '../components/Carousel/Slider';
 import SliderItem from '../components/Carousel/sliderItem';
 import { AiFillCaretRight } from 'react-icons/ai'
 
+import GridItem from '../components/Grid/GridItem';
+import Grid from '../components/Grid/Grid'
+
 /* const myLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
 }; */
@@ -46,32 +49,28 @@ export default function Home({ posts, interviews, streetdance }) {
             </motion.div>
             <p>Read about locking, culture, interviews and more...</p>
             <h3 className={styles.blog_row_title}>Latest Posts:</h3>
-            <div className={styles.home_grid}>
-              {posts.map(({ node: { title, slug, date } }) => {
+            <Grid >
+              {posts.map(({ node }, idx) => {
                 return (
-                  <div className={styles.post_card} key={slug}>
-                    <h4>{title}</h4>
-                    <span>{formatDate(date)}</span>
-                    <Link href={`/blog/` + slug} passHref>
-                      <a aria-label={title}></a>
-                    </Link>
-                  </div>
+                  <div key={idx}>
+                  <GridItem props={node} />
+                </div>
                 );
               })}
-            </div>
-            <div className={styles.section}>
+            </Grid>
+            
               <h3 className={styles.blog_row_title}>Streetdance:</h3>
-              <Slider>
-                {streetdance.map(({ node }, idx) => {
-                  return (
-                    <div key={idx}>
-                      <SliderItem props={node} />
-                    </div>
-                  );
-                })}
-              </Slider>
+              <Grid >
+              {streetdance.map(({ node }, idx) => {
+                return (
+                  <div key={idx}>
+                  <GridItem props={node} />
+                </div>
+                );
+              })}
+            </Grid>
               <p className={styles.swipe}>Swipe <AiFillCaretRight /></p>
-            </div>
+           
             <h3 className={styles.blog_row_title}>Interviews:</h3>
             <div className={styles.home_grid}>
               {interviews.map(

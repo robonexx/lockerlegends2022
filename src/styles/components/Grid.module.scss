@@ -19,9 +19,9 @@
 .grid_item {
     position: relative;
     display: block;
-    min-width: 360px;
-    max-width: 400px;
-    min-height: 380px;
+    min-width: 280px;
+    max-width: 320px;
+    min-height: 280px;
     filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.225));
 
     @media screen and (max-width: 1440px) {
