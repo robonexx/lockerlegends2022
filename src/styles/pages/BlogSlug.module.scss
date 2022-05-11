@@ -61,7 +61,7 @@
       height: auto;
       border-radius: 5px;
     }
-    li, strong, b, i, h3, h4, h5, h6, span {
+    li, strong, b, i, h3, h4, h5, h6, span, div {
       color: $color-client-1;
     }
 
@@ -70,6 +70,7 @@
     }
 
   }
+
      
     pre {
       position: relative;

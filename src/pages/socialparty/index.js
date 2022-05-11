@@ -1,8 +1,8 @@
-import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import styles from '../../styles/layout/PageLayout.module.scss';
+import { useEffect } from 'react';
 
 const ytVid1 = 'xbK0C9AYMd8';
 const ytVidJB1 = 'Zdz88MBWomo';
@@ -15,6 +15,9 @@ const ytVidWalkingthedog = 'M6AZNywvF-s';
 const ytVidBump = 'uSjkoY9IWXQ';
 
 export default function Socialparty() {
+  useEffect(() => {
+    // eslint-disable-line no-console
+  }, []);
   return (
     <div className={styles.pagelayout}>
       <section>
@@ -190,7 +193,8 @@ export default function Socialparty() {
             type='text/html'
             width='100%'
             height='360'
-            src={`https://www.youtube.com/embed/${ytVidJB1}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+            src={`https://www.youtube-nocookie.com/embed/${ytVidJB1}`}
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           ></iframe>
         </div>
         <div className={styles.wrapper_2_col}>
@@ -208,7 +212,8 @@ export default function Socialparty() {
             type='text/html'
             width='100%'
             height='360'
-            src={`https://www.youtube.com/embed/${ytVidJB2}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+            src={`https://www.youtube-nocookie.com/embed/${ytVidJB2}`}
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           ></iframe>
         </div>
         <p>The Mashpotatoes</p>
@@ -260,7 +265,8 @@ export default function Socialparty() {
           type='text/html'
           width='100%'
           height='360'
-          src={`https://www.youtube.com/embed/${ytVid1}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+          src={`https://www.youtube-nocookie.com/embed/${ytVid1}`}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
         ></iframe>
 
         <p>
@@ -308,7 +314,8 @@ export default function Socialparty() {
           type='text/html'
           width='100%'
           height='360'
-          src={`https://www.youtube.com/embed/${ytVidTight}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+          src={`https://www.youtube-nocookie.com/embed/${ytVidTight}`}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
         ></iframe>
 
         <div>
@@ -339,7 +346,8 @@ export default function Socialparty() {
           type='text/html'
           width='100%'
           height='360'
-          src={`https://www.youtube.com/embed/${ytVidTexas}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+          src={`https://www.youtube-nocookie.com/embed/${ytVidTexas}`}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
         ></iframe>
         <h2>The Four Corners</h2>
 
@@ -376,7 +384,8 @@ export default function Socialparty() {
           type='text/html'
           width='100%'
           height='360'
-          src={`https://www.youtube.com/embed/${ytVidBreakdown}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+          src={`https://www.youtube-nocookie.com/embed/${ytVidBreakdown}`}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
         ></iframe>
 
         <p>
@@ -392,7 +401,8 @@ export default function Socialparty() {
           type='text/html'
           width='100%'
           height='360'
-          src={`https://www.youtube.com/embed/${ytVidRocksteady}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+          src={`https://www.youtube-nocookie.com/embed/${ytVidRocksteady}`}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
         ></iframe>
 
         <iframe
@@ -401,7 +411,8 @@ export default function Socialparty() {
           type='text/html'
           width='100%'
           height='360'
-          src={`https://www.youtube.com/embed/${ytVidWalkingthedog}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+          src={`https://www.youtube-nocookie.com/embed/${ytVidWalkingthedog}`}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
         ></iframe>
         <p>
           {' '}
@@ -424,7 +435,8 @@ export default function Socialparty() {
           type='text/html'
           width='100%'
           height='360'
-          src={`https://www.youtube.com/embed/${ytVidBump}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+          src={`https://www.youtube-nocookie.com/embed/${ytVidBump}`}
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
         ></iframe>
         <div className={styles.wrapper}>
           <p>
