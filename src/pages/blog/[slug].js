@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-/* import Image from 'next/image'; */
 import ErrorPage from 'next/error';
 import { useRouter } from 'next/router';
 import {
@@ -99,14 +98,7 @@ export default function Blog({ blog, blogs }) {
                   </div>
                 );
               })}
-            </div>
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                paddingTop: '1rem',
-              }}
-            >
+
               <Link href='/blog'>Check all posts</Link>
             </div>
           </div>

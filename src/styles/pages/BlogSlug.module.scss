@@ -170,6 +170,12 @@
         width: 100%;
         text-decoration: none;
         color: $color-client-1;
+        z-index: 2;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-client-3;
+        }
       }
       h3 {
         margin-bottom: 20px;
@@ -177,5 +183,12 @@
         color: $color-client-2;
       }
     }
+
+    .link {
+      text-decoration: none;
+      color: red;
+    }
 }
+
+
 
