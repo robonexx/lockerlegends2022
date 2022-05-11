@@ -10,6 +10,9 @@ import { formatDate } from '../../utils/functions';
 import Slider from '../../components/Carousel/Slider';
 import SliderItem from '../../components/Carousel/sliderItem';
 
+import Grid from '../../components/Grid/Grid';
+import GridItem from '../../components/Grid/GridItem';
+
 export default function index({ interviews }) {
   /*  const [index, setIndex] = useState();
   const [width, setWidth] = useState(0);
@@ -31,18 +34,18 @@ export default function index({ interviews }) {
     <div className={styles.wattsstaxx}>
       <div className={styles.inner}>
         <motion.h1 animate={{ x: 0 }} initial={{ x: 250 }}>
-          Slider
+         Grid
         </motion.h1>
       </div>
-      <Slider>
+      <Grid>
         {interviews.map(({ node }, idx) => {
           return (
             <div key={idx}>
-              <SliderItem props={node} />
+              <GridItem props={node} />
             </div>
           );
         })}
-      </Slider>
+      </Grid>
       {/*  <motion.div className={styles.slider} ref={slider}>
         <motion.div
           drag='x'
