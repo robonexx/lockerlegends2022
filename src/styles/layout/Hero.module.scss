@@ -47,11 +47,12 @@
       .hero_logo {
         position: relative;
         display: block;
+        margin-top: 20vh;
         max-width: 1000px;
         height: 260px;
         object-fit: cover;
         >span {
-          margin: 0;
+          
           >img {
             width: 100%;
             height: 100%;
@@ -125,7 +126,7 @@
           width: 100%;
 
           .hero_logo {
-            margin-top: 2rem;
+            margin-top: 10vh;
             transform: scale(0.85);
           }
 
@@ -152,7 +153,6 @@
 
         .hero_logo {
           transform: scale(0.85);
-          margin-top: 0;
         }
       
         > .hero_pretitle {

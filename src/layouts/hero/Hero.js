@@ -16,7 +16,7 @@ export default function Hero() {
         {/*  <h1 className={styles.hero_title}>LOCKERLEGENDS</h1> */}
         <div className={styles.hero_logo}>
           <Image
-            src='/svg/SVG_LOGO_TEXT.svg'
+            src='/svg/LOGO_HERO.svg'
             layout='fill'
             alt='logo'
             priority
