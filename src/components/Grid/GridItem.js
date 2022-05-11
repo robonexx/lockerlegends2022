@@ -29,14 +29,27 @@ export default function GridItem({
 
       {/* Checking if there is an featured image for the post otherwise insert an other photo */}
       {sourceUrl === null ? (
-        <Image
-          src={`/images/interview.webp`}
-          layout='fill'
-          alt='blog post image'
-          priority
-        />
+        <div className={styles.image}>
+          <Image
+            src={`/images/interview.webp`}
+            layout='fill'
+            objectFit='cover'
+           
+            alt='blog replacement image'
+            priority
+          />
+        </div>
       ) : (
-        <Image src={sourceUrl} layout='fill' alt='blog post image' priority />
+        <div className={styles.image}>
+          <Image
+            src={sourceUrl}
+            layout='fill'
+            objectFit='cover'
+            
+            alt='blog post image'
+            priority
+          />
+        </div>
       )}
 
       <h3 className={styles.grid_title}>{title}</h3>

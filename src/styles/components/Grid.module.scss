@@ -47,6 +47,17 @@
     }
 
     
+.image {
+    position: relative;
+    display: block;
+    border-radius: 0;
+        min-width: inherit;
+        min-height: inherit;
+        max-width: 100%;
+        padding: 2rem;
+}
+
+    
 .grid_item img{
     pointer-events: none;
     border-radius: 10px;
@@ -89,3 +100,4 @@
         font-size: $font-size-s;
     }
 }
+
