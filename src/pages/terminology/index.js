@@ -6,24 +6,46 @@ import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import styles from '../../styles/layout/PageLayout.module.scss';
 
 export default function Terminology({ speed }) {
-  const { scrollYProgress } = useViewportScroll();
-  const yValue = useTransform(scrollYProgress, [0, 1], [0, 50 * speed]);
+  /* const { scrollYProgress } = useViewportScroll();
+  const yValue = useTransform(scrollYProgress, [0, 1], [0, 50 * speed]); */
 
   return (
-    <motion.div className={styles.PageLayout}>
+    <motion.div className={styles.pagelayout}>
       <section>
-        <header>
-          <h1>Understanding Street Terminology</h1>
-          <p>recently read a post from an Og asking the question: </p>
-          <p>about the difference between Hiphop & streetdance </p>
-        </header>
+        <motion.header
+          initial={{ opacity: 0, y: -200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <motion.h1
+            initial={{ opacity: 0, x: -200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 0.4 }}
+          >
+            Understanding Street Terminology
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            recently read a post from an Og asking the question:{' '}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
+            about the difference between Hiphop & streetdance 
+          </motion.p>
+        </motion.header>
 
         <motion.div
           className={styles.image}
           initial={{ opacity: 0, y: 300 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          style={{ y: yValue }}
+          /* style={{ y: yValue }} */
         >
           <Image
             src='/images/streetTerm.png'
@@ -35,12 +57,8 @@ export default function Terminology({ speed }) {
             priority
           />
         </motion.div>
-        <motion.div
+        <div
           className={styles.wrapper}
-          initial={{ opacity: 0, y: 200 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
-          style={{ y: yValue }}
         >
           <p>
             Obviously this is a issue that has developed since the trailer from
@@ -62,7 +80,7 @@ export default function Terminology({ speed }) {
             emerge. Explaining the changing in various ethnic social eras 
             through the decades into how they are seen & used today. 
           </p>
-        </motion.div>
+        </div>
         <div className={styles.wrapper}>
           <p>
             For example:  Hiphop the movement has now become the commercial term
@@ -75,8 +93,8 @@ export default function Terminology({ speed }) {
             developed these elements , which together created cultural art forms
             from a social issue movement. with the terms of its expression
             elements. Now confused As the source. 
-            <br />
-            <br />
+          </p>
+          <p>
             There are many terms, the term movement itself now is confused with
             the technical movements of a dance style confused with the social
             movements for social change. Urban now has replaced inner city or
@@ -90,10 +108,9 @@ export default function Terminology({ speed }) {
 
         <motion.div
           className={styles.image}
-          initial={{ opacity: 0, y: 0 }}
+          initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          style={{ y: yValue, marginBottom: '5vh' }}
+          transition={{ duration: 1.5 }}
         >
           <Image
             src='/images/terminology.png'
@@ -109,10 +126,8 @@ export default function Terminology({ speed }) {
         <motion.div
           className={styles.wrapper}
           initial={{ opacity: 0, y: 200 }}
-          animate={{ opacity: 1, y: -100 }}
-          exit={{ y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          style={{ y: yValue }}
         >
           <p>
             Even in my experience with the making of film “beyond Hiphop” I had

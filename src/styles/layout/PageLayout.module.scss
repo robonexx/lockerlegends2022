@@ -21,11 +21,10 @@
             display: grid;
             place-content: center;
             margin: 0 auto 5rem;
-            padding: 2rem;
             width: 100%;
             max-height: 400px;
             min-height: 200px;
-            padding: 0 10%;
+            padding: 2rem 10%;
             background-color: $color-client-2;
            
     
@@ -35,12 +34,12 @@
             }
     
             h1 {
-                font-size: 3rem;
+                font-size: 2rem;
                 color: $color-client-1;
                 margin-bottom: 1rem;
     
                 @media screen and (min-width: 1185px) {
-                    font-size: 10rem;
+                    font-size: 6rem;
                 }
             }
     
