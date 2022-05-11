@@ -98,7 +98,6 @@ export default function Blog({ blog, blogs }) {
                   </div>
                 );
               })}
-
               <Link href='/blog'>Check all posts</Link>
             </div>
           </div>
