@@ -8,7 +8,7 @@ export default function Logo() {
     <div className={styles.logo_img}>
       <Image
         src='/svg/SVG_LOGO_TEXT.svg'
-        height='52'
+        height='46'
         width='500'
         alt='lockerlegends logo'
         objectFit='cover'
@@ -17,3 +17,4 @@ export default function Logo() {
     </div>
   );
 }
+

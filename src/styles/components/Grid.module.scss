@@ -25,15 +25,15 @@
     filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.225));
 
     @media screen and (max-width: 1440px) {
-        min-width: 260px;
-        max-width: 300px;
+        min-width: 220px;
+        max-width: 260px;
         min-height: 280px;
         
     }
 
     @media screen and (max-width: 768px) {
-        max-width: 280px;
-        min-width: 240px;
+        max-width: 240px;
+        min-width: 220px;
         min-height: 300px;
         max-height: 360px;
         

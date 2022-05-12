@@ -1,17 +1,24 @@
 
 .logo {
     position: relative;
-    object-fit: cover;
+    display: block;
 
-   
-}
+    svg {
+        width: 180px;
+        height: 42px;
 
-.logo_img {
-display: block;
-position: relative;
-margin-right: 0.5rem;
-cursor: pointer;
-@media screen and (max-width: 50em){
-   
-}
+
+        @media screen and (min-width: 460px) {
+            width: 200px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 240px;
+        }
+        @media screen and (min-width: 960px) {
+            width: 100%;
+            height: 46px;
+        }
+        
+    }
 }
