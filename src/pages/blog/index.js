@@ -12,10 +12,10 @@ import {
 import GridItem from '../../components/responsiveGrid/GridItem'; */
 import Grid from '../../components/Grid/Grid';
 import GridItem from '../../components/Grid/GridItem';
-import { motion } from 'framer-motion';
+/* import { motion } from 'framer-motion';
 import Slider from '../../components/Carousel/Slider';
 import SliderItem from '../../components/Carousel/SliderItem';
-
+ */
 // styles
 import styles from '../../styles/pages/Blog.module.scss';
 
