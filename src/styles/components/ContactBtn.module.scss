@@ -21,19 +21,27 @@
         font-weight: 400;
         font-size: $font-size-m;
         text-decoration: none;
-        color: $color-client-1;
+        color: $color-black;
+        transition: color 0.3s ease-in-out;
 
         @media screen and (max-width: 50em) {
             font-size: $font-size-base;
-            font-weight: $font-base;
+            font-weight: $font-bold;
+            color: $color-black;
         }
     }
     
 
     &:hover {
-        background: $color-client-3;
-        border: solid 1px $color-client-2;
+        background: darken($color-client-2, 5%);
+        border: solid 1px $color-client-1;
         border-radius: 50px;
+        
+
+        .contact_link {
+            color: $color-client-1;
+            text-shadow: 2px 2px 1px rgba(0,0,0,.225);
+        }
       }
 
       @media screen and (max-width: 50em){

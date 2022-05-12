@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from '../../styles/layout/PageLayout.module.scss';
 
 export default function History() {
+  const soultrain = 'RoH1VGA9-oE';
   return (
     <div className={styles.pagelayout}>
       <section>
@@ -17,11 +18,13 @@ export default function History() {
             </h2>
           </div>
         </header>
-        <div className={styles.wrapper}>
-          <p style={{ color: '#ee4e34' }}>
-            :as seen through the eyes of some of the original pioneers
-          </p>
-        </div>
+        <h2
+          className={`
+         ${styles.highligh_o} ${styles.big_text} ${styles.text_center}`}
+        >
+          :as seen through the eyes of some of the original pioneers
+        </h2>
+
         <div className={styles.wrapper}>
           <p>
             NOTE: History is a compilation of historical events, most history is
@@ -35,9 +38,8 @@ export default function History() {
             through the many eyes that experienced it, which all came together
             to produce its foundation <br /> <br />
           </p>
-          <p style={{ backgroundColor: 'transparent', color: 'white' }}>
-            ...Read and Enjoy
-          </p>
+          <h1></h1>
+          ...Read and Enjoy
         </div>
 
         <div className={styles.image}>
@@ -89,15 +91,20 @@ export default function History() {
           </p>
         </div>
         <div className={styles.wrapper}>
-          <p>Don “Campbellock” Campbell early soul Train Line</p>
+          <h2 className={`${styles.highligh_o} ${styles.big_text}`}>
+            Don “Campbellock” Campbell early soultrain footage with Damito Jo
+            Freeman
+          </h2>
           <div className={styles.video}>
-            {/* <iframe
-              src='https://www.youtube.com/embed/RoH1VGA9-oE'
-              title='YouTube video player'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowFullscreen
-              frameBorder='0'
-            ></iframe> */}
+            <iframe
+              id='ytplayer'
+              className={styles.video}
+              type='text/html'
+              width='100%'
+              height='360'
+              src={`https://www.youtube-nocookie.com/embed/${soultrain}`}
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
+            ></iframe>
           </div>
         </div>
 
@@ -179,8 +186,8 @@ export default function History() {
             dancers such as Tony Go-Go and “The Original Skeeter Rabbit” (James
             Higgins)were members who were added and danced as OFFICIAL
             ALTERNATES with the Original Official Group The Lockers,
-            <br />
-            <br />
+          </p>
+          <p>
             Many dancers have claimed original status ,some even taking pictures
             at events at mavericks today , or at Soul Train reunion Parties, and
             THEY ARE NOT. They may have danced on soul train or went to the
@@ -193,8 +200,8 @@ export default function History() {
             on the ORIGINAL scene and are not mentioned we would be happy to
             include you , If you want to know who was and who wasn’t just ask ,
             we will post and clarify your confusion… ORIGINAL means ORIGINAL,
-            <br />
-            <br />
+          </p>
+          <p>
             Please take note : All the way up into the 80s the group The LOCKERS
             was reconstructed many times with various dancers added or dropped
             as members.( see some of the later groups)As the group went through
@@ -254,8 +261,6 @@ export default function History() {
         </div>
         <div>
           <p>
-            <br />
-            <br />
             Note: Many of these groups and individules quickly clammered to
             exploit not just the artform of locking but it’s entire culture and
             roots. Many renamed steps and plagerized entire taped routines. Some
@@ -263,14 +268,14 @@ export default function History() {
             learned or inquired about the brotherhood which made locking great.
             They only attemped to capitalize, exploit and alter the history of
             locking.
-            <br />
-            <br />
-            Many don’t understand what the History &; background has to do with
+          </p>
+          <h2 className={`${styles.big_text}`}>
+            Many don’t understand what the History & background has to do with
             the dance of Locking, Many wonder why it just can’t be a dance
             style, show or circus act..WATCH this video WATTS STAX and see what
             the inspiration was and still is for those that KEEP IT REAL
-            <br />
-            <br />
+          </h2>
+          <p>
             By 1973 there were an excess of pioneers known as lockers who made
             their name and reputations in the urban communities and night clubs.
             The few known as the Original members of “The Lockers Group” became
@@ -350,9 +355,9 @@ export default function History() {
             <br />
             <br />
           </p>
-          <p>
+          <h2 className={`${styles.big_text}`}>
             Any Questions.. please send us an email at info@lockerlegends.net
-          </p>
+          </h2>
         </div>
       </section>
     </div>

@@ -37,7 +37,7 @@ export default function Socialparty() {
         </p>
         <div className={styles.wrapper}>
           <p>
-            <span style={{ color: '#ee4e34' }}>The Lock move itself...</span>{' '}
+            <span className={styles.highlight_w}>The Lock move itself...</span>{' '}
             Was created by Don Campbell as he attempted to do some of the Party
             dances “The Robot Shuffle” or “The Funky Chicken” (Video seen on the
             Soul Train Page) His flavor or style of freezing was termed as

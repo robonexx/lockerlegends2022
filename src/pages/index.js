@@ -38,13 +38,16 @@ export default function Home({ posts, interviews, streetdance }) {
               MOVES THAT CREATE THE DANCE ITSELF. <br /> THE ORIGINAL DANCE
               STYLE CALLED LOCKING HAS DEEP ROOTS WITHIN A ERA, WHICH MENT SO
               MUCH TO THE UNITY AND DE SEGREGATION OF A PEOPLE… READ… LEARN...
-              <span style={{ color: '#ee4e34', fontWeight: 'bold' }}>
-                {' '}
-                and understand what brought about the evolution of words like
-                soul and funk..
-              </span>{' '}
-              <br />
-              <br />
+            </p>
+            <h2>
+              {' '}
+              and understand what brought about the evolution of words like soul
+              and funk..
+            </h2>
+
+            <br />
+            <br />
+            <p>
               Understand the DANCERS that contributed to the Original foundation
               of this dance & opened the door to what exist today as <br />
               <br /> “THE STREET DANCE OF LOCKING” <br />

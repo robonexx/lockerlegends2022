@@ -368,8 +368,8 @@ export default function Terminology() {
           </p>
         </div>
         <div className={styles.wrapper}>
-          <h1 style={{ color: '#ee4e34' }}>The Damita Jo Freeman Foundation</h1>
-          <h1 style={{ color: 'white' }}>Soul Train Dancers speak :</h1>
+          <h1 className={styles.highlight_o}>The Damita Jo Freeman Foundation</h1>
+          <h1 className={styles.highlight_w}>Soul Train Dancers speak :</h1>
         </div>
         <div className={styles.wrapper}>
           <p>

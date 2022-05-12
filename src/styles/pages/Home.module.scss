@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-family: $font-base;
     overflow-x: hidden;
-    font-family: $font-base;
+    
 
     @media screen and (max-width: 680px) {
       margin: 0 auto;
@@ -40,6 +40,7 @@ h2 {
       h2 {
         padding: 0.5rem 0;
         color: $color-client-2;
+        font-size: $font-size-ml;
       }
 
       h3 {
@@ -58,6 +59,16 @@ h2 {
       a {
         text-decoration: none;
         padding: 0 0.5rem;
+      }
+      .highlight_o {
+        color: $color-client-2;
+      }
+
+      .highlight_b {
+        color: $color-black;
+      }
+      .highlight_w {
+        color: $color-white;
       }
 
       .icons {

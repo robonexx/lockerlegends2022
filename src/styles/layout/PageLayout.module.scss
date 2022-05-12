@@ -6,9 +6,10 @@
     min-height: 100vh;
     height: 100%;
     background-color: $color-bg;
+    font-family: $font-base;
 
     > section {
-        margin: 56px auto 0;
+        margin: 56px auto 10rem;
         width: 90%;
 
         @media screen and (min-width: 960px) {
@@ -68,9 +69,9 @@
     }
 
     p:nth-child(2n) {
-        background-color: $color-client-2;
-        color: black;
-        font-weight: 400;
+        background-color: $color-black;
+        color: $color-client-2;
+        font-weight: 800;
     }
 
     .wrapper {
@@ -160,3 +161,26 @@
         width: 80%;
     }
 }
+
+.highlight_o {
+    color: $color-client-2;
+  }
+
+  .highlight_b {
+    color: $color-black;
+  }
+  .highlight_w {
+    color: $color-white;
+  }
+
+  .big_text {
+      font-size: $font-size-ml;
+
+      @media screen and (min-width: 960px) {
+          font-size: $font-size-l;
+      }
+  }
+
+  .text_center {
+      text-align: center;
+  }
