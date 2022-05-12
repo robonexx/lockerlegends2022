@@ -15,6 +15,7 @@
     border-radius: 25px;
     align-self: start;
     justify-self: start;
+    overflow: hidden;
   }
 
   
@@ -34,14 +35,14 @@
     position: absolute;
     background-color: $color-client-2;
     opacity: 0;
-    height: 1em;
+    height: 1.5rem;
     width: 100%;
-    top: 1.5em;
+    top: 1rem;
     left: 0;
     z-index: -1;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    transform-origin: bottom left;
+    transform-origin: bottom;
     transition: all 0.3s cubic-bezier(0.45, 1.43, 0.72, 1.18);
   }
 
@@ -55,10 +56,11 @@
     box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
-.btn_special{
+button.btn_special{
 
-    > .btn_link {
+    > a {
         text-decoration: none;
         color: $color-client-1;
+        font-weight: $font-bold;
     }
 } 

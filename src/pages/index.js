@@ -215,6 +215,7 @@ export default function Home({ posts, interviews, streetdance }) {
               >
                 <div className={styles.icons}>
                   <AiOutlineFacebook className={styles.icon} />
+                  <span>LockerLegends on FB</span>
                   <AiOutlineUsergroupAdd className={styles.icon} />
                 </div>
               </Link>
