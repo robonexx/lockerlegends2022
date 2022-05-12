@@ -9,7 +9,9 @@ export default function Slider(props) {
   const sliderRef = useRef();
 
   useEffect(() => {
-    setWidth(sliderRef.current.scrollWidth + 10 - sliderRef.current.offsetWidth);
+    setWidth(
+      sliderRef.current.scrollWidth + 10 - sliderRef.current.offsetWidth
+    );
   }, []);
 
   return (
