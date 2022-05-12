@@ -65,15 +65,15 @@ export default function Blog({ posts, social }) {
         </div>
 
         <h1>All Posts</h1>
-        <Slider>
+        <Grid>
           {posts.map(({ node }, idx) => {
             return (
               <div key={idx}>
-                <SliderItem props={node} />
+                <GridItem props={node} />
               </div>
             );
           })}
-        </Slider>
+        </Grid>
       </div>
     </>
   );
