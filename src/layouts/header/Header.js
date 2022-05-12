@@ -71,8 +71,7 @@ export default function Header() {
               style={{ PointerEvents: 'none' }}
               title='Timeline of Locking'
               icon={<GiPlantRoots />}
-              /* url='/timeline' */
-              url=''
+              url='/timeline'
             />
             <DropDownItem
               title='Steps & Moves'

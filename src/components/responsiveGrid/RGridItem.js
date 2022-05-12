@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 import styles from '../../styles/components/ResponsiveGrid.module.scss';
 
-export default function GridItem({ props: { slug, title, date, featuredImage } }) {
+export default function RGridItem({ slug, title, date, featuredImage, key }) {
   return (
-    <div className={styles.item} key={props.key}>
-      <div className={styles.title}>{props.title}</div>
+    <div className={styles.item} key={key}>
+      <div className={styles.title}>{title}</div>
       <div className={styles.image}>
         <Image
           src={`/images/${featuredImage}`}
