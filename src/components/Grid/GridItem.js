@@ -31,7 +31,6 @@ export default function GridItem({
       <h3 className={styles.grid_title}>{title}</h3>
       <Link href={`/blog/` + slug} passHref>
         <a aria-label={title}></a>
-        {/* <span>Read more...</span> */}
       </Link>
       <span>{formatDate(date)}</span>
     </motion.div>
