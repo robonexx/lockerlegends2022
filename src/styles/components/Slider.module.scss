@@ -1,28 +1,33 @@
 @use '../base/' as *;
 
 .slider {
+    position: relative;
     border: 10solid #000;
     background-color: black;
-    width: 600px;
-    height: 400px;
+    min-width: 90vw;
+    max-height: 300px;
+    padding: 10px;
     cursor: grab;
     overflow: hidden;
 
-    @media screen and (max-width: 1185px) {
-        height: 400px;
-        padding: 10px;
+    @media screen and (min-width: 460px) {
+        max-height: 360px;
     }
-    @media screen and (max-width: 768px) {
-        width: 100vw;
-        height: 380px;
-        padding: 10px;
+
+   
+    @media screen and (min-width: 768px) {
+        min-width: 360px;
+        max-height: 360px;
+        
+    }
+
+    @media screen and (min-width: 1185px) {
+        min-width: 600px;
+        max-height: 400px;
+       
     }
     
-    @media screen and (max-width: 460px) {
-        width: 100vw;
-        height: 340px;
-        padding: 10px;
-    }
+   
     }
     
     .inner_slider {
@@ -34,20 +39,32 @@
     .slider_item {
         position: relative;
         display: block;
-        min-width: 400px;
-        min-height: 380px;
+        min-width: 90vw;
+        min-height: 320px;
         margin-right: 40px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 360px;
+            min-width: 320px;
+            min-height: 340px;
+            
+        }
+
+        @media screen and (min-width: 960px) {
+            max-width: 420px;
+            min-width: 380px;
+            min-height: 380px;   
+        }
+        @media screen and (min-width: 1185px) {
+            min-width: 580px;
+            max-height: 420px;
+           
+        }
+
+        
     
-        @media screen and (max-width: 768px) {
-            max-width: 90vw;
-            min-height: 360px;
-            
-        }
-        @media screen and (max-width: 460px) {
-            max-width: 90vw;
-            min-height: 320px;
-            
-        }
+        
+       
     
         
     .slider_item img{

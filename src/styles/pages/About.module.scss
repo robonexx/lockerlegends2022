@@ -14,7 +14,7 @@
     position: relative;
     margin: 0rem auto 10rem;
     max-width: 1000px;
-    font-family: $font-base;
+    
 
     .we {
       color: $color-client-2;
@@ -31,7 +31,7 @@
   
     p {
       color: #fff;
-      font-size: 1.2rem;
+      font-size: $font-size-base;
       line-height: 1.4rem;
       font-weight: 400;
     }

@@ -3,7 +3,8 @@
     position: relative;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 10rem;
+    height: 100%;
 
     > header {
       display: grid;
@@ -38,6 +39,10 @@
               font-size: $font-size-ml;
           }
       }
+  }
+
+  h1 {
+    color: $color-client-2;
   }
 
     .blog_wrapper {

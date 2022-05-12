@@ -5,7 +5,7 @@ import { fetchAPI } from '../api';
 export async function getAllPosts() {
   const data = await fetchAPI(`
       {
-          posts(first: 100) {
+          posts(first: 100, where: { orderby: { field: DATE, order: DESC } }) {
               edges {
                   node {
                       title
@@ -29,7 +29,7 @@ export async function getAllPosts() {
           }
       }
       `);
-  return data?.posts.edges;
+  return data?.posts;
 }
 
 // get post slugs
@@ -86,6 +86,82 @@ export async function getLatestPosts() {
 }
 
 // get post by category
+
+// get social era
+export async function getPostCategorySocial() {
+    const data = await fetchAPI(`
+      {
+          posts(where: {categoryName: "social-party-era"}, first: 5) {
+              edges {
+                  node {
+                      title
+                      slug
+                      date
+  
+                      featuredImage {
+                          node {
+                              sourceUrl
+                          }
+                      }
+                      
+                  }
+              }
+            }
+          }
+        `);
+    return data?.posts;
+}
+
+export async function getPostCategoryEntertainment() {
+    const data = await fetchAPI(`
+      {
+          posts(where: {categoryName: "performance-entertainment-era"}, first: 5) {
+              edges {
+                  node {
+                      title
+                      slug
+                      date
+  
+                      featuredImage {
+                          node {
+                              sourceUrl
+                          }
+                      }
+                      
+                  }
+              }
+            }
+          }
+        `);
+    return data?.posts;
+}
+export async function getPostCategoryBattle() {
+    const data = await fetchAPI(`
+      {
+          posts(where: {categoryName: "battle-era"}, first: 5) {
+              edges {
+                  node {
+                      title
+                      slug
+                      date
+  
+                      featuredImage {
+                          node {
+                              sourceUrl
+                          }
+                      }
+                      
+                  }
+              }
+            }
+          }
+        `);
+    return data?.posts;
+}
+  
+
+
+
 // interviews
 
 export async function getPostCategoryInterviews() {
@@ -163,7 +239,7 @@ export async function getPostCategoryStreetdance() {
 }
 
 // get posts and more posts
-// having the frament inside could have just serparted it and will do so at a later state, not in the mvp of this website
+// having the fragment inside could have just serparted it and will do so at a later state, not in the mvp of this website
 
 export async function getPostAndMorePosts(slug) {
   const data = await fetchAPI(

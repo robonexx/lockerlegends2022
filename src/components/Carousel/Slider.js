@@ -6,14 +6,14 @@ import styles from '../../styles/components/Slider.module.scss';
 export default function Slider(props) {
   const [width, setWidth] = useState(0);
 
-  const slider = useRef();
+  const sliderRef = useRef();
 
   useEffect(() => {
-    setWidth(slider.current.scrollWidth + 30 - slider.current.offsetWidth);
+    setWidth(sliderRef.current.scrollWidth + 10 - sliderRef.current.offsetWidth);
   }, []);
 
   return (
-    <motion.div className={styles.slider} ref={slider}>
+    <motion.div className={styles.slider} ref={sliderRef}>
       <motion.div
         drag='x'
         dragConstraints={{ right: 0, left: -width }}

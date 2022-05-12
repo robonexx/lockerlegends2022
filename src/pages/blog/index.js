@@ -1,16 +1,29 @@
 import Head from 'next/head';
-import { getAllPosts } from '../../lib/posts/get-posts';
+import { getAllPosts, getPostCategoryCulture, getPostCategorySocial, getPostCategoryEntertainment, getPostCategoryBattle, getPostCategoryStreetdance, getPostCategoryInterviews } from '../../lib/posts/get-posts';
 import Link from 'next/link';
 import { formatDate } from '../../utils/functions';
-import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
-import GridItem from '../../components/responsiveGrid/GridItem';
-import { motion } from 'framer-motion'
+/* import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
+import GridItem from '../../components/responsiveGrid/GridItem'; */
+import Grid from '../../components/Grid/Grid';
+import GridItem from '../../components/Grid/GridItem';
+import { motion } from 'framer-motion';
 
 import styles from '../../styles/pages/Blog.module.scss';
+import Slider from '../../components/Carousel/Slider';
+import SliderItem from '../../components/Carousel/SliderItem'
 
-const IMG = 'penguinscene.png';
 
-export default function Blog({ posts }) {
+export default function Blog({ posts, social }) {
+/* 
+  const getCategorname = posts.map(({ node }) => {
+    console.log(node.categories)
+    console.log(node.categories.nodes)
+    let names = []
+    names = node.categories.nodes.map(({ name }) => name)
+    console.log(names)
+    return names
+  })
+  console.log(getCategorname) */
   return (
     <>
       <Head>
@@ -22,41 +35,58 @@ export default function Blog({ posts }) {
       </Head>
 
       <div className={styles.blog_main}>
-      <header>
+        <header>
           <div>
             <h1>Editorials (Blog) </h1>
             <h2>
-              Read the latest Editorials (posts) related to the artform of locking and culture...
+              Read the latest Editorials (posts) related to the artform of
+              locking and culture...
             </h2>
           </div>
         </header>
+
+        
         <div className={styles.blog_wrapper}>
-          <ResponsiveGrid>
-            {posts?.map(({ node }) => {
+        <h1>The Social Era! </h1>
+          <Grid>
+            {social.map(({ node }, idx) => {
               return (
-                <div key={node.slug}>
-                  <GridItem
-                    url={`/blog/` + node.slug}
-                    title={node.title}
-                    img={IMG}
-                    date={formatDate(node.date)}
-                  />
+                <div key={idx}>
+                  <GridItem props={node}   />
                 </div>
               );
             })}
-          </ResponsiveGrid>
+          </Grid>
         </div>
+
+        <h1>All Posts</h1>
+        <Slider>
+        {posts.map(({ node }, idx) => {
+              return (
+                <div key={idx}>
+                  <SliderItem props={node}   />
+                </div>
+              );
+            })}
+        </Slider>
       </div>
     </>
   );
 }
 
 export async function getStaticProps() {
-  const posts = await getAllPosts();
+   const posts = await getAllPosts();
+  const social = await getPostCategorySocial();
+  const culture = await getPostCategoryCulture();
+  const entertainment = await getPostCategoryEntertainment()
+  const battle = await getPostCategoryBattle()
+  const interviews = await getPostCategoryInterviews()
+  const streetdacne = await getPostCategoryStreetdance()
 
   return {
     props: {
-      posts,
+      posts: posts.edges,
+      social: social.edges,
     },
   };
 }
