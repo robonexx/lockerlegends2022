@@ -61,12 +61,12 @@
       height: auto;
       border-radius: 5px;
     }
-    li, strong, b, i, h3, h4, h5, h6, span, div {
+    li, strong, b, i, h2, h3, h4, h5, h6, span, div {
       color: $color-client-1;
     }
 
     li {
-      padding: 0.25rem 0;
+      padding: 1rem 0;
     }
 
   }

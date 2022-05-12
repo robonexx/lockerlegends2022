@@ -22,6 +22,10 @@
     margin: 0 auto 10rem;
     height: 100%;
 
+    @media screen and (min-width:1024px) {
+     max-width: 1000px;
+  }
+
 h2 {
   color: $color-client-1;
 }
@@ -33,21 +37,27 @@ h2 {
       overflow-x: hidden;
 
       h1 {
-        padding: 0.5rem 0;
+        padding: 1rem 0;
         color: $color-client-1;
+
       }
 
       h2 {
         padding: 0.5rem 0;
         color: $color-client-2;
         font-size: $font-size-ml;
+        /* @media screen and (min-width:1024px) {
+          text-align: center;
+       } */
       }
 
       h3 {
         font-size: $font-size-m;
+        
       }
 
       p {
+        padding: 0.5rem 0;
         font-size: $font-size-base;
         line-height: 1.4rem;
 
@@ -108,12 +118,19 @@ h2 {
     .posts {
       width: 100%;
       background: linear-gradient(to left, rgb(20, 20, 20), rgb(36, 36, 36));
+      @media screen and (min-width:1024px) {
+        padding: 2rem;
+        border-radius: 5px;
+     }
 
       h2 {
         color: $color-client-1;
         font-weight: $font-normal;
         border-bottom: 1px solid #888;
         padding: 0.5rem 0;
+        @media screen and (min-width:1024px) {
+          padding: 1rem 0;
+       }
       }
     }
     
@@ -151,4 +168,28 @@ h2 {
 }
 
 
+.highlight_o {
+  color: $color-client-2;
+}
+
+.highlight_b {
+  color: $color-black;
+}
+.highlight_w {
+  color: $color-white;
+}
+
+.big_text {
+    font-size: $font-size-ml;
+
+    @media screen and (min-width: 1024px) {
+        font-size: $font-size-l;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+}
+
+.text_center {
+    text-align: center;
+}
 

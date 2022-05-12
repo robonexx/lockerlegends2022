@@ -39,12 +39,15 @@ export default function Home({ posts, interviews, streetdance }) {
               STYLE CALLED LOCKING HAS DEEP ROOTS WITHIN A ERA, WHICH MENT SO
               MUCH TO THE UNITY AND DE SEGREGATION OF A PEOPLE… READ… LEARN...
             </p>
-            <h2>
+            <span className={`${styles.highlight_o} ${styles.big_text}`}>
               {' '}
               and understand what brought about the evolution of words like soul
               and funk..
-            </h2>
-
+            </span>{' '}
+            <ReadMoreBtnIn
+              title='What is funk?'
+              srcUrl='/blog/what-does-funk-or-funky-really-mean'
+            />
             <br />
             <br />
             <p>
@@ -76,9 +79,15 @@ export default function Home({ posts, interviews, streetdance }) {
             </Grid>
           </div>
           <div className={styles.section}>
-            <h2>HOW DID THIS DANCE ARTFORM HAPPEN?</h2>
-            <h2>WHAT INSPIRED THIS DANCE?</h2>
-            <h2>IS IT A MOVEMENT OR JUST A DANCE?</h2>
+            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
+              HOW DID THIS DANCE ARTFORM HAPPEN?
+            </h5>
+            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
+              WHAT INSPIRED THIS DANCE?
+            </h5>
+            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
+              IS IT A MOVEMENT OR JUST A DANCE?
+            </h5>
             <h1>The social connection to the era</h1>
             <p>
               Independent record companies such as Staxx, Motown and The Sounds
