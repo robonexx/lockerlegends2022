@@ -18,11 +18,21 @@
 
     .contact_link {
         font-family: $font-base;
-        font-weight: 400;
+        font-weight: 800;
         font-size: $font-size-m;
         text-decoration: none;
         color: $color-black;
         transition: color 0.3s ease-in-out;
+        
+        span {
+            padding: 0.25rem 0.5rem 0;
+            >svg {
+                color: white;
+                filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.322));
+                transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+            }
+
+        }
 
         @media screen and (max-width: 50em) {
             font-size: $font-size-base;
@@ -37,10 +47,18 @@
         border: solid 1px $color-client-1;
         border-radius: 50px;
         
-
         .contact_link {
             color: $color-client-1;
             text-shadow: 2px 2px 1px rgba(0,0,0,.225);
+
+            span {
+                padding: 0.25rem 0.5rem 0;
+                >svg {
+                    transform: translateX(10px) rotate(35deg);
+                }
+    
+            }
+            
         }
       }
 
@@ -49,7 +67,6 @@
           justify-content: center;
         width: 100px;
         
-
         .contact_link {
             span {
                 position: absolute;

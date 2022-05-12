@@ -28,10 +28,10 @@ export default function Home({ posts, interviews, streetdance }) {
         <div className={styles.home_wrapper}>
           <div className={styles.section}>
             <h1>EDUCATE B4U RECREATE</h1>
-            <p>
+            <h2>
               Over 15 years Lockerlegends have served your Locking educational
               need
-            </p>
+            </h2>
             <br />
             <p>
               THE ART-FORM & CULTURE OF A STREET DANCE IS MUCH MORE THAN THE
@@ -53,15 +53,62 @@ export default function Home({ posts, interviews, streetdance }) {
             <p>
               Understand the DANCERS that contributed to the Original foundation
               of this dance & opened the door to what exist today as <br />
-              <br /> “THE STREET DANCE OF LOCKING” <br />
-              <br />
+            </p>
+            <br />
+            <h2>“THE STREET DANCE OF LOCKING”</h2>
+            <br />
+            <h3>
+              Read about the social party that is a foundation to locking...
+            </h3>
+            <br />
+            <div className={styles.image}>
+              <Image
+                src='/images/socialdance2.png'
+                width='100%'
+                height='100%'
+                layout='responsive'
+                objectFit='cover'
+                objectPosition='center'
+                priority
+              />
+            </div>
+            <ReadMoreBtnIn
+              srcUrl='/social'
+              title='Click! to read about the social party era!'
+            />
+            <p>
               Help us solidify this from just a dance into a ART-FORM to be
               passed down to future generations!
             </p>
           </div>
 
           <div className={styles.section}>
-            <p>Read about locking, culture, interviews and more...</p>
+            <h1>FROM CAMBELLOCKING to LOCKING</h1>
+            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
+              History of Locking
+            </h5>
+            <div className={styles.image}>
+              <Image
+                src='/images/donflying.jpg'
+                width='100%'
+                height='100%'
+                layout='responsive'
+                objectFit='cover'
+                objectPosition='center'
+                priority
+              />
+            </div>
+            <ReadMoreBtnIn
+              srcUrl='/history'
+              title='Learn more about LOCKING!'
+            />
+          </div>
+
+          <div className={styles.section}>
+            <p>
+              Read the latest editorial, about the dance locking, the culture,
+              interviews and more...
+            </p>
             <br />
             <h1>Editorials</h1>
           </div>
@@ -100,6 +147,12 @@ export default function Home({ posts, interviews, streetdance }) {
               Brown,Curtis Mayfield andIssac Hayes.
             </p>
           </div>
+          <div style={{ width: '100%', margin: '0 auto' }}>
+            <ReadMoreBtnIn
+              srcUrl='/wattstaxx'
+              title='Read about... WHATTSSTAXX'
+            />
+          </div>
           <div className={styles.image}>
             <Image
               src='/images/wattsriots.png'
@@ -111,13 +164,16 @@ export default function Home({ posts, interviews, streetdance }) {
               priority
             />
           </div>
-          <div className={styles.section}>
-            <h2>
-              “YOU CANNOT KNOW WHERE YOU ARE GOING UNLESS YOU KNOW WHERE YOU
-              BEEN”
-            </h2>
-            <p style={{ textAlign: 'right' }}>unknown authors quote</p>
-          </div>
+
+          <h2>
+            “YOU CANNOT KNOW WHERE YOU ARE GOING UNLESS YOU KNOW WHERE YOU BEEN”
+          </h2>
+          <p
+            style={{ textAlign: 'right', color: 'white', marginBottom: '2rem' }}
+          >
+            unknown authors quote
+          </p>
+
           <div className={styles.section}>
             <p>
               The inner city communities of the United States were marked with
@@ -182,6 +238,10 @@ export default function Home({ posts, interviews, streetdance }) {
               todays new school locking dancer Rebecca Tsaoism and the famed
               Soul Train Line
             </p>
+            <ReadMoreBtnIn
+              srcUrl='/soultrain'
+              title='Check out the SOUL TRAIN page here...'
+            />
             <h2>
               I want to thank Damita and Flo for taking up the mantle to where
               to share the real with this generation... <br />
@@ -240,11 +300,17 @@ export default function Home({ posts, interviews, streetdance }) {
               <br />
             </div>
           </div>
-          <div className={styles.section}>
-            <h1>FROM CAMBELLOCKING to LOCKING</h1>
-            <h2>History of Locking</h2>
-            <ReadMoreBtnIn srcUrl='/history' title='Learn more...' />
-          </div>
+          <p
+            style={{
+              margin: '2rem 0',
+              color: 'white',
+              backgroundColor: 'black',
+              padding: '4px 8px',
+            }}
+          >
+            More content will be added, stay tuned and hope you'll like our new
+            look!
+          </p>
           <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>
             ENJOY THE WEBSITE!
           </h2>
