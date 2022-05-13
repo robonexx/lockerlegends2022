@@ -4,6 +4,10 @@
     position: relative;
     display: block;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     svg {
         width: 180px;
         height: 42px;

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styles from '../../styles/components/ContactBtn.module.scss';
 
 export default function ContactBtn(props) {

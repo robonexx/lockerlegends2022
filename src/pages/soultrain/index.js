@@ -176,7 +176,7 @@ export default function Terminology() {
             musical careers , but sensitive social issues,
           </p>
         </div>
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper_2_col}>
           <p>
             This cultural and social influence was never more evident than in
             the James Brown live Soul Train performance of 1972. in what may
@@ -202,6 +202,7 @@ export default function Terminology() {
               priority
             />
           </div>
+          </div>
           <p>
             Don Cornelius retired as host in 1993, and the show used guest host
             from that time until 1997, comedian Mystro Clark hosted for
@@ -213,7 +214,7 @@ export default function Terminology() {
             continued to be exposed.featuring many great dancers and musical
             artist.
           </p>
-        </div>
+        
         <div className={styles.wrapper}>
           <p>
             {' '}

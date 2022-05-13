@@ -25,9 +25,12 @@
         @media screen and (max-width: 1440px){
             font-size: $font-size-ml;
         }
+        @media screen and (max-width: 960){
+            font-size: $font-size-m;
+        }
 
         @media screen and (max-width: 50em){
-            font-size: $font-size-s;
+           display: none;
         }
     }
 

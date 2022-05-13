@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import styles from '../../styles/layout/Hero.module.scss';
+
+const Vid = () => {
+  return (
+    <video autoPlay loop muted playsInline>
+      <source src='/video/la.webm' type='video/webm' />
+    </video>
+  );
+};
 
 export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.hero_overlay}></div>
 
-      <video autoPlay loop muted playsInline className={styles.hero_video}>
-        <source src='/video/la.webm' type='video/webm' />
-      </video>
+      <div className={styles.hero_video}>
+        <Vid />
+      </div>
 
       <section className={styles.hero_wrapper}>
         {/*  <h3 className={styles.hero_pretitle}></h3> */}

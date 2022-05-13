@@ -122,21 +122,14 @@ a .mobile {
   }
 }
 
+
 @media screen and (max-width: 960px) {
   .navbar {
     position: fixed;
     top: 54px;
     right: 0;
     left: auto;
-    margin: 0;
-    padding: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    border-bottom: none;
-    background-color: none;
+    
   }
   .menu_icon {
     bottom: 2rem;
@@ -157,6 +150,7 @@ a .mobile {
     &:hover {
       background-color: darken($color-client-2, 5%);
     }
+    
   }
 
   
@@ -222,6 +216,34 @@ a .mobile {
    opacity: 0;  
   }
 
+}
+@media (min-width: 769px) and 
+       (max-width: 1024px) and 
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-width: 769px) and 
+       (max-width: 1024px) and 
+       (min-resolution: 192dpi) {
+        .menu_icon {
+          bottom: 8rem;
+          right: 2rem;
+          position: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1100;
+          cursor: pointer;
+          padding: 1.25rem 0.25rem;
+          border-radius: 50%;
+          background-color: $color-client-2;
+          outline: none;
+          border: none;
+          box-shadow: 0 0 2px 2px rgba(8, 8, 8, 0.205);
+      
+          &:hover {
+            background-color: darken($color-client-2, 5%);
+          }
+          
+        }
 }
 
 @media screen and (max-width: 768px) {
