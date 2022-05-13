@@ -8,28 +8,21 @@ import {
   getPostCategoryStreetdance,
   getPostCategoryInterviews,
 } from '../../lib/posts/get-posts';
-/* import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
-import GridItem from '../../components/responsiveGrid/GridItem'; */
 import Grid from '../../components/Grid/Grid';
 import GridItem from '../../components/Grid/GridItem';
-/* import { motion } from 'framer-motion';
-import Slider from '../../components/Carousel/Slider';
-import SliderItem from '../../components/Carousel/SliderItem';
- */
+
 // styles
 import styles from '../../styles/pages/Blog.module.scss';
 
-export default function Blog({ posts, social }) {
-  /* 
-  const getCategorname = posts.map(({ node }) => {
-    console.log(node.categories)
-    console.log(node.categories.nodes)
-    let names = []
-    names = node.categories.nodes.map(({ name }) => name)
-    console.log(names)
-    return names
-  })
-  console.log(getCategorname) */
+export default function Blog({
+  posts,
+  social,
+  entertainment,
+  battle,
+  culture,
+  streetdance,
+  interviews,
+}) {
   return (
     <>
       <Head>
@@ -50,7 +43,9 @@ export default function Blog({ posts, social }) {
             </h2>
           </div>
         </header>
-
+        <p style={{ color: '#888' }}>
+          This page will be updated in the coming months
+        </p>
         <div className={styles.blog_wrapper}>
           <h1>The Social Era! </h1>
           <Grid>
@@ -63,17 +58,78 @@ export default function Blog({ posts, social }) {
             })}
           </Grid>
         </div>
-
-        <h1>All Posts</h1>
-        <Grid>
-          {posts.map(({ node }, idx) => {
-            return (
-              <div key={idx}>
-                <GridItem props={node} />
-              </div>
-            );
-          })}
-        </Grid>
+        <div className={styles.blog_wrapper}>
+          <h1>The Performance & Entertainment Era! </h1>
+          <Grid>
+            {entertainment.map(({ node }, idx) => {
+              return (
+                <div key={idx}>
+                  <GridItem props={node} />
+                </div>
+              );
+            })}
+          </Grid>
+        </div>
+        <div className={styles.blog_wrapper}>
+          <h1>Battle Era! </h1>
+          <Grid>
+            {battle.map(({ node }, idx) => {
+              return (
+                <div key={idx}>
+                  <GridItem props={node} />
+                </div>
+              );
+            })}
+          </Grid>
+        </div>
+        <div className={styles.blog_wrapper}>
+          <h1>Streetdance! </h1>
+          <Grid>
+            {streetdance.map(({ node }, idx) => {
+              return (
+                <div key={idx}>
+                  <GridItem props={node} />
+                </div>
+              );
+            })}
+          </Grid>
+        </div>
+        <div className={styles.blog_wrapper}>
+          <h1>Culture! </h1>
+          <Grid>
+            {culture.map(({ node }, idx) => {
+              return (
+                <div key={idx}>
+                  <GridItem props={node} />
+                </div>
+              );
+            })}
+          </Grid>
+        </div>
+        <div className={styles.blog_wrapper}>
+          <h1>Interviews! </h1>
+          <Grid>
+            {interviews.map(({ node }, idx) => {
+              return (
+                <div key={idx}>
+                  <GridItem props={node} />
+                </div>
+              );
+            })}
+          </Grid>
+        </div>
+        <div className={styles.blog_wrapper}>
+          <h1>All Posts</h1>
+          <Grid>
+            {posts.map(({ node }, idx) => {
+              return (
+                <div key={idx}>
+                  <GridItem props={node} />
+                </div>
+              );
+            })}
+          </Grid>
+        </div>
       </div>
     </>
   );
@@ -86,12 +142,17 @@ export async function getStaticProps() {
   const entertainment = await getPostCategoryEntertainment();
   const battle = await getPostCategoryBattle();
   const interviews = await getPostCategoryInterviews();
-  const streetdacne = await getPostCategoryStreetdance();
+  const streetdance = await getPostCategoryStreetdance();
 
   return {
     props: {
       posts: posts.edges,
       social: social.edges,
+      entertainment: entertainment.edges,
+      battle: battle.edges,
+      culture: culture.edges,
+      interviews: interviews.edges,
+      streetdance: streetdance.edges,
     },
   };
 }

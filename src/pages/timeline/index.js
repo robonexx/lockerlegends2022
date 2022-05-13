@@ -4,12 +4,17 @@ import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
 import RGridItem from '../../components/responsiveGrid/RGridItem';
 import { items } from '../../content/items';
 
+// styles
+import styles from '../../styles/pages/Timeline.module.scss'
+
 export default function Timeline() {
   return (
-    <div>
-      <h1 style={{ fontSize: '3rem', color: 'white' }}>
-        This Page is still Just a test for layouts and grid
+    <div className={styles.timeline}>
+      <h1>
+        TIMELINE OF LOCKING!
       </h1>
+      <p>This page will be updates shortly until then follow the links and enjoy</p>
+      <p>Wanna read about history? Check any other link below</p>
       <ResponsiveGrid>
         {items.map(({ title, img, url, id, slug }) => (
           <div key={id}>

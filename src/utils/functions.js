@@ -16,7 +16,7 @@ export const replaceImage = {
           width={attribs.width}
           height={attribs.height}
           alt={
-            attribs.alt ? attribs.alt : 'This image is missing an alt text please include one in your wp'
+            attribs.alt ? attribs.alt : 'This image is missing an alt text please include one in your wordpress'
           }
         />
       );
