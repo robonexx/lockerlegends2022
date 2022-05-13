@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '../../styles/layout/PageLayout.module.scss';
 
-export default function index() {
+export default function Wattsstaxx() {
   return (
     <div className={styles.pagelayout}>
       <section>

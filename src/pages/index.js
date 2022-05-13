@@ -73,7 +73,7 @@ export default function Home({ posts, interviews, streetdance }) {
               />
             </div>
             <ReadMoreBtnIn
-              srcUrl='/social'
+              srcUrl='/socialparty'
               title='Click! to read about the social party era!'
             />
             <p>
@@ -149,7 +149,7 @@ export default function Home({ posts, interviews, streetdance }) {
           </div>
           <div style={{ width: '100%', margin: '0 auto' }}>
             <ReadMoreBtnIn
-              srcUrl='/wattstaxx'
+              srcUrl='/wattsstaxx'
               title='Read about... WHATTSSTAXX'
             />
           </div>
