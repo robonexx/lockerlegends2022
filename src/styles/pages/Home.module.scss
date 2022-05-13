@@ -10,6 +10,7 @@
     font-family: $font-base;
     overflow-x: hidden;
     
+    
 
     @media screen and (max-width: 680px) {
       margin: 0 auto;
@@ -28,6 +29,12 @@
 
 h2 {
   color: $color-client-1;
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
     .section {
@@ -44,6 +51,12 @@ h2 {
      }
 
       h1 {
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
         padding: 1rem 0;
         color: $color-client-1;
 
@@ -54,6 +67,12 @@ h2 {
       }
 
       h2 {
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
         padding: 0.5rem 0;
         color: $color-client-2;
         font-size: $font-size-ml;
@@ -63,11 +82,23 @@ h2 {
       }
 
       h3 {
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
         font-size: $font-size-m;
         
       }
 
       p {
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
         padding: 0.5rem 0;
         font-size: $font-size-base;
         line-height: 1.4rem;
@@ -79,10 +110,22 @@ h2 {
       }
 
       h3, p {
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
         color: $color-client-1;
       }
 
       a {
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
         text-decoration: none;
         padding: 0 0.5rem;
       }
@@ -136,6 +179,12 @@ h2 {
      }
 
       h2 {
+        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
         color: $color-client-1;
         font-weight: $font-normal;
         border-bottom: 1px solid #888;
@@ -191,6 +240,12 @@ h2 {
 }
 
 .big_text {
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
     font-size: $font-size-ml;
 
     @media screen and (min-width: 1024px) {
