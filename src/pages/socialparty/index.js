@@ -328,9 +328,6 @@ export default function Socialparty() {
             imitated on the social party scene in the mid 1960s
             <br />
             <br />
-            <span style={{ color: '#ee4e34' }}>The Texas Hop... </span>
-            <br />
-            <br />
             <span style={{ color: '#ee4e34' }}>The Texas Hop... </span>on the
             west coast during the 1950s & 60s The texas hop was an creative
             social party coupls dance , much on the order of the Lyndy hop
