@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
@@ -18,6 +19,14 @@ export default function Terminology() {
 
   return (
     <motion.div className={styles.pagelayout}>
+      <Head lang='en'>
+        <title>Soul Train - LockerLegends</title>
+        <meta
+          name='description'
+          content='History about the soul train televsion program that was a plattform for afro americans'
+        />
+        <meta property='og:title' content='History about soul train the tv show' />
+      </Head>
       <section>
         <motion.header
           initial={{ opacity: 0, y: -200 }}

@@ -1,4 +1,4 @@
-import React from 'react';
+import Head from 'next/head'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '../../styles/layout/PageLayout.module.scss';
@@ -6,6 +6,14 @@ import styles from '../../styles/layout/PageLayout.module.scss';
 export default function Wattsstaxx() {
   return (
     <div className={styles.pagelayout}>
+      <Head lang='en'>
+        <title>Wattsstaxx - LockerLegends</title>
+        <meta
+          name='description'
+          content='history about the wattsriots the concert and importance of the movement'
+        />
+        <meta property='og:title' content='wattsstaxx the concert' />
+      </Head>
       <section>
         <motion.header
           initial={{ y: -200, opacity: 0 }}

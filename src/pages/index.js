@@ -21,7 +21,13 @@ export default function Home({ posts, interviews, streetdance }) {
   return (
     <>
       <Head lang='en'>
-        <title>LockerLegends</title>
+        <title>LockerLegends - educate before you recreate</title>
+        <meta
+          name='description'
+          content='The official locking website of the streetdance pioneers hiphop streetdance funk soul history knowledge curriculum '
+        />
+        <meta property='og:title' content='Educate before you recreate' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className={styles.home_main}>
         <Hero />

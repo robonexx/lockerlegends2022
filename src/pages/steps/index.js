@@ -1,10 +1,18 @@
-import React from 'react';
+import Head from 'next/head'
 import FaqList from '../../components/faqbox/FaqList';
 import styles from '../../styles/pages/StepsAndMoves.module.scss';
 
 export default function Steps() {
   return (
     <div className={styles.steps_wrapper}>
+      <Head lang='en'>
+        <title>Step & Moves - LockerLegends</title>
+        <meta
+          name='description'
+          content='The locking curriculum dance steps and moves'
+        />
+        <meta property='og:title' content='Dance steps and moves of locking' />
+      </Head>
       <div className={styles.container_top}>
         <h1>THE STEPS & MOVES OF LOCKING</h1>
         <h4>

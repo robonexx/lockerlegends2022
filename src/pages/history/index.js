@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image';
 
 // styles
@@ -7,6 +8,14 @@ export default function History() {
   const soultrain = 'RoH1VGA9-oE';
   return (
     <div className={styles.pagelayout}>
+      <Head lang='en'>
+        <title>History - LockerLegends</title>
+        <meta
+          name='description'
+          content='History about the artform and dance style locking'
+        />
+        <meta property='og:title' content='locking history' />
+      </Head>
       <section>
         <header>
           <div>

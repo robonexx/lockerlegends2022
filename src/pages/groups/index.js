@@ -1,4 +1,4 @@
-import React from 'react';
+import Head from 'next/head';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
@@ -7,6 +7,14 @@ import styles from '../../styles/layout/PageLayout.module.scss';
 export default function Groups() {
   return (
     <div className={styles.pagelayout}>
+      <Head lang='en'>
+        <title>Groups & Dancers - LockerLegends</title>
+        <meta
+          name='description'
+          content='Information history about the dancers and groups that was active in the 70s'
+        />
+        <meta property='og:title' content='Information about groups and dancers' />
+      </Head>
       <section>
         <motion.header
           initial={{ y: -200, opacity: 0 }}

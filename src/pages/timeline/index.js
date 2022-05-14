@@ -1,5 +1,4 @@
-import React from 'react';
-
+import Head from 'next/head'
 import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
 import RGridItem from '../../components/responsiveGrid/RGridItem';
 import { items } from '../../content/items';
@@ -10,6 +9,14 @@ import styles from '../../styles/pages/Timeline.module.scss'
 export default function Timeline() {
   return (
     <div className={styles.timeline}>
+      <Head lang='en'>
+        <title>Timeline - LockerLegends</title>
+        <meta
+          name='description'
+          content='the locking time line and evolution'
+        />
+        <meta property='og:title' content='About locking history timeline of the artform' />
+      </Head>
       <h1>
         TIMELINE OF LOCKING!
       </h1>

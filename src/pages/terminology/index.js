@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image';
 
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
@@ -11,6 +12,14 @@ export default function Terminology({ speed }) {
 
   return (
     <motion.div className={styles.pagelayout}>
+      <Head lang='en'>
+        <title>Street Terminology - LockerLegends</title>
+        <meta
+          name='description'
+          content='Street terminlogy the vocabulary used on the streets'
+        />
+        <meta property='og:title' content='street terminology vocabulary' />
+      </Head>
       <section>
         <motion.header
           initial={{ opacity: 0, y: -200 }}

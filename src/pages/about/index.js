@@ -1,16 +1,18 @@
-import React from 'react';
+import Head from 'next/head';
 import Section_top from '../../layouts/pagelayout/Section_top';
 import styles from '../../styles/pages/About.module.scss';
 
 const About = () => {
   return (
     <div className={styles.about_main}>
-      {/*  <section className={styles.about_section_top}>
-        <h3 className={styles.pre_title}>About</h3>
-        <h1 className={styles.headline}>LOCKERLEGENDS</h1>
-
-        <span className={styles.sub_header}>15 year Review & Purpose!</span>
-      </section> */}
+      <Head lang='en'>
+        <title>About Us - LockerLegends</title>
+        <meta
+          name='description'
+          content='About lockerlegends review and purpose '
+        />
+        <meta property='og:title' content='About us and our purpose' />
+      </Head>
       <Section_top
         pretitle='...'
         headline='lockerlegends'

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -20,6 +21,14 @@ export default function Socialparty() {
   }, []);
   return (
     <div className={styles.pagelayout}>
+      <Head lang='en'>
+        <title>Social party Era - LockerLegends</title>
+        <meta
+          name='description'
+          content='Information about the social party Era'
+        />
+        <meta property='og:title' content='Social party' />
+      </Head>
       <section>
         <header>
           <div>

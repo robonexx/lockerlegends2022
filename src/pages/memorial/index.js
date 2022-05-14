@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import { motion } from 'framer-motion';
@@ -44,6 +45,17 @@ const Index = (props) => (
     transition={{ duration: 1 }}
     exit={{ x: -500, opacity: 0 }}
   >
+    <Head lang='en'>
+      <title>Memorial - LockerLegends</title>
+      <meta
+        name='description'
+        content='Memorial page for the legends that has passed. Paying our respects and memorizing their existance'
+      />
+      <meta
+        property='og:title'
+        content='Memorial page for the one that has passed on'
+      />
+    </Head>
     <div className={styles.container}>
       <motion.div
         animate={{ opacity: 1 }}

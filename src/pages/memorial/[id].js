@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import fetch from 'isomorphic-unfetch';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -33,6 +34,14 @@ const fadeInUp = {
 
 const Memorial = (props) => (
   <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
+    <Head lang='en'>
+      <title>Memorial - LockerLegends</title>
+      <meta
+        name='description'
+        content='Memorial for the legends who has passed and contributed to locking dance'
+      />
+      <meta property='og:title' content='Memorial page' />
+    </Head>
     <div className={styles.fullscreen}>
       <Link href='/memorial'>
         <motion.div
