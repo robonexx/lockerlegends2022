@@ -154,6 +154,10 @@ A yeah and contolling my ADHD... with that written
 ### take a look on the page here 
 [lockerlegendsOld]: https://www.lockerlegends.net/ 
 - will be up until end of may
+</br>
+
+--- 
+</br>
 and the New website (my version)
 [lockerlegendsNew]: https://www.lockerlegends.org/
 
