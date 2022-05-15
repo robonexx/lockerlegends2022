@@ -1,6 +1,6 @@
-# LockerLegends website 2022
+# ![#ffc13b] LockerLegends website 2022 `#ffc13b`
 
-## Exam project and a live site rebuilding the lockerlegends.net site, still old site up will be switced to this latest 19th of may
+## ![#ff6e40] Exam project and a live site rebuilding the lockerlegends.net site, still old site up will be switced to this latest 19th of may `#ff6e40
 
 So this is my exam project at KYH, I decided to rebuild the lockerlegends website.
 
