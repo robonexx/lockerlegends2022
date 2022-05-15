@@ -31,7 +31,7 @@ A lot of spam to be removed with over 9000 comments, and there is no comment sec
 
 # preview
 
-<img src="/../../../../github/robonexx/db/blob/main/images/ll1.png" alt="Project image" width="150">
+<img src="/../../../../robonexx/db/blob/main/images/ll1.png" alt="Project image" width="150">
 
 ## How I will try to solve it and build this site?
 
