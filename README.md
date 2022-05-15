@@ -160,7 +160,7 @@ A yeah and contolling my ADHD... with that written
 --- 
 </br>
 
-[lockerlegendsOld]: https://www.lockerlegends.net/ 
+- LockerLegends old - [OldLockerLegends](https://www.lockerlegends.net/)
 
 - will be up until end of may
 </br>
@@ -169,7 +169,7 @@ A yeah and contolling my ADHD... with that written
 </br>
 and the New website (my version)
 
-[lockerlegendsNew]: https://www.lockerlegends.org/
+- LockerLegends New - [NewLockerLegends](https://www.lockerlegends.org/)
 
 - this page is already up and running and updated
 
