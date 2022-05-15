@@ -150,7 +150,10 @@ Ive would ove to find time to learn more about SVG animation, been trying it out
 
 I loved working with NEXT even thou I still also like REACT a lot, I love FRAMER MOTION, makes animations fun, even thou i like doing the hole keyframes thingy and manipulating with Javascript also, just takes more time. 
 
-A yeah and contolling my ADHD... with that written 
+A yeah and contolling my ADHD... with that written  
+
+</br>
+
 ### take a look on the page here 
 [lockerlegendsOld]: https://www.lockerlegends.net/ 
 - will be up until end of may
