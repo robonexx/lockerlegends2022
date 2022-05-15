@@ -155,21 +155,23 @@ A yeah and contolling my ADHD... with that written
 </br>
 
 ### take a look on the page here 
+</br>
+
+--- 
+</br>
 
 [lockerlegendsOld]: https://www.lockerlegends.net/ 
+
 - will be up until end of may
 </br>
 
 --- 
 </br>
 and the New website (my version)
+
 [lockerlegendsNew]: https://www.lockerlegends.org/
 
 - this page is already up and running and updated
-
-so many things that I come up with and that is not done yet, wanna add dark/light mode (is dark mode now)
-Add animations to steps and moves page when clicking on tha step boxes have and animation or video show the step written about
-etc. etc.. etc... ;D
 
 </br>
 
