@@ -41,8 +41,7 @@ A lot of spam to be removed with over 9000 comments, and there is no comment sec
 
 <img src="/../../../../robonexx/db/blob/main/images/lln1.png" alt="Project image" width="150"><img src="/../../../../robonexx/db/blob/main/images/lln2.png" alt="Project image" width="150"><img src="/../../../../robonexx/db/blob/main/images/lln3.png" alt="Project image" width="150"><img src="/../../../../robonexx/db/blob/main/images/lln4.png" alt="Project image" width="150">
 
-<img src="/../../../../robonexx/db/blob/main/images/lln5.png" alt="Project image" width="150">
-<img src="/../../../../robonexx/db/blob/main/images/lln6.png" alt="Project image" width="150">
+<img src="/../../../../robonexx/db/blob/main/images/lln5.png" alt="Project image" width="150"><img src="/../../../../robonexx/db/blob/main/images/lln6.png" alt="Project image" width="150">
 
 
 ## How I will try to solve it and build this site?
