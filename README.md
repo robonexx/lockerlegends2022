@@ -1,8 +1,8 @@
-# ![#ffc13b] LockerLegends website 2022 `#ffc13b`
+#  LockerLegends website 2022 `#ffc13b`
 
 ## ![#ff6e40] Exam project and a live site rebuilding the lockerlegends.net site, still old site up will be switced to this latest 19th of may `#ff6e40
 
-So this is my exam project at KYH, I decided to rebuild the lockerlegends website.
+**So this is my exam project at KYH, I decided to rebuild the lockerlegends website.**
 
 ## Opportunity to give back
 
@@ -28,6 +28,10 @@ It´s hard to navigate and read due to a lot of contect being plain text with ou
 The UI is outdated. The owner cant upload images in to wordpress, code is missing. 
 The average visitor statistic is 1-2 pages per visitor, lasting from 30s-2min. In other words something is needed to be done. 
 A lot of spam to be removed with over 9000 comments, and there is no comment section open? 
+
+# preview
+
+<img src="/../../../../github/docs/fb/main/images/ll1.png" alt="Project image" width="150">
 
 ## How I will try to solve it and build this site?
 
