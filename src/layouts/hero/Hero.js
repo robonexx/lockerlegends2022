@@ -4,16 +4,7 @@ import styles from '../../styles/layout/Hero.module.scss';
 
 const Vid = () => {
   return (
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      width='100%'
-      height='100%'
-      controls='controls'
-      controlspreload='auto'
-    >
+    <video autoPlay loop muted playsInline width='100%' height='100%'>
       <source src='/video/lavid.mp4' type='video/mp4' />
     </video>
   );
