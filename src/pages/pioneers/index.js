@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Hof from '../../components/Hof/Hof';
 
@@ -19,7 +20,11 @@ export const Pioneers = () => {
       </Head>
       <Sidebar />
       <div id={styles.main_doc}>
-        <h1 className={styles.hof_title}>O.G pioneers hall of fame</h1>
+        <motion.h1
+           initial={{ y: -200, opacity: 0 }}
+           animate={{ y: 0, opacity: 1 }}
+           transition={{ delay: 0.1, duration: 0.4 }}
+          className={styles.hof_title}>O.G pioneers hall of fame</motion.h1>
         <Hof />
       </div>
     </div>

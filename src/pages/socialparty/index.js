@@ -30,12 +30,24 @@ export default function Socialparty() {
         <meta property='og:title' content='Social party' />
       </Head>
       <section>
-        <header>
+        <motion.header
+         initial={{ y: -200, opacity: 0 }}
+         animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4 }}
+        >
           <div>
-            <h1>THE SOCIAL PARTY - (SOUL) DANCES</h1>
-            <h2>The PARTY - Where social party dance steps are created</h2>
+            <motion.h1
+             initial={{ y: -200, opacity: 0 }}
+             animate={{ y: 0, opacity: 1 }}
+             transition={{ delay: 0.4, duration: 0.4 }}
+            >THE SOCIAL PARTY - (SOUL) DANCES</motion.h1>
+            <motion.h2
+             initial={{ y: 200, opacity: 0 }}
+             animate={{ y: 0, opacity: 1 }}
+             transition={{ delay: 0.6, duration: 0.4 }}
+            >The PARTY - Where social party dance steps are created</motion.h2>
           </div>
-        </header>
+        </motion.header>
 
         <p>
           The Roots of Locking are deep in the SOCIAL PARTY SCENE which was

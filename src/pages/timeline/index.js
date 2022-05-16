@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {motion} from 'framer-motion'
 import ResponsiveGrid from '../../components/responsiveGrid/ResponsiveGrid';
 import RGridItem from '../../components/responsiveGrid/RGridItem';
 import { items } from '../../content/items';
@@ -23,15 +24,19 @@ export default function Timeline() {
       <p>This page will be updates shortly until then follow the links and enjoy</p>
       <p>Wanna read about history? Check any other link below</p>
       <ResponsiveGrid>
-        {items.map(({ title, img, url, id, slug }) => (
-          <div key={id}>
+        {items.map(({ title, img, url, id, slug }, i) => (
+          <motion.div key={id}
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: i * 0.4, duration: 0.3 }}
+          >
             <RGridItem
               title={title}
               featuredImage={img}
               url={url}
               slug={slug}
             />
-          </div>
+          </motion.div>
         ))}
       </ResponsiveGrid>
     </div>

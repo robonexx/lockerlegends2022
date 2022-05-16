@@ -27,9 +27,9 @@ export default function Terminology({ speed }) {
           transition={{ duration: 0.4 }}
         >
           <motion.h1
-            initial={{ opacity: 0, x: -200 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2, duration: 0.4 }}
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
           >
             Understanding Street Terminology
           </motion.h1>
@@ -115,12 +115,7 @@ export default function Terminology({ speed }) {
           </p>
         </div>
 
-        <motion.div
-          className={styles.image}
-          initial={{ opacity: 0, y: 200 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
-        >
+        <div>
           <Image
             src='/images/terminology.png'
             width='100%'
@@ -130,14 +125,10 @@ export default function Terminology({ speed }) {
             objectPosition='center'
             priority
           />
-        </motion.div>
+        </div>
 
-        <motion.div
-          className={styles.wrapper}
-          initial={{ opacity: 0, y: 200 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
+        <div
+          className={styles.wrapper}>
           <p>
             Even in my experience with the making of film “beyond Hiphop” I had
             to continually explain to the producer that I was talking about a
@@ -159,7 +150,7 @@ export default function Terminology({ speed }) {
             And it is the vary reason I have said from the beginning “ Educate
             before you recreate “ 
           </p>
-        </motion.div>
+        </div>
       </section>
     </motion.div>
   );

@@ -48,12 +48,15 @@
     .blog_wrapper {
         padding: 10rem 0 0;
         h1 {
+          font-family: 'orbitron';
           text-align: center;
           padding: 2rem 0;
           border-bottom: 1px solid #888;
           border-top: 1px solid #888;
-          background-color: white;
+          color: $color-client-3;
+          background-color: $color-client-2;
           margin: 0.5rem 0;
+          font-weight: 800;
     
           @media screen and (min-width: 1024) {
             text-align: left;

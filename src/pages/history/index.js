@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image';
+import { motion } from 'framer-motion'
 
 // styles
 import styles from '../../styles/layout/PageLayout.module.scss';
@@ -17,15 +18,27 @@ export default function History() {
         <meta property='og:title' content='locking history' />
       </Head>
       <section>
-        <header>
+        <motion.header
+          initial={{ y: -200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4 }}
+        >
           <div>
-            <h1>OUR STORY OF THE HISTORY OF LOCKING</h1>
-            <h2>
+            <motion.h1
+            initial={{ y: -200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
+            >OUR STORY OF THE HISTORY OF LOCKING</motion.h1>
+            <motion.h2
+             initial={{ y: 200, opacity: 0 }}
+             animate={{ y: 0, opacity: 1 }}
+             transition={{ delay: 0.6, duration: 0.4 }}
+            >
               THIS IS A HISTORY OF THE ORIGINAL FOUNDATION OF A STREET DANCE
               CALLED ”LOCKING”
-            </h2>
+            </motion.h2>
           </div>
-        </header>
+        </motion.header>
         <h2
           className={`
          ${styles.highligh_o} ${styles.big_text} ${styles.text_center}`}
@@ -50,7 +63,11 @@ export default function History() {
           ...Read and Enjoy
         </div>
 
-        <div className={styles.image}>
+        <motion.div
+           initial={{ y: 200, opacity: 0 }}
+           animate={{ y: 0, opacity: 1 }}
+           transition={{ delay: 0.6, duration: 0.6 }}
+          className={styles.image}>
           <Image
             src='/images/gogobrotherswatts.png'
             width='100'
@@ -59,7 +76,7 @@ export default function History() {
             objectFit='cover'
             objectPosition='center'
           />
-        </div>
+        </motion.div>
         <div className={styles.wrapper}>
           <p>
             Locking or Campbellocking is a dance art form with improvisational

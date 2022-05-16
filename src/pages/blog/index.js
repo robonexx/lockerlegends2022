@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import {motion} from 'framer-motion'
 import {
   getAllPosts,
   getPostCategoryCulture,
@@ -34,26 +35,45 @@ export default function Blog({
       </Head>
 
       <div className={styles.blog_main}>
-        <header>
+        <motion.header
+         initial={{ y: -200, opacity: 0 }}
+         animate={{ y: 0, opacity: 1 }}
+         transition={{ duration: 0.4 }}>
           <div>
-            <h1>Editorials (Blog) </h1>
-            <h2>
+            <motion.h1
+             initial={{ y: -200, opacity: 0 }}
+             animate={{ y: 0, opacity: 1 }}
+             transition={{ delay: 0.4, duration: 0.4 }}
+            >Editorials (Blog) </motion.h1>
+            <motion.h2
+             initial={{ y: 200, opacity: 0 }}
+             animate={{ y: 0, opacity: 1 }}
+             transition={{ delay: 0.6, duration: 0.4 }}
+            >
               Read the latest Editorials (posts) related to the artform of
               locking and culture...
-            </h2>
+            </motion.h2>
           </div>
-        </header>
+        </motion.header>
         <p style={{ color: '#888' }}>
           This page will be updated in the coming months
         </p>
         <div className={styles.blog_wrapper}>
-          <h1>The Social Era! </h1>
+          <motion.h1
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+           transition={{ delay: 0.2, duration: 0.5 }}
+          >The Social Era! </motion.h1>
           <Grid>
-            {social.map(({ node }, idx) => {
+            {social.map(({ node }, i) => {
               return (
-                <div key={idx}>
+                <motion.div key={i}
+                initial={{ x: -50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: i * 0.4, duration: 0.3 }}
+                >
                   <GridItem props={node} />
-                </div>
+                </motion.div>
               );
             })}
           </Grid>
