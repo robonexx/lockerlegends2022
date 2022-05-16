@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import {
   getLatestPosts,
   getPostCategoryInterviews,
@@ -152,13 +151,12 @@ export default function Home({ posts, interviews, streetdance }) {
               conscious music sung by artists like Marvin Gaye, James
               Brown,Curtis Mayfield andIssac Hayes.
             </p>
-          </div>
-          <div style={{ width: '100%', margin: '0 auto' }}>
             <ReadMoreBtnIn
               srcUrl='/wattsstaxx'
               title='Read about... WHATTSSTAXX'
             />
           </div>
+          <div style={{ width: '100%', margin: '0 auto' }}></div>
           <div className={styles.image}>
             <Image
               src='/images/wattsriots.png'
@@ -174,6 +172,7 @@ export default function Home({ posts, interviews, streetdance }) {
           <h2>
             “YOU CANNOT KNOW WHERE YOU ARE GOING UNLESS YOU KNOW WHERE YOU BEEN”
           </h2>
+
           <p
             style={{ textAlign: 'right', color: 'white', marginBottom: '2rem' }}
           >

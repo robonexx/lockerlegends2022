@@ -5,7 +5,7 @@ import styles from '../../styles/layout/Hero.module.scss';
 const Vid = () => {
   return (
     <video autoPlay loop muted playsInline>
-      <source src='/video/la.webm' type='video/webm' />
+      <source src='/video/lavid.mp4' type='video/mp4' />
     </video>
   );
 };
