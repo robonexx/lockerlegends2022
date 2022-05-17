@@ -19,15 +19,15 @@ import ReadMoreBtnIn from '../components/readmorebtn/ReadMoreBtnOut';
 export default function Home({ posts, interviews, streetdance }) {
   return (
     <>
-      <Head lang='en'>
+      {/* <Head lang='en'>
         <title>LockerLegends - educate before you recreate</title>
         <meta
           name='description'
           content='The official locking website of the streetdance pioneers hiphop streetdance funk soul history knowledge curriculum '
         />
-        <meta property='og:title' content='Educate before you recreate' />
+        <meta property='og:title' content='Lockerlegends title' key='title' />
         <link rel='icon' href='/favicon.ico' />
-      </Head>
+      </Head> */}
       <div className={styles.home_main}>
         <Hero />
         <div className={styles.home_wrapper}>
