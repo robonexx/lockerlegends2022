@@ -51,10 +51,12 @@
       z-index: 10;
 
       .hero_logo {
+        margin: 0 auto;
         margin-top: 100px;
         position: relative;
         display: block;
         max-width: 1000px;
+        width: 90%;
         height: 260px;
         object-fit: cover;
 

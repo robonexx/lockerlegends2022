@@ -1,0 +1,152 @@
+@use '../base/' as *;
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  z-index: 100;
+  overflow: hidden;
+
+  .banner_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+
+    .row_title {
+      margin-top: 1rem;
+
+
+      // center row brothers
+      .row_letter {
+        font-size: 6rem;
+        font-weight: 800;
+
+        @media screen and (min-width: 768px) {
+          font-size: 8rem;
+        }
+  
+        @media screen and (min-width: 960px) {
+          font-size: 10rem;
+        }
+  
+      }
+    }
+    
+
+    &:last-child {
+      .row_title {
+        color: $color-client-2;
+        filter: drop-shadow(1px 1px 1px rgba(17, 17, 17, 0.885)) drop-shadow(3px 3px 3px rgb(12, 12, 12));
+  
+        &:nth-child(1) {
+          .row_letter {
+            font-size: 5rem;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+
+    
+    .row_title {
+      letter-spacing: 1rem;
+      white-space: nowrap;
+      cursor: pointer;
+      color: $color-client-2;
+      filter: drop-shadow(1px 1px 1px rgba(17, 17, 17, 0.885)) drop-shadow(3px 3px 3px rgb(12, 12, 12));
+
+      &:nth-child(1) {
+        margin-top: 5rem;
+        .row_letter {
+          font-size: 2rem;
+          font-weight: 800;
+        }
+      }
+    }
+    
+  
+    &.bottom {
+      font-family: $font-alt;
+      cursor: pointer;
+      opacity: 0.3;
+      transform: rotate(-10deg);
+
+      .row_title {
+        position: relative;
+        letter-spacing: 1rem;
+        white-space: nowrap;
+        cursor: pointer;
+        color: $color-black;
+        filter: drop-shadow(1px 1px 1px rgba(0,0,0,.885)) drop-shadow(3px 3px 3px rgb(12, 12, 12));
+      }
+    }
+
+    .row_col {
+      width: inherit;
+      height: fit-content;
+      display: flex;
+      align-content: center;
+      justify-content: flex-start;
+      
+      &:first-child {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .row_message {
+        position: absolute;
+        text-align: left;
+        top: auto;
+        bottom: 1.5rem;
+        right: auto;
+        left: 1rem;
+        width: fit-content;
+        cursor: pointer;
+        @media screen and (min-width: 768px) {
+          bottom: 2rem;
+          left: 2rem;
+        }
+        
+        h3 {
+          line-height: 2rem;
+          font-size: $font-size-m;
+          font-weight: 800;
+          text-shadow: 1px 1px 1px #555555; 
+          filter: drop-shadow(2px 2px 1px rgb(221, 108, 16));
+          line-height: 2rem; 
+
+          @media screen and (min-width: 768px) {
+            font-size: 2rem;
+          }
+                 
+        }
+      }
+    }
+
+    .scroll {
+      height: 160px;
+      width: 160px;
+      /* border-radius: 100%; */
+      /* background: #fff; */
+      /* position: absolute; */
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+      
+     /*  span {
+        font-size: 50px;
+        font-weight: 600;
+        margin: 4px 0;
+        @media screen and (max-width: 460px) {
+          font-size:50px;
+          margin: 2px 0;
+        }
+      } */
+    }
+  }
+}

@@ -1,21 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image';
-import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import { motion} from 'framer-motion';
 
 // styles
 import styles from '../../styles/layout/PageLayout.module.scss';
 
 export default function Terminology() {
-  /* const { scrollYProgress } = useViewportScroll();
-  const yValue = useTransform(scrollYProgress, [0, 1], [0, 500 * speed]);
- */
-  /* 
-  initial={{ opacity: 0, y: 200 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2 }}
-      style={{ y: yValue }}
-      
-  */
 
   return (
     <motion.div className={styles.pagelayout}>

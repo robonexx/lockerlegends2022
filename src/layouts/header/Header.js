@@ -26,12 +26,17 @@ export default function Header() {
       <TopMenu />
       <Nav>
         <NavItem title='home' icon={<AiOutlineHome />} url='/' />
-        <NavItem title='about' icon={<MdOutlineAnnouncement />} url='/about' />
+        <NavItem title='about' icon={<MdOutlineAnnouncement />} url='/about'>
+          <DropDown>
+            <DropDownItem
+              title='The Gogo Brothers'
+              icon={<MdOutlineGroups />}
+              url='/gogobrothers'
+            />
+          </DropDown>
+        </NavItem>
 
-        <NavItem
-          title='history'
-          icon={<MdOutlineHistoryEdu />} /*  url='/history' */
-        >
+        <NavItem title='history' icon={<MdOutlineHistoryEdu />}>
           <DropDown>
             <DropDownItem
               title='History Of Locking'

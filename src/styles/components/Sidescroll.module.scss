@@ -1,0 +1,50 @@
+@use '../base/' as *;
+$move-initial: calc(-25%);
+$move-final: calc(-50%);
+
+.sideScroll {
+  position: relative;
+  overflow: hidden;
+  &.animate .sideScroll__inner {
+    animation-play-state: running;
+  }
+  .sideScroll__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d($move-initial, 0, 0);
+    animation: sideScroll 5s linear infinite;
+    animation-play-state: paused;
+    @media (min-width: 460px) {
+      transform: translate3d(calc(-25% + 10vw), 0, 0);
+      animation: sideScroll-lg 5s linear infinite;
+      animation-play-state: paused;
+    }
+  }
+  .row_title {
+    padding: 0 2vw;
+    @media (min-width: 460px) {
+      padding: 0 2vw;
+    }
+  }
+}
+
+@keyframes sideScroll {
+  0% {
+    transform: translate3d($move-initial, 0, 0);
+  }
+
+  100% {
+    transform: translate3d($move-final, 0, 0);
+  }
+}
+
+@keyframes sideScroll-lg {
+  0% {
+    transform: translate3d(calc(-25% + 10vw), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(calc(-50% + 10vw), 0, 0);
+  }
+}
