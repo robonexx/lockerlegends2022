@@ -48,6 +48,7 @@ export default function Layout({ children }) {
         <link rel='icon' href='https://www.lockerlegends.org/favicon.ico' />
         <link rel='icon' href='%PUBLIC_URL%/favicon.ico' />
         <meta name='robots' content='max-image-preview:large' />
+        <link rel='canonical' href='https://www.lockerlegends.org/'></link>
       </Head>
       <Header />
       <ScrollToTop>
