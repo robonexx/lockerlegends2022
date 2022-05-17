@@ -29,8 +29,8 @@ export default function Home({ posts, interviews, streetdance }) {
         />
       </Head>
       <motion.div className={styles.home_main}
-       initial={{ opacity: 0, y: -500 }}
-       animate={{ opacity: 1, y: 0 }}
+       initial={{ opacity: 0}}
+       animate={{ opacity: 1}}
        transition={{ duration: 1 }}
        exit={{ opacity: 0 }}
       >

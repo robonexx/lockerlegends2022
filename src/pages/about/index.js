@@ -18,10 +18,10 @@ const About = () => {
       </Head>
       <motion.div
         className={styles.about_main}
-        initial={{ opacity: 0, x: 500 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
         transition={{ duration: 1 }}
-        exit={{ x: -500, opacity: 0 }}
+        exit={{opacity: 0 }}
       >
         <Section_top
           pretitle='...'
