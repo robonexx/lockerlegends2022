@@ -162,6 +162,10 @@ a .mobile {
     .nav_item {
       left: 30vw;
       height: fit-content;
+
+      &:hover {
+        background-color: transparent;
+      }
     }
 
     .nav_links {
