@@ -12,20 +12,10 @@ export default function Layout({ children }) {
         <meta
           name='description'
           content='The official locking website of the streetdance pioneers hiphop streetdance funk soul history knowledge curriculum '
+          key='desc'
         />
         <meta property='og:title' content='Lockerlegends' key='title' />
         <link rel='icon' href='/favicon.ico' />
-        <meta
-          property='og:image'
-          content='https://lockerlegends.org/lockerlegendshome.png'
-        />
-        <meta property='og:image:type' content='image/png' />
-        <meta property='og:image:width' content='400' />
-        <meta property='og:image:height' content='195' />
-        <meta
-          property='og:image:alt'
-          content='The Official Locking pioneers website - LOCKERLEGENDS'
-        />
       </Head>
       <Header />
       <ScrollToTop>

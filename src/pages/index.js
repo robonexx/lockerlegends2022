@@ -19,15 +19,25 @@ import ReadMoreBtnIn from '../components/readmorebtn/ReadMoreBtnOut';
 export default function Home({ posts, interviews, streetdance }) {
   return (
     <>
-      {/* <Head lang='en'>
+      <Head lang='en'>
         <title>LockerLegends - educate before you recreate</title>
         <meta
           name='description'
-          content='The official locking website of the streetdance pioneers hiphop streetdance funk soul history knowledge curriculum '
+          content='The official locking website of the streetdance pioneers hiphop streetdance funk soul history knowledge curriculum'
+          key='desc'
         />
-        <meta property='og:title' content='Lockerlegends title' key='title' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head> */}
+        <meta
+          property='og:image'
+          content='https://www.lockerlegends.org/lockerlegendshome.png'
+        />
+        <meta property='og:image:type' content='image/png' />
+        <meta property='og:image:width' content='400' />
+        <meta property='og:image:height' content='195' />
+        <meta
+          property='og:image:alt'
+          content='The Official Locking pioneers website - LOCKERLEGENDS'
+        />
+      </Head>
       <div className={styles.home_main}>
         <Hero />
         <div className={styles.home_wrapper}>
@@ -170,13 +180,22 @@ export default function Home({ posts, interviews, streetdance }) {
           </div>
 
           <h2
-            style={{ textAlign: 'left', color: 'white', padding: '0 0 2rem 4rem', width: '90%' }}
+            style={{
+              textAlign: 'left',
+              color: 'white',
+              padding: '0 0 2rem 4rem',
+              width: '90%',
+            }}
           >
             “YOU CANNOT KNOW WHERE YOU ARE GOING UNLESS YOU KNOW WHERE YOU BEEN”
           </h2>
 
           <p
-            style={{ textAlign: 'right', color: 'white', padding: '0 4rem 2rem 0' }}
+            style={{
+              textAlign: 'right',
+              color: 'white',
+              padding: '0 4rem 2rem 0',
+            }}
           >
             unknown authors quote
           </p>
