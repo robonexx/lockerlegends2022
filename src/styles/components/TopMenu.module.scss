@@ -12,6 +12,9 @@
     z-index: 1000;
     
     .subtitle {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         font-family: inherit;
         color: rgb(255, 255, 255);
         font-size: 44px;
@@ -25,12 +28,8 @@
         @media screen and (max-width: 1440px){
             font-size: $font-size-ml;
         }
-        @media screen and (max-width: 960){
-            font-size: $font-size-m;
-        }
-
-        @media screen and (max-width: 50em){
-           display: none;
+        @media screen and (max-width: 1024px){
+            display: none;
         }
     }
 
