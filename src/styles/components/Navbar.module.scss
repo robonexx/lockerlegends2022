@@ -89,28 +89,10 @@ a .mobile {
 }
 
 
-.nav_item .nav_links:before {
-  content: "";
-  position: absolute;
-  top: 99%;
-  bottom: 0;
-  /* left: 100%; */
-  right: 100%;
-  transition: all 0.2s ease-out;
-  background: $color-client-3;
-  border-radius: 25px;
-}
-
 
 
 .nav_item:hover {
-    &:before {
-      bottom: -1px;
-      left: 1.4rem;
-      right: 0;
-      font-weight: 400;
-     
-    }  
+   background-color: darken($color-client-2, 5%);
 } 
 
 
