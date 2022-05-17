@@ -310,7 +310,8 @@ export default function Home({ posts, interviews, streetdance }) {
           <p
             style={{
               margin: '2rem 0',
-              color: 'white',
+              textAlign: 'center',
+              color: '#888',
               backgroundColor: 'black',
               padding: '4px 8px',
             }}
