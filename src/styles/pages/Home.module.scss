@@ -187,13 +187,19 @@ user-select: none;
 -moz-user-select: none;
 -ms-user-select: none;
 user-select: none;
+font-family: 'Orbitron';
+letter-spacing: 2px;
         color: $color-client-1;
         font-weight: $font-normal;
         border-bottom: 1px solid #888;
-        padding: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        font-size: $font-size-ml;
+
         @media screen and (min-width:1024px) {
           padding: 1rem 0;
+          
        }
+        
       }
     }
     
