@@ -10,7 +10,6 @@ import {
 import { formatDate, metaDescription, removeTags } from '../../utils/functions';
 import parse from 'html-react-parser';
 import { replaceImage } from '../../utils/functions';
-/* import Html2react from '../components/html2react'; */
 
 import styles from '../../styles/pages/BlogSlug.module.scss';
 
@@ -28,27 +27,6 @@ export default function Blog({ blog, blogs }) {
     return excerpt;
   }
 
-  /* const replaceImage = {
-    replace: ({ name, attribs, children }) => {
-      if (name === 'figure' && /wp-block-image/.test(attribs.class)) {
-        return <>{domToReact(children, replaceImage)}</>;
-      }
-
-      if (name === 'img') {
-        return (
-          <Image
-            src={attribs.src}
-            width={attribs.width}
-            height={attribs.height}
-            alt={
-              attribs.alt ? attribs.alt : 'This image is missing an alt text please include one in your wp'
-            }
-          />
-        );
-      }
-    },
-  }; */
-
   return (
     <>
       {router.isFallback ? (
@@ -57,6 +35,7 @@ export default function Blog({ blog, blogs }) {
         <>
           <Head>
             <title>LockerLegends - {blog.title}</title>
+            <link rel='dns-prefetch' href='//i0.wp.com'></link>
             <meta content={makeExcerpt(blog.excerpt)} name='description' />
           </Head>
 
