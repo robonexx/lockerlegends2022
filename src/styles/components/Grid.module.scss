@@ -47,7 +47,7 @@
     }
 
     
-.image {
+>.image {
     position: relative;
     display: block;
     border-radius: 0;
@@ -55,13 +55,21 @@
         min-height: inherit;
         max-width: 100%;
         padding: 2rem;
+        @media screen and (max-width: 460px) {
+            margin: 0 auto;
+            max-width: 90%;        
+        }
+
+
+        img{
+           object-position: center;
+           pointer-events: none;
+           border-radius: 2px;
+           object-position: top center;
+        }
 }
 
     
-.grid_item img{
-    pointer-events: none;
-    border-radius: 10px;
-}
 
     .grid_title {
     position: absolute;
