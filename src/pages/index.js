@@ -169,12 +169,14 @@ export default function Home({ posts, interviews, streetdance }) {
             />
           </div>
 
-          <h2>
+          <h2
+            style={{ textAlign: 'left', color: 'white', padding: '0 0 2rem 4rem', width: '90%' }}
+          >
             “YOU CANNOT KNOW WHERE YOU ARE GOING UNLESS YOU KNOW WHERE YOU BEEN”
           </h2>
 
           <p
-            style={{ textAlign: 'right', color: 'white', marginBottom: '2rem' }}
+            style={{ textAlign: 'right', color: 'white', padding: '0 4rem 2rem 0' }}
           >
             unknown authors quote
           </p>
