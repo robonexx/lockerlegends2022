@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         <link rel='icon' href='/favicon.ico' />
         <meta
           property='og:image'
-          content='%PUBLIC_URL%/images/lockerlegendshome.png'
+          content='https://lockerlegends.org/lockerlegendshome.png'
         />
         <meta property='og:image:type' content='image/png' />
         <meta property='og:image:width' content='400' />
