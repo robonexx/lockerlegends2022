@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <>
       <Head lang='en'>
         <meta charSet='UTF-8' />
-        <meta name='viewport' content='width=device-width' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <title>
           LOCKERLEGENDS "The Streetdance called Locking | Streetdance,
           HipHop,Lockers,Campbellocking, Locking &amp; Locking pioneers and
@@ -30,6 +30,10 @@ export default function Layout({ children }) {
         <meta
           property='og:site_name'
           content='LOCKERLEGENDS "The Streetdance called Locking'
+        ></meta>
+        <meta
+          name='keywords'
+          content='LOCKING,CAMPBELLOCKING,STREETDANCE,HIPHOP,CULTURE,HISTORY,KNOWLEDGE,LEARNING,SOUL TRAIN,WATTSTAXX,SOCIAL PARTY,BATTLES,PERFORMANCE,EDITORIALS,BLOG,AFRO AMEICAN HERITAGE, FUNK, SOUL'
         ></meta>
         <meta
           property='og:image'
