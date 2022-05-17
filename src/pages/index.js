@@ -31,7 +31,7 @@ export default function Home({ posts, interviews, streetdance }) {
       <motion.div className={styles.home_main}
        initial={{ opacity: 0}}
        animate={{ opacity: 1}}
-       transition={{ duration: 1 }}
+       transition={{ duration: 0.3 }}
        exit={{ opacity: 0 }}
       >
         <Hero />
