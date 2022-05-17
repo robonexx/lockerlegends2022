@@ -34,7 +34,12 @@ export default function Blog({
         />
       </Head>
 
-      <div className={styles.blog_main}>
+      <motion.div className={styles.blog_main}
+      initial={{ opacity: 0, y: -500 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+      >
         <motion.header
          initial={{ y: -200, opacity: 0 }}
          animate={{ y: 0, opacity: 1 }}
@@ -150,7 +155,7 @@ export default function Blog({
             })}
           </Grid>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

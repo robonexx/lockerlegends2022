@@ -4,13 +4,11 @@ import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <>
-      <AnimatePresence exitBeforeEnter>
-        <Layout>
-          <Component {...pageProps} key={router.route} />
-        </Layout>
-      </AnimatePresence>
-    </>
+    <AnimatePresence exitBeforeEnter>
+      <Layout>
+        <Component {...pageProps} key={router.route} />
+      </Layout>
+    </AnimatePresence>
   );
 }
 

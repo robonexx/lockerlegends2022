@@ -15,6 +15,7 @@ import { AiOutlineUsergroupAdd } from 'react-icons/ai';
 // styles
 import styles from '../styles/pages/Home.module.scss';
 import ReadMoreBtnIn from '../components/readmorebtn/ReadMoreBtnOut';
+import { motion } from 'framer-motion';
 
 export default function Home({ posts, interviews, streetdance }) {
   return (
@@ -27,7 +28,12 @@ export default function Home({ posts, interviews, streetdance }) {
           key='desc'
         />
       </Head>
-      <div className={styles.home_main}>
+      <motion.div className={styles.home_main}
+       initial={{ opacity: 0, y: -500 }}
+       animate={{ opacity: 1, y: 0 }}
+       transition={{ duration: 1 }}
+       exit={{ opacity: 0 }}
+      >
         <Hero />
         <div className={styles.home_wrapper}>
           <div className={styles.section}>
@@ -331,7 +337,7 @@ export default function Home({ posts, interviews, streetdance }) {
             ENJOY THE WEBSITE!
           </h2>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

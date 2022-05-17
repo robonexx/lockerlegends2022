@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 
 export default function Card2(key, src, title, href) {
