@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from '../../styles/layout/Hero.module.scss';
 
@@ -22,18 +22,27 @@ export default function Hero() {
       <section className={styles.hero_wrapper}>
         {/*  <h3 className={styles.hero_pretitle}></h3> */}
         {/*  <h1 className={styles.hero_title}>LOCKERLEGENDS</h1> */}
-        <div className={styles.hero_logo}>
+        <motion.div
+          className={styles.hero_logo}
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <Image
             src='/svg/LOGO_HERO.svg'
             layout='fill'
             alt='logo'
             priority
           ></Image>
-        </div>
+        </motion.div>
 
-        <h3 className={styles.hero_subtitle}>
+        <motion.h3 className={styles.hero_subtitle}
+         initial={{ x: 100, opacity: 0 }}
+         animate={{ x: 0, opacity: 1 }}
+         transition={{delay: 0.2, duration: 0.5}}
+        >
           Official “LOCKING” pioneers website of the street dance pioneers
-        </h3>
+        </motion.h3>
       </section>
     </div>
   );

@@ -27,15 +27,16 @@
      max-width: 1000px;
   }
 
-h2 {
-  color: $color-client-1;
-  -webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
+  h2 {
+    padding-bottom: 1rem;
+    color: $color-client-1;
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
 
     .section {
       margin: 0 auto;
@@ -59,6 +60,7 @@ user-select: none;
 user-select: none;
         padding: 1rem 0;
         color: $color-client-1;
+        text-transform: uppercase;
 
         @media screen and (min-width: 1024px) {
           text-align: center;
@@ -76,9 +78,6 @@ user-select: none;
         padding: 0.5rem 0;
         color: $color-client-2;
         font-size: $font-size-ml;
-        /* @media screen and (min-width:1024px) {
-          text-align: center;
-       } */
       }
 
       h3 {
@@ -129,16 +128,6 @@ user-select: none;
         text-decoration: none;
         padding: 0 0.5rem;
       }
-      .highlight_o {
-        color: $color-client-2;
-      }
-
-      .highlight_b {
-        color: $color-black;
-      }
-      .highlight_w {
-        color: $color-white;
-      }
 
       
       .icons {
@@ -184,20 +173,6 @@ user-select: none;
         margin: 2rem 0;
      }
 
-      h2 {
-        -webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-font-family: 'Orbitron';
-letter-spacing: 2px;
-        color: $color-client-1;
-        font-weight: $font-normal;
-        border-bottom: 1px solid #888;
-        padding: 0.5rem 1rem;
-        font-size: $font-size-ml;
 
         @media screen and (min-width:1024px) {
           padding: 1rem 0;
@@ -206,10 +181,6 @@ letter-spacing: 2px;
         
       }
     }
-    
-  
-
-  }
 
   
 .image {

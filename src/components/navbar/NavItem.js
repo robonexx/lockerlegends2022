@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/router';
-
 import styles from '../../styles/components/Navbar.module.scss';
 
 export default function NavItem(props) {

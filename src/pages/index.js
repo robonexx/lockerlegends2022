@@ -28,11 +28,12 @@ export default function Home({ posts, interviews, streetdance }) {
           key='desc'
         />
       </Head>
-      <motion.div className={styles.home_main}
-       initial={{ opacity: 0}}
-       animate={{ opacity: 1}}
-       transition={{ duration: 0.3 }}
-       exit={{ opacity: 0 }}
+      <motion.div
+        className={styles.home_main}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        exit={{ opacity: 0 }}
       >
         <Hero />
         <div className={styles.home_wrapper}>
@@ -49,11 +50,11 @@ export default function Home({ posts, interviews, streetdance }) {
               STYLE CALLED LOCKING HAS DEEP ROOTS WITHIN A ERA, WHICH MENT SO
               MUCH TO THE UNITY AND DE SEGREGATION OF A PEOPLE… READ… LEARN...
             </p>
-            <span className={`${styles.highlight_o} ${styles.big_text}`}>
-              {' '}
+            <h2>
               and understand what brought about the evolution of words like soul
               and funk..
-            </span>{' '}
+            </h2>
+
             <ReadMoreBtnIn
               title='What is funk?'
               srcUrl='/blog/what-does-funk-or-funky-really-mean'
@@ -67,9 +68,9 @@ export default function Home({ posts, interviews, streetdance }) {
             <br />
             <h2>“THE STREET DANCE OF LOCKING”</h2>
             <br />
-            <h3>
+            <p>
               Read about the social party that is a foundation to locking...
-            </h3>
+            </p>
             <br />
             <div className={styles.image}>
               <Image
@@ -94,9 +95,8 @@ export default function Home({ posts, interviews, streetdance }) {
 
           <div className={styles.section}>
             <h1>FROM CAMBELLOCKING to LOCKING</h1>
-            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
-              History of Locking
-            </h5>
+            <h2>History of Locking</h2>
+
             <div className={styles.image}>
               <Image
                 src='/images/donflying.jpg'
@@ -136,15 +136,11 @@ export default function Home({ posts, interviews, streetdance }) {
             </Grid>
           </div>
           <div className={styles.section}>
-            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
-              HOW DID THIS DANCE ARTFORM HAPPEN?
-            </h5>
-            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
-              WHAT INSPIRED THIS DANCE?
-            </h5>
-            <h5 className={`${styles.highlight_o} ${styles.big_text}`}>
-              IS IT A MOVEMENT OR JUST A DANCE?
-            </h5>
+            <h2>HOW DID THIS DANCE ARTFORM HAPPEN?</h2>
+
+            <h2>WHAT INSPIRED THIS DANCE?</h2>
+            <h2>IS IT A MOVEMENT OR JUST A DANCE?</h2>
+
             <h1>The social connection to the era</h1>
             <p>
               Independent record companies such as Staxx, Motown and The Sounds
