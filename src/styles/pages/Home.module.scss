@@ -210,38 +210,6 @@ user-select: none;
       }
 }
 
-
-.highlight_o {
-  color: $color-client-2;
-}
-
-.highlight_b {
-  color: $color-black;
-}
-.highlight_w {
-  color: $color-white;
-}
-
-.big_text {
-  -webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-    font-size: $font-size-ml;
-
-    @media screen and (min-width: 1024px) {
-        font-size: $font-size-l;
-        margin: 0.5rem 0;
-        text-align: center;
-    }
-}
-
-.text_center {
-    text-align: center;
-}
-
 .btn_center {
   display: flex;
   justify-self: center;
@@ -249,3 +217,22 @@ user-select: none;
 }
 
 
+.whatisalocker {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+  padding: 0.5rem 1rem;
+  display: block;
+  background-color: $color-client-1;
+  color: $color-client-3;
+  border-top: 5px solid $color-client-2;
+  border-left: 5px solid $color-client-2;
+  
+  h2 {
+color: $color-client-2;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}

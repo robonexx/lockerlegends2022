@@ -36,6 +36,7 @@ export default function Home({ posts, interviews, streetdance }) {
         exit={{ opacity: 0 }}
       >
         <Hero />
+
         <div className={styles.home_wrapper}>
           <div className={styles.section}>
             <h1>EDUCATE B4U RECREATE</h1>
@@ -87,10 +88,10 @@ export default function Home({ posts, interviews, streetdance }) {
               srcUrl='/socialparty'
               title='Click! to read about the social party era!'
             />
-            <p>
-              Help us solidify this from just a dance into a ART-FORM to be
-              passed down to future generations!
-            </p>
+            <h2 style={{textAlign:'center'}}>
+              ! Help us solidify this from just a dance into a ART-FORM to be
+              passed down to future generations !
+            </h2>
           </div>
 
           <div className={styles.section}>
@@ -115,12 +116,27 @@ export default function Home({ posts, interviews, streetdance }) {
           </div>
 
           <div className={styles.section}>
+            <h2> WHAT IS A LOCKER ?</h2>
             <p>
+              A LOCKER has been ,For decades anyone who subscribes to the
+              Locking lifestyle and is a student of the dance of Locking.
+              <br />
+              - The Lockers is the name of the group.. Being considered A LOCKER
+              is something that we all treasure and this term has been in
+              existance prior to organized proffessional groups
+              <br />
+              Much love & respect to all our LOCKER brothers and sisters around
+              the world.
+            </p>
+          </div>
+
+          <div className={styles.section}>
+            <br />
+            <h1>Editorials</h1>
+            <p style={{ color: '#888' }}>
               Read the latest editorial, about the dance locking, the culture,
               interviews and more...
             </p>
-            <br />
-            <h1>Editorials</h1>
           </div>
 
           <div className={styles.posts}>
