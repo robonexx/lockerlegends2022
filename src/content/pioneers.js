@@ -14,7 +14,7 @@ export const pioneers = [
     desc: 'The term OG in the street dance of Locking refers to ORIGINAL GENERATION, therefor we acknowledge those who contributed within that era as ORIGINAL OG’s, OG LEGENDS or simply OGs. The  others who did the dance of locking from other eras or decades within locking we refer to as 70s ,80s & 90s 0ldSchool or new school pioneers , or simply BG’s , this terminology is in direct connection with street respect terminology.',
     href: '#The_term_OG',
     url: '',
-    img: 'watts.jpg',
+    img: 'wattshandshake.png',
     id: 'The_term_OG',
   },
   {
@@ -158,8 +158,17 @@ export const pioneers = [
     desc: 'She was an already accomplished choreograher when she learned to lock from Don Campbell and was an organizing force in development of the Group the “Original Lockers”.  Toni had an extensive ballet background and eventually became the only female in the original Lockers Group, although Basil is not from the Original Movement of Locking her contribution as a manager should be acknowledged, without her connections and showbussiness expierience the Lockers would not have been able to obtain the professional , or reach the commercial Level of acceptance as they did, she is most noted for incorperating her ballet into locking and her continuous spins.',
     href: '#Toni_Basil',
     url: '',
-    img: 'tonibasil.png',
+    img: 'tonib.png',
     id: 'Toni_Basil',
+  },
+  {
+    name: 'Pat Davis',
+    aka: 'Butterfly',
+    desc: 'Another early soultrain dancer whos influence on Locking was imeasureable, with her rendition of the Robot and early butterfly arm moves which later became known as leolocks. In the 70s she was also  a member of A unique group called " The Something Special"  a dance group of soul train dancers which featured early Locking icons  Jimmy Foster "Scoooby Doo , although this group was not a classical Locking crew , as they exhibited many of the early dancing styles',
+    href: '#Pat_Davis',
+    url: '',
+    img: 'patd.png',
+    id: 'Pat_Davis',
   },
   {
     name: 'Charles Washington',
