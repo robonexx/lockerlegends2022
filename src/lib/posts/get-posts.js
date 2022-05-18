@@ -53,7 +53,7 @@ export async function getAllPostSlugs() {
 export async function getLatestPosts() {
   const data = await fetchAPI(`
     {
-      posts(first: 5, where: { orderby: { field: DATE, order: DESC } }) {
+      posts(first: 3, where: { orderby: { field: DATE, order: DESC } }) {
           edges {
               node {
                   title
@@ -89,7 +89,7 @@ export async function getLatestPosts() {
 
 // get social era
 export async function getPostCategorySocial() {
-    const data = await fetchAPI(`
+  const data = await fetchAPI(`
       {
           posts(where: {categoryName: "social-party-era"}, first: 5) {
               edges {
@@ -109,11 +109,11 @@ export async function getPostCategorySocial() {
             }
           }
         `);
-    return data?.posts;
+  return data?.posts;
 }
 
 export async function getPostCategoryEntertainment() {
-    const data = await fetchAPI(`
+  const data = await fetchAPI(`
       {
           posts(where: {categoryName: "performance-entertainment-era"}, first: 5) {
               edges {
@@ -133,10 +133,10 @@ export async function getPostCategoryEntertainment() {
             }
           }
         `);
-    return data?.posts;
+  return data?.posts;
 }
 export async function getPostCategoryBattle() {
-    const data = await fetchAPI(`
+  const data = await fetchAPI(`
       {
           posts(where: {categoryName: "battle-era"}, first: 5) {
               edges {
@@ -156,11 +156,8 @@ export async function getPostCategoryBattle() {
             }
           }
         `);
-    return data?.posts;
+  return data?.posts;
 }
-  
-
-
 
 // interviews
 

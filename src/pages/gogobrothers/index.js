@@ -8,7 +8,13 @@ const ytVidGogoBros = 'k3zHrVyfKGM';
 
 export default function Gogobrothers() {
   return (
-    <div className={styles.gogo}>
+    <motion.div
+      className={styles.gogo}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+    >
       <Head lang='en'>
         <title>Gogo Brothers - LockerLegends</title>
         <meta
@@ -25,12 +31,16 @@ export default function Gogobrothers() {
         />
       </Head>
       <section>
-        <header>
+        <motion.header>
           <Banner />
-        </header>
+        </motion.header>
 
         <div>
-          <motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -1000 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
             The GoGo Brothers Legacy ”A REAL STREET LEGEND” from Watts,
             California and Verbum Dei High School to around the world
           </motion.p>
@@ -44,67 +54,73 @@ export default function Gogobrothers() {
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full'
           ></iframe>
         </div>
-        <p>The GoGo brothers on Soul Train second season 1972</p>
-        <p>
-          The first seen Is Greg Cambellock Jr who danced with the GoGo brothers
-          at watts writers workshop and then with the Lockers then the camera
-          switches to Tony GoGo from the Verb class of 73, he is briefly
-          followed by soul train legend lil Joe chasm ,, Then the camera
-          switches to line one where Buddy GoGo in the gold with the stripped
-          sox ,class of 73 does early locking moves. the camera briefly switches
-          to like two ,, and then back to line one where Skeeter Rabbit with the
-          (class of 73) with the white crossed suspenders , doing kick splits
-          ..later in the video can be seen Kevin YoYo from the Verbum Dei Class
-          of 74.. this is what made up
-        </p>
-        <motion.div className={styles.image}>
+        <div>
+          <p>The GoGo brothers on Soul Train second season 1972</p>
+          <p>
+            The first seen Is Greg Cambellock Jr who danced with the GoGo
+            brothers at watts writers workshop and then with the Lockers then
+            the camera switches to Tony GoGo from the Verb class of 73, he is
+            briefly followed by soul train legend lil Joe chasm, Then the camera
+            switches to line one where Buddy GoGo in the gold with the stripped
+            sox ,class of 73 does early locking moves. the camera briefly
+            switches to like two, and then back to line one where Skeeter Rabbit
+            with the (class of 73) with the white crossed suspenders, doing kick
+            splits ...later in the video can be seen Kevin YoYo from the Verbum
+            Dei Class of 74... this is what made up
+          </p>
+          <h2>The GoGo & YoYo brothers Group</h2>
+        </div>
+        <div className={styles.images}>
           <Image
             src='/images/gogobrotherswatts.png'
-            width='100%'
-            height='100%'
             layout='responsive'
+            height='100%'
+            width='100%'
             objectFit='cover'
             objectPosition='center'
             priority
           />
-        </motion.div>
-        <h2>The GoGo & YoYo brothers Group</h2>
+        </div>
+
         <div>
           <p>
-          Every now and then there are legends of street culture who can
-          transcend street into the commercial or organize the world of sport &
-            entertainment.
+            Every now and then there are legends of street culture who can
+            transcend street into the commercial or organize the world of sport
+            & entertainment.
             <br />
-            If you go into any basketball gym in this country you
-            can find rumors & stories of legends who never made it but should have, remarkable recounts of remarkable feats of talent.
-            They are immortalized under colorful street names , with multiple stories of
-          everything from drug addiction to racial in opportunities as to the
-          reason of a non transition from street to an inclusion of fame &
-          wealth , And the same holds true for the legends of streetdance They
-          faced the same , the stories of these legends are locked in the gyms
-          of nightclubs & house-parties , on street corners & parks with
-          remarkable feats of creativity , surrounded by remarkable odds of
-          survival. Just as in other social street activities these legends face
-          the daily disappointment of watching those of lessor talent ,who
-          learned , copied and replicated from them succeed in a world of
-          nepotism & politics , where success is based not on the ability but
-          rather on the accessibility of the lucky or privileged ! Even Verbum
-          Dei High School does not know the influence it has had on the world
-          from the U.S. to Japan
-
+            <br />
+            If you go into any basketball gym in this country you can find
+            rumors & stories of legends who never made it but should have,
+            remarkable recounts of remarkable feats of talent.
+            <br />
+            <br />
+            They are immortalized under colorful street names, with multiple
+            stories of everything from drug addiction to racial in opportunities
+            as to the reason of a non transition from street to an inclusion of
+            fame & wealth, And the same holds true for the legends of
+            streetdance They faced the same, the stories of these legends are
+            locked in the gyms of nightclubs & house-parties, on street corners
+            & parks with remarkable feats of creativity, surrounded by
+            remarkable odds of survival.
+            <br />
+            <br />
+            Just as in other social street activities these legends face the
+            daily disappointment of watching those of lessor talent ,who learned
+            , copied and replicated from them succeed in a world of nepotism &
+            politics , where success is based not on the ability but rather on
+            the accessibility of the lucky or privileged ! Even Verbum Dei High
+            School does not know the influence it has had on the world from the
+            U.S. to Japan
           </p>
         </div>
-        <h2>Tony GoGo carried on the GoGo brothers tradition in Japan</h2>
-        <p>
-          The term Go-Go Brothers have been connected to the Art form of Locking
-          since 1971
-        </p>
-        <motion.div
-          className={styles.image}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: -100 }}
-          transition={{ duration: 1 }}
-        >
+        <div>
+          <h2>Tony GoGo carried on the GoGo brothers tradition in Japan</h2>
+          <p>
+            The term Go-Go Brothers have been connected to the Art form of
+            Locking since 1971
+          </p>
+        </div>
+        <motion.div className={styles.image}>
           <Image
             src='/images/tonyg.webp'
             width='100%'
@@ -150,6 +166,6 @@ export default function Gogobrothers() {
           always Tony Gogo.
         </p>
       </section>
-    </div>
+    </motion.div>
   );
 }

@@ -164,6 +164,7 @@ export default function Home({ posts, interviews, streetdance }) {
               and the struggles of our communities. They exposed the soulful
               harmony of well choreographed vocal groups and gave us the direct
               heart pounding inspirational music and lyrics of various bands.
+              <br/><br/>
               During these times, the struggle was revealed through the social
               conscious music sung by artists like Marvin Gaye, James
               Brown,Curtis Mayfield andIssac Hayes.
@@ -222,12 +223,16 @@ export default function Home({ posts, interviews, streetdance }) {
               freedom in the African American community could only be found in
               the inner cities segregated night clubs or in community house
               parties. The turn of the decade brought about a pride in the
-              accomplishments made during the civil rights struggles. The BOLD
+              accomplishments made during the civil rights struggles.
+              <br /><br />
+              The BOLD
               generation of the 1970’s was now free to express itself. SOUL
               TRAIN became the portal and revealed to the world its’ creativity.
               Funk music spearheaded the charge and Afro American youth boldly
               displayed their pride, with large Afro hair styles and colorful
-              creative clothing. During this time, an art form was born. This
+              creative clothing. During this time, an art form was born.
+              <br /><br />
+              This
               art form created a subculture which has influenced and
               transitioned the eras of Funk, Disco and Hip Hop through three
               decades. Yes! The art form first known as “Campbellocking” and now

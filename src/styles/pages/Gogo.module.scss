@@ -76,7 +76,7 @@ p {
 
 
     
-.image {
+.images {
     position: relative;
     display: block;
     border-radius: 0;
@@ -84,6 +84,7 @@ p {
         min-height: 300px;
         max-width: 100%;
         padding: 2rem;
+        margin: 1rem 0;
 
         @media screen and (min-width: 768px) {
             margin: 0 auto;
@@ -92,13 +93,12 @@ p {
         }
         @media screen and (min-width: 960px) {
             margin: 0 auto;
-            min-height: 600px;
+            max-height: 600px;
             max-width: 560px;
         }
 
         @media screen and (min-width: 1440px) {
             margin: 0 auto;
-            min-height: 100%;
             max-width: 680px;
             min-width: 560px;
         }
