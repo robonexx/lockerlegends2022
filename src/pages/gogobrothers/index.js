@@ -31,15 +31,18 @@ export default function Gogobrothers() {
         />
       </Head>
       <section>
-        <motion.header>
+        <motion.header
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}>
           <Banner />
         </motion.header>
 
         <div>
           <motion.p
-            initial={{ opacity: 0, y: -1000 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ delay: 0.9, duration: 1 }}
           >
             The GoGo Brothers Legacy ”A REAL STREET LEGEND” from Watts,
             California and Verbum Dei High School to around the world
@@ -74,7 +77,7 @@ export default function Gogobrothers() {
         <div className={styles.images}>
           <Image
             src='/images/gogobrotherswatts.png'
-            layout='responsive'
+            layout='fill'
             height='100%'
             width='100%'
             objectFit='cover'
@@ -121,17 +124,17 @@ export default function Gogobrothers() {
             Locking since 1971
           </p>
         </div>
-        <motion.div className={styles.image}>
+        <div className={styles.images}>
           <Image
             src='/images/tonyg.webp'
             width='100%'
             height='100%'
-            layout='responsive'
+            layout='fill'
             objectFit='cover'
-            objectPosition='center'
+            objectPosition='center top'
             priority
           />
-        </motion.div>
+        </div>
         <p>
           Grand Master Locker Tony Go-Go , Co founding member of the original Go
           Go Brothers group has preserved and developed the Go-Go legacy for

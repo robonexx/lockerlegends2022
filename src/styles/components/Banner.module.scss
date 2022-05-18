@@ -21,11 +21,17 @@
       margin-top: 1rem;
 
 
+
       // center row brothers
       .row_letter {
         font-size: 6rem;
         font-weight: 800;
-       
+        -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
         @media screen and (min-width: 768px) {
           font-size: 8rem;
@@ -48,6 +54,13 @@
           .row_letter {
             font-size: 5rem;
             font-weight: 800;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
           }
         }
       }
@@ -61,11 +74,20 @@
       color: $color-client-2;
       filter: drop-shadow(1px 1px 1px rgba(17, 17, 17, 0.885)) drop-shadow(3px 3px 3px rgb(12, 12, 12));
 
+     
+
       &:nth-child(1) {
         margin-top: 5rem;
         .row_letter {
           font-size: 2rem;
           font-weight: 800;
+
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
         }
       }
     }
@@ -109,6 +131,7 @@
         left: 1rem;
         width: fit-content;
         cursor: pointer;
+
         @media screen and (min-width: 768px) {
           bottom: 2rem;
           left: 2rem;
@@ -121,6 +144,13 @@
           text-shadow: 1px 1px 1px #555555; 
           filter: drop-shadow(2px 2px 1px rgb(221, 108, 16));
           line-height: 2rem; 
+
+          -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
           @media screen and (min-width: 768px) {
             font-size: 2rem;
