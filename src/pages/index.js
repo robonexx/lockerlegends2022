@@ -88,7 +88,7 @@ export default function Home({ posts, interviews, streetdance }) {
               srcUrl='/socialparty'
               title='Click! to read about the social party era!'
             />
-            <h2 style={{textAlign:'center'}}>
+            <h2 style={{ textAlign: 'center' }}>
               ! Help us solidify this from just a dance into a ART-FORM to be
               passed down to future generations !
             </h2>
@@ -97,7 +97,7 @@ export default function Home({ posts, interviews, streetdance }) {
           <div className={styles.section}>
             <h1>FROM CAMBELLOCKING to LOCKING</h1>
             <h2>History of Locking</h2>
-
+            <p>Don "Campbellock" Campbell, the Creator of Campbellocking</p>
             <div className={styles.image}>
               <Image
                 src='/images/donflying.jpg'
@@ -128,6 +128,24 @@ export default function Home({ posts, interviews, streetdance }) {
               Much love & respect to all our LOCKER brothers and sisters around
               the world.
             </p>
+          </div>
+
+          <div className={styles.section}>
+            <h2>
+              THE WORLDS FIRST SYCHRONIZED LOCKING GROUP “THE ORIGINAL GOGO
+              BROTHERS 1971/1973
+            </h2>
+            <p>
+              Watts streetmovement of Locking was not only inspired by Don
+              Campbell, but by the social Issues of the 1960s. This movement
+              produced the first group ever.. pictured Left to Right Tony “GoGo”
+              Lewis, James “SkeeterRabbit” Higgins and Edwin “Buddy GoGo”
+              Lombard..from the GoGo, YoYo and CoCo Watts Brothers Family
+            </p>
+            <ReadMoreBtnIn
+              srcUrl='/gogobrothers'
+              title='The GOGO BROTHERS'
+            />
           </div>
 
           <div className={styles.section}>
@@ -164,7 +182,8 @@ export default function Home({ posts, interviews, streetdance }) {
               and the struggles of our communities. They exposed the soulful
               harmony of well choreographed vocal groups and gave us the direct
               heart pounding inspirational music and lyrics of various bands.
-              <br/><br/>
+              <br />
+              <br />
               During these times, the struggle was revealed through the social
               conscious music sung by artists like Marvin Gaye, James
               Brown,Curtis Mayfield andIssac Hayes.
@@ -224,16 +243,17 @@ export default function Home({ posts, interviews, streetdance }) {
               the inner cities segregated night clubs or in community house
               parties. The turn of the decade brought about a pride in the
               accomplishments made during the civil rights struggles.
-              <br /><br />
-              The BOLD
-              generation of the 1970’s was now free to express itself. SOUL
-              TRAIN became the portal and revealed to the world its’ creativity.
-              Funk music spearheaded the charge and Afro American youth boldly
-              displayed their pride, with large Afro hair styles and colorful
-              creative clothing. During this time, an art form was born.
-              <br /><br />
-              This
-              art form created a subculture which has influenced and
+              <br />
+              <br />
+              The BOLD generation of the 1970’s was now free to express itself.
+              SOUL TRAIN became the portal and revealed to the world its’
+              creativity. Funk music spearheaded the charge and Afro American
+              youth boldly displayed their pride, with large Afro hair styles
+              and colorful creative clothing. During this time, an art form was
+              born.
+              <br />
+              <br />
+              This art form created a subculture which has influenced and
               transitioned the eras of Funk, Disco and Hip Hop through three
               decades. Yes! The art form first known as “Campbellocking” and now
               simmply as LOCKING

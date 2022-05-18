@@ -64,7 +64,7 @@ export default function Wattsstaxx() {
         </p>
 
         <h1>The concert</h1>
-        <motion.div className={styles.image}>
+        <div className={styles.image}>
           <Image
             src='/images/wattsfist.png'
             width='100%'
@@ -74,7 +74,7 @@ export default function Wattsstaxx() {
             objectPosition='center'
             priority
           />
-        </motion.div>
+        </div>
         <div className={styles.wrapper_col_2}>
           <p>
             The concert was held at the Los Angeles Memorial Coliseum on August
@@ -106,7 +106,7 @@ export default function Wattsstaxx() {
              known as locking, were in the film.
           </p>
         </div>
-        <motion.div className={styles.image}>
+        <div className={styles.image}>
           <Image
             src='/images/wattshandshake.png'
             layout='responsive'
@@ -116,8 +116,8 @@ export default function Wattsstaxx() {
             objectPosition='center'
             priority
           />
-        </motion.div>
-        <motion.div className={styles.wrapper}>
+        </div>
+        <div className={styles.wrapper}>
           <h2>The handshake of brotherhood</h2>
           <p>
             Later during an interview with Staxx records owner Al Bell ,the
@@ -126,7 +126,7 @@ export default function Wattsstaxx() {
             handshake and the dance of locking from soul train was the
             visual manifestation of the spoken word
           </p>
-        </motion.div>
+        </div>
         <div className={styles.wrapper_col_2}>
           <p>
             The first song played in concert is the "Star-Spangled Banner"
@@ -204,7 +204,29 @@ export default function Wattsstaxx() {
             African-American society follow.
             <br />
           </p>
-          <p>
+          <motion.div className={styles.image}>
+          <Image
+            src='/images/funkywomanwattsconcert.png'
+            width='100%'
+            height='100%'
+            layout='responsive'
+            objectFit='cover'
+            objectPosition='center'
+            priority
+          />
+        </motion.div>
+         
+        </div>
+        {/* <iframe
+          src='https://www.youtube.com/embed/KCFyKRtlLOI'
+          title='YouTube video player'
+          allow='autoplay; clipboard-write; picture-in-picture'
+          allowFullscreen
+          frameBorder='0'
+        ></iframe> */}
+
+        <div className={styles.wrapper}>
+        <p>
             <br />
             In the next segment, Rufus Thomas performs "The Breakdown" and "Do
             the Funky Chicken." There is another interlude with Pryor, and then
@@ -217,16 +239,6 @@ export default function Wattsstaxx() {
             film-makers to use Hayes' concert performances of "Theme from Shaft"
             and "Soulsville".
           </p>
-        </div>
-        {/* <iframe
-          src='https://www.youtube.com/embed/KCFyKRtlLOI'
-          title='YouTube video player'
-          allow='autoplay; clipboard-write; picture-in-picture'
-          allowFullscreen
-          frameBorder='0'
-        ></iframe> */}
-
-        <div className={styles.wrapper}>
           <div className={styles.image}>
             <Image
               src='/images/rufusthomas.png'
@@ -238,7 +250,8 @@ export default function Wattsstaxx() {
               priority
             />
           </div>
-          <div className={styles.wrapper}>
+        </div>
+        <div className={styles.wrapper}>
             <p>
               These songs are restored on Region 1 DVD release of the film. The
               camera pans out at the end of the stadium showing several people
@@ -248,7 +261,6 @@ export default function Wattsstaxx() {
               <br />
             </p>
           </div>
-        </div>
       </section>
     </div>
   );

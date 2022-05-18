@@ -69,6 +69,7 @@ export default function Gogobrothers() {
             Dei Class of 74... this is what made up
           </p>
           <h2>The GoGo & YoYo brothers Group</h2>
+          <h2 style={{textAlign: 'right'}}>- Handshake of Brotherhood</h2>
         </div>
         <div className={styles.images}>
           <Image
