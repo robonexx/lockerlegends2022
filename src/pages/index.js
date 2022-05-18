@@ -12,6 +12,8 @@ import Grid from '../components/Grid/Grid';
 // icons
 import { AiOutlineFacebook } from 'react-icons/ai';
 import { AiOutlineUsergroupAdd } from 'react-icons/ai';
+import { GiPeaceDove } from 'react-icons/gi';
+
 // styles
 import styles from '../styles/pages/Home.module.scss';
 import ReadMoreBtnIn from '../components/readmorebtn/ReadMoreBtnOut';
@@ -321,11 +323,23 @@ export default function Home({ posts, interviews, streetdance }) {
           </div>
           <div className={styles.section}>
             <h3>
-              More editorials on the editorial(blog) page, read about the
+              More editorials on the editorial (blog) page, read about the
               history, culture and dance of the artform locking
             </h3>
           </div>
 
+          <div className={styles.section}>
+            <h2>In loving memory...</h2>
+            <p>...to the ones who contributed to the dance, artform and culture of locking. <br />
+              The artists that inspired us and who brought soul, funk and insipiration to the communities.<br />
+              To the ones who will forever be in our hearts and never forgotten, we have done this memorial page to honor these Legends!
+            </p>
+
+            <ReadMoreBtnIn
+              srcUrl='/memorial'
+              title='Memorial page'
+            />
+          </div>
           <div className={styles.section}>
             <div>
               <h2>Got questions?</h2>
