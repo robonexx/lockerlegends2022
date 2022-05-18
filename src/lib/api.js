@@ -15,21 +15,3 @@ export async function fetchAPI(query, { variables } = {}) {
   const json = await res.json();
   return json.data;
 }
-/* 
-export async function getLatestPosts() {
-  const data = await fetchAPI(`
-      {
-        posts(first: 5, where: { orderby: { field: DATE, order: DESC } }) {
-            edges {
-                node {
-                    title
-                    slug
-                    date
-                    
-                }
-            }
-        }
-    }
-        `);
-  return data?.posts;
-} */

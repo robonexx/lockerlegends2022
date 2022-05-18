@@ -43,21 +43,10 @@ export default function Blog({ blog, blogs }) {
             <span className={styles.date}>{formatDate(blog.date)}</span>
             <h4 className={styles.blog_title}>Editorial: {blog.title}</h4>
 
-            {/* {blog.featuredImage && (
-              <Image
-                src={blog.featuredImage.node.sourceUrl}
-                height={blog.featuredImage.node.mediaDetails.height}
-                width={blog.featuredImage.node.mediaDetails.width}
-                layout='fill'
-                objectFit='cover'
-                alt='blog post image'
-                priority
-              />
-            )} */}
+           
 
             <div className={styles.post_wrapper}>
-              {/* using the replace image function here and parse from html-react-parser */}
-              {/* Using this method instead of dangerously set inner html */}
+             
               {parse(blog.content, replaceImage)}
             </div>
           </article>

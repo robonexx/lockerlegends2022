@@ -1,6 +1,5 @@
 import { domToReact } from 'html-react-parser';
-import Image from 'next/image'
-
+import Image from 'next/image';
 
 // replace image function
 export const replaceImage = {
@@ -16,15 +15,15 @@ export const replaceImage = {
           width={attribs.width}
           height={attribs.height}
           alt={
-            attribs.alt ? attribs.alt : 'This image is missing an alt text please include one in your wordpress'
+            attribs.alt
+              ? attribs.alt
+              : 'This image is missing an alt text please include one in your wordpress'
           }
         />
       );
     }
   },
 };
-
-
 
 // formatting date function
 
