@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from '../../styles/layout/PageLayout.module.scss';
@@ -6,7 +6,7 @@ import styles from '../../styles/layout/PageLayout.module.scss';
 export default function Wattsstaxx() {
   return (
     <div className={styles.pagelayout}>
-      <Head lang='en'>
+      <Head lang='en-EN'>
         <title>Wattsstaxx - LockerLegends</title>
         <meta
           name='description'
@@ -205,17 +205,16 @@ export default function Wattsstaxx() {
             <br />
           </p>
           <motion.div className={styles.image}>
-          <Image
-            src='/images/funkywomanwattsconcert.png'
-            width='100%'
-            height='100%'
-            layout='responsive'
-            objectFit='cover'
-            objectPosition='center'
-            priority
-          />
-        </motion.div>
-         
+            <Image
+              src='/images/funkywomanwattsconcert.png'
+              width='100%'
+              height='100%'
+              layout='responsive'
+              objectFit='cover'
+              objectPosition='center'
+              priority
+            />
+          </motion.div>
         </div>
         {/* <iframe
           src='https://www.youtube.com/embed/KCFyKRtlLOI'
@@ -226,7 +225,7 @@ export default function Wattsstaxx() {
         ></iframe> */}
 
         <div className={styles.wrapper}>
-        <p>
+          <p>
             <br />
             In the next segment, Rufus Thomas performs "The Breakdown" and "Do
             the Funky Chicken." There is another interlude with Pryor, and then
@@ -252,15 +251,15 @@ export default function Wattsstaxx() {
           </div>
         </div>
         <div className={styles.wrapper}>
-            <p>
-              These songs are restored on Region 1 DVD release of the film. The
-              camera pans out at the end of the stadium showing several people
-              during the interludes in the film while the speech "I Am Somebody"
-              is being shouted again followed by "Lift Ev'ry Voice and Sing" as
-              the credits roll.
-              <br />
-            </p>
-          </div>
+          <p>
+            These songs are restored on Region 1 DVD release of the film. The
+            camera pans out at the end of the stadium showing several people
+            during the interludes in the film while the speech "I Am Somebody"
+            is being shouted again followed by "Lift Ev'ry Voice and Sing" as
+            the credits roll.
+            <br />
+          </p>
+        </div>
       </section>
     </div>
   );

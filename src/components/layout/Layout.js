@@ -7,7 +7,7 @@ import Header from '../../layouts/header/Header';
 export default function Layout({ children }) {
   return (
     <>
-      <Head lang='en'>
+      <Head lang='en-EN'>
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <title>
@@ -46,11 +46,33 @@ export default function Layout({ children }) {
           property='og:image:alt'
           content='The Official Locking pioneers website - LOCKERLEGENDS'
         />
+        <meta name='apple-mobile-web-app-capable' content='yes' />
+        <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+        <meta name='HandheldFriendly' content='true' />
         <meta property='og:locale' content='en_US'></meta>
         <link rel='icon' href='%PUBLIC_URL%/favicon.ico' />
-        <link rel='icon' href='https://www.lockerlegends.net/favicon.ico' />
-        <link rel='icon' href='https://www.lockerlegends.org/favicon.ico' />
-        <link rel='icon' href='%PUBLIC_URL%/favicon.ico' />
+        <link
+          rel='apple-touch-icon'
+          sizes='180x180'
+          href='/apple-touch-icon.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/favicon-32x32.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='/favicon-16x16.png'
+        />
+        <link rel='manifest' href='/site.webmanifest' />
+        <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
+        <meta name='msapplication-TileColor' content='#da532c' />
+        <meta name='theme-color' content='#ffffff' />
+        <link rel='shortcut icon' href='/favicon.ico' />
         <meta name='robots' content='max-image-preview:large' />
         <link rel='canonical' href='https://www.lockerlegends.org/'></link>
       </Head>

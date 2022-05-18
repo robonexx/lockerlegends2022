@@ -32,7 +32,7 @@ export default function Header() {
           url='/about'
         ></NavItem>
 
-        <NavItem title='history' icon={<MdOutlineHistoryEdu />}>
+        <NavItem title='history' icon={<MdOutlineHistoryEdu url='' />}>
           <DropDown>
             <DropDownItem
               title='History Of Locking'
@@ -61,7 +61,7 @@ export default function Header() {
             />
           </DropDown>
         </NavItem>
-        <NavItem title='knowledge' icon={<SiMusicbrainz />}>
+        <NavItem title='knowledge' icon={<SiMusicbrainz url='' />}>
           <DropDown>
             <DropDownItem
               title='O.G Pioneers'

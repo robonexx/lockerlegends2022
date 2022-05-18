@@ -34,7 +34,7 @@ const fadeInUp = {
 
 const Memorial = (props) => (
   <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
-    <Head lang='en'>
+    <Head lang='en-EN'>
       <title>Memorial - LockerLegends</title>
       <meta
         name='description'

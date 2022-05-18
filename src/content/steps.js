@@ -145,7 +145,7 @@ export const steps = [
   },
   {
     name: 'THE SUPER FLY',
-    desc: '',
+    desc: 'A Hat move, where you shake your head and reseble a Fly buzzin',
     by: '',
     id: '25',
   },
@@ -178,17 +178,5 @@ export const steps = [
     desc: 'Although technically The Robot is not a Lock, Roboting has always been a part of Locking from the friendship of Don Campbell and Charles “ROBOT” Washington, It was incorporated into both the evolutionary Locking movement and in the commercial Locking Performances.. so it will be forever linked Roboting was introduces as a dance and into the Locking Subculture by Charles “Robot “Washington',
     by: '',
     id: '30',
-  },
-  {
-    name: '',
-    desc: '',
-    by: '',
-    id: '31',
-  },
-  {
-    name: '',
-    desc: '',
-    by: '',
-    id: '32',
   },
 ];
