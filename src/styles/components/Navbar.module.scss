@@ -99,7 +99,8 @@ a .mobile {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
 }
 
 .nav_links {
@@ -110,7 +111,8 @@ a .mobile {
   text-transform: uppercase;
   position: relative;
 
-  
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

@@ -10,6 +10,13 @@
     outline: none;
     border: none;
     background: transparent;
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
 }
 
 
@@ -21,6 +28,13 @@
     background-color: rgb(255, 255, 255);
     transition: all 0.4s cubic-bezier(0.75, 0.2, 0.05, 1);
     filter: drop-shadow(1px 1px 1px black);
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
 
 }
 .line::before {
