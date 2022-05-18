@@ -30,10 +30,10 @@ export default function Gogobrothers() {
         </header>
 
         <div>
-          <p>
+          <motion.p>
             The GoGo Brothers Legacy ”A REAL STREET LEGEND” from Watts,
             California and Verbum Dei High School to around the world
-          </p>
+          </motion.p>
           <iframe
             id='ytplayer'
             className={styles.video}
@@ -70,12 +70,14 @@ export default function Gogobrothers() {
         </motion.div>
         <h2>The GoGo & YoYo brothers Group</h2>
         <div>
+          <p>
           Every now and then there are legends of street culture who can
           transcend street into the commercial or organize the world of sport &
-          entertainment . If you go into any basketball gym in this country you
-          can find rumors & stories of legends who never made it but should have
-          , remarkable recounts of remarkable feats of talent. They are
-          immortalized under colorful street names , with multiple stories of
+            entertainment.
+            <br />
+            If you go into any basketball gym in this country you
+            can find rumors & stories of legends who never made it but should have, remarkable recounts of remarkable feats of talent.
+            They are immortalized under colorful street names , with multiple stories of
           everything from drug addiction to racial in opportunities as to the
           reason of a non transition from street to an inclusion of fame &
           wealth , And the same holds true for the legends of streetdance They
@@ -89,6 +91,8 @@ export default function Gogobrothers() {
           rather on the accessibility of the lucky or privileged ! Even Verbum
           Dei High School does not know the influence it has had on the world
           from the U.S. to Japan
+
+          </p>
         </div>
         <h2>Tony GoGo carried on the GoGo brothers tradition in Japan</h2>
         <p>

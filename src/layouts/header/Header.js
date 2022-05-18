@@ -26,15 +26,11 @@ export default function Header() {
       <TopMenu />
       <Nav>
         <NavItem title='home' icon={<AiOutlineHome />} url='/' />
-        <NavItem title='about' icon={<MdOutlineAnnouncement />} url='/about'>
-          <DropDown>
-            <DropDownItem
-              title='The Gogo Brothers'
-              icon={<MdOutlineGroups />}
-              url='/gogobrothers'
-            />
-          </DropDown>
-        </NavItem>
+        <NavItem
+          title='about'
+          icon={<MdOutlineAnnouncement />}
+          url='/about'
+        ></NavItem>
 
         <NavItem title='history' icon={<MdOutlineHistoryEdu />}>
           <DropDown>
@@ -68,7 +64,7 @@ export default function Header() {
         <NavItem title='knowledge' icon={<SiMusicbrainz />}>
           <DropDown>
             <DropDownItem
-              title='Pioneers'
+              title='O.G Pioneers'
               icon={<MdOutlineGroups />}
               url='/pioneers'
             />
@@ -92,6 +88,11 @@ export default function Header() {
               title='Social Party'
               icon={<FaRecordVinyl />}
               url='/socialparty'
+            />
+            <DropDownItem
+              title='The Gogo Brothers'
+              icon={<MdOutlineGroups />}
+              url='/gogobrothers'
             />
           </DropDown>
         </NavItem>

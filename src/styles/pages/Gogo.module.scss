@@ -7,16 +7,43 @@
     background-color: $color-bg;
     font-family: $font-base;
     scroll-behavior: smooth;
+    font-family: $font-base;
 
-    > section {
-        margin: 56px auto 10rem;
-        width: 90%;
-        -webkit-touch-callout: none;
+    
+p {
+    padding: 0.5rem 0;
+    font-size: $font-size-base;
+    line-height: 1.4rem;
+    color: $color-client-1;
+    -webkit-touch-callout: none;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
 
+        @media screen and (min-width: 460px) {
+            font-size: $font-size-m;
+            line-height: 1.6rem;
+        }
+}
+
+
+
+    h2 {
+        padding: 0.5rem 0;
+        color: $color-client-2;
+        font-size: $font-size-ml;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+    > section {
+        margin: 56px auto 10rem;
+        width: 90%;
+        
         @media screen and (min-width: 1024px) {
             margin: 100px auto;
             max-width: 1000px;
@@ -44,30 +71,9 @@
     background-color: $color-client-1;
     overflow: hidden;
    
-
-    @media screen and (min-width: 768px) {
-        text-align: center;
-
-    }
-
-    h1 {
-        font-size: 2rem;
-        color: $color-client-3;
-        margin-bottom: 1rem;
-
-        @media screen and (min-width: 1185px) {
-            font-size: 6rem;
-        }
-    }
-
-    h2 {
-        color: $color-client-3;
-        font-size: $font-size-m;
-        @media screen and (min-width: 1185px) {
-            font-size: $font-size-ml;
-        }
-    }
 }
+
+
 
     
 .image {

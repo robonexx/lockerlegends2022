@@ -215,24 +215,3 @@ user-select: none;
   justify-self: center;
   width: 100vw;
 }
-
-
-.whatisalocker {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1000px;
-  padding: 0.5rem 1rem;
-  display: block;
-  background-color: $color-client-1;
-  color: $color-client-3;
-  border-top: 5px solid $color-client-2;
-  border-left: 5px solid $color-client-2;
-  
-  h2 {
-color: $color-client-2;
-  }
-
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
-}

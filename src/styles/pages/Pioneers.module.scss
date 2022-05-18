@@ -19,6 +19,12 @@
       width: 85vw;
       min-height: 100vh;
       height: 100%;
+
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
     
     .hof_title {

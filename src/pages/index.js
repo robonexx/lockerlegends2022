@@ -118,10 +118,10 @@ export default function Home({ posts, interviews, streetdance }) {
           <div className={styles.section}>
             <h2> WHAT IS A LOCKER ?</h2>
             <p>
-              A LOCKER has been ,For decades anyone who subscribes to the
+              - A LOCKER has been, for decades anyone who subscribes to the
               Locking lifestyle and is a student of the dance of Locking.
               <br />
-              - The Lockers is the name of the group.. Being considered A LOCKER
+              - The Lockers is the name of the group. Being considered A LOCKER
               is something that we all treasure and this term has been in
               existance prior to organized proffessional groups
               <br />
