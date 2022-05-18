@@ -60,6 +60,15 @@
         height: 260px;
         object-fit: cover;
 
+        
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
         // check if its a tablet
         @media (min-width: 769px) and 
        (max-width: 1024px) and 
@@ -78,6 +87,15 @@
             width: 100%;
             height: 100%;
             margin: 0;
+
+            
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
           }
         }
 
@@ -104,6 +122,15 @@
           font-weight: 400;
           color: white;
           text-shadow: 0 2px 1px rgba(0,0,0,.825);
+
+          
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
           
         }
     }

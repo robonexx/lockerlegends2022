@@ -49,6 +49,15 @@
   padding: 0 1.25rem;
   height: 100%;
   cursor: pointer;
+
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 .link_icon {
@@ -60,6 +69,15 @@
    justify-content: center;
    transition: filter 300ms;
    color: $color-client-1;
+
+   
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
 }
 
 .nav_icon {
@@ -73,6 +91,15 @@ a .mobile {
 .menu_icon {
   display: none;
   cursor: pointer;
+
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 .nav_links {
@@ -82,6 +109,15 @@ a .mobile {
   font-family: $font-base;
   text-transform: uppercase;
   position: relative;
+
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 
   @media screen and (max-width: 1440px){
     font-size: 1rem;
@@ -138,6 +174,13 @@ a .mobile {
   .nav_icon {
     color: $color-white;
     font-size: 2rem;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   } 
    
 
