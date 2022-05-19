@@ -186,6 +186,7 @@ export async function getStaticProps() {
       interviews: interviews.edges,
       streetdance: streetdance.edges,
     },
+    revalidate: 30,
   };
 }
 
