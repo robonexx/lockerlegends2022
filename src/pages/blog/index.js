@@ -189,16 +189,3 @@ export async function getStaticProps() {
     revalidate: 30,
   };
 }
-
-/* 
-original map of the posts to the blog page.
-
-<div className={styles.post_card} key={node.slug}>
-                <h2> {node.title}</h2>
-                <span>{formatDate(node.date)}</span>
-                <Link href={`/blog/` + node.slug} passHref>
-                  <a aria-label={node.title}></a>
-                </Link>
-              </div> 
-
-*/
