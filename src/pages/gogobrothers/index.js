@@ -34,7 +34,8 @@ export default function Gogobrothers() {
         <motion.header
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}>
+          transition={{ duration: 0.6 }}
+        >
           <Banner />
         </motion.header>
 
@@ -72,14 +73,12 @@ export default function Gogobrothers() {
             Dei Class of 74... this is what made up
           </p>
           <h2>The GoGo & YoYo brothers Group</h2>
-          <h2 style={{textAlign: 'right'}}>- Handshake of Brotherhood</h2>
+          <h2 style={{ textAlign: 'right' }}>- Handshake of Brotherhood</h2>
         </div>
         <div className={styles.images}>
           <Image
             src='/images/gogobrotherswatts.png'
             layout='fill'
-            height='100%'
-            width='100%'
             objectFit='cover'
             objectPosition='center'
             priority
@@ -127,8 +126,6 @@ export default function Gogobrothers() {
         <div className={styles.images}>
           <Image
             src='/images/tonyg.webp'
-            width='100%'
-            height='100%'
             layout='fill'
             objectFit='cover'
             objectPosition='center top'
