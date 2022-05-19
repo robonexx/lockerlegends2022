@@ -26,6 +26,7 @@
     .we {
       color: $color-client-2;
       font-weight: bold;
+      font-size: $font-size-ml;
     }
   
     
@@ -38,7 +39,7 @@
   
     p {
       color: #fff;
-      font-size: $font-size-base;
+      font-size: $font-size-m;
       line-height: 1.4rem;
       font-weight: 400;
     }
@@ -50,19 +51,18 @@
 
   .about_main {
 
-    .about_article {    
-      margin: 0 auto 10rem;
-      display: block;
-       padding: 0 3rem;
 
-  
     .about_article {
       position: relative;
       margin: 0rem auto 5rem;
       padding: 1rem 5rem;
       max-width: 800px;
-      ;
-    }
+
+      .we {
+        color: $color-client-2;
+        font-weight: bold;
+        font-size: $font-size-m;
+      }
   }
   }
 }

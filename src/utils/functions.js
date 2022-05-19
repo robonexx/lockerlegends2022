@@ -1,6 +1,9 @@
 import { domToReact } from 'html-react-parser';
 import Image from 'next/image';
 
+// styles
+import styles from '../styles/pages/BlogSlug.module.scss';
+
 // replace image function
 export const replaceImage = {
   replace: ({ name, attribs, children }) => {
@@ -10,16 +13,17 @@ export const replaceImage = {
 
     if (name === 'img') {
       return (
-        <Image
-          src={attribs.src}
-          width={attribs.width}
-          height={attribs.height}
-          alt={
-            attribs.alt
-              ? attribs.alt
-              : 'This image is missing an alt text please include one in your wordpress'
-          }
-        />
+        <span className={styles.image}>
+          <Image
+            src={attribs.src}
+            width={attribs.width}
+            height={attribs.height}
+            objectFit='cover'
+            layout='responsive'
+            priority
+            alt={attribs.alt ? attribs.alt : 'please ad featured image '}
+          />
+        </span>
       );
     }
   },
