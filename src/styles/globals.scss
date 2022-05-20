@@ -140,20 +140,3 @@ font-size: 3.5rem;
        
   }
   }
-
-  a {
-
-    @media screen and (max-width: 40em) {
-     
-      outline: none;
-      -webkit-tap-highlight-color: transparent !important;
-    outline: none !important;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-     
-}
-  }

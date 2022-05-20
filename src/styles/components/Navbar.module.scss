@@ -264,6 +264,15 @@ a .mobile {
 
     .nav_item {
       left: 10vw;
+      outline: none;
+      -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     }
 
     .nav_item:nth-child(1) {
@@ -272,6 +281,15 @@ a .mobile {
 
     .nav_links {
       font-size: $font-size-base;
+      outline: none;
+      -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     }
 
     .nav_links:hover {
