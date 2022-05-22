@@ -264,6 +264,8 @@ a .mobile {
 
     .nav_item {
       left: 10vw;
+
+      /* Not the best sollution for Accessibilty but for phones its much better looking */
       outline: none;
       -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
@@ -281,6 +283,8 @@ a .mobile {
 
     .nav_links {
       font-size: $font-size-base;
+
+      /* Not the best sollution for Accessibilty but for phones its much better looking */
       outline: none;
       -webkit-tap-highlight-color: transparent !important;
     outline: none !important;

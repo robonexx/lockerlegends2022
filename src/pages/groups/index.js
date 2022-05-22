@@ -126,7 +126,7 @@ export default function Groups() {
         <div className={styles.wrapper_col_2}>
           <motion.div className={styles.image}>
             <Image
-              src='/images/33rpm2.png'
+              src='/images/33rpm.png'
               layout='responsive'
               height='100%'
               width='100%'
