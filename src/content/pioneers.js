@@ -144,15 +144,6 @@ export const pioneers = [
     id: 'Alpha_Andersson',
   },
   {
-    name: 'Johnnie McCloud',
-    aka: 'Sambo Lock',
-    desc: 'Although “Sambo” danced for only a short time (early 1970s’) he was very influential in locking development. He was on tour with the improvasation dancers known as the “Campbellock dancers”. Known for his continous kick splits and is credited with the first known buttdrop which he titled “The Pancake".',
-    href: '#Johnnie_McCloud',
-    url: '',
-    img: '',
-    id: 'Johnnie_McCloud',
-  },
-  {
     name: 'Toni Basil',
     aka: 'Toni',
     desc: 'She was an already accomplished choreograher when she learned to lock from Don Campbell and was an organizing force in development of the Group the “Original Lockers”.  Toni had an extensive ballet background and eventually became the only female in the original Lockers Group, although Basil is not from the Original Movement of Locking her contribution as a manager should be acknowledged, without her connections and showbussiness expierience the Lockers would not have been able to obtain the professional , or reach the commercial Level of acceptance as they did, she is most noted for incorperating her ballet into locking and her continuous spins.',
@@ -182,7 +173,7 @@ export const pioneers = [
   {
     name: 'Others',
     aka: '(Image is not connected to the names',
-    desc: 'Kevin “YoYo” Lombard :see the GoGo Brothers page, \n Eugine Henderson “F&M”,\n Steve Crane ” Sinbad” see:The Ghetto dancers,\n Greg Dandridge “Captain,\n Crunch”see The Ghetto Dancers,\n Mike Frenke “Peekaboo” see: 33rpm & YoYo brothers,\n Guy Evan “Shocklock”,\n John “OkieDoke” Wilson see 33rpm,\n Jeffrey Daniel,\n Tito Collins see: The Alphebet kids & 33rom,\n Jeffery McKintire “Cat Man”,\n Bishop “CoCo” Hall,\n Tick, Sneaky T,\n Enock “Elmer Fud” Smith (RIP),\n',
+    desc: 'Kevin “YoYo” Lombard :see the GoGo Brothers page, \n Sambo Lock - Johnnie McCloud \n Eugine Henderson “F&M”,\n Steve Crane ” Sinbad” see:The Ghetto dancers,\n Greg Dandridge “Captain,\n Crunch”see The Ghetto Dancers,\n Mike Frenke “Peekaboo” see: 33rpm & YoYo brothers,\n Guy Evan “Shocklock”,\n John “OkieDoke” Wilson see 33rpm,\n Jeffrey Daniel,\n Tito Collins see: The Alphebet kids & 33rom,\n Jeffery McKintire “Cat Man”,\n Bishop “CoCo” Hall,\n Tick, Sneaky T,\n Enock “Elmer Fud” Smith (RIP),\n',
     href: '#Others',
     url: '',
     img: 'others.png',
