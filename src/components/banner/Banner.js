@@ -67,22 +67,22 @@ const BannerRowTop = ({ title }) => {
       </div>
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1}}
+        animate={{ opacity: 1 }}
         transition={{
           duration: 2,
         }}
         className={styles.row_col}
       >
         <motion.span
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-          className={styles.row_message}>
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className={styles.row_message}
+        >
           <h3>OG SKEETER RABBIT</h3>
           <h3>TONY GOGO</h3>
           <h3>BUDDY GOGO</h3>
           <h3>KEVIN YOYO</h3>
-          <h3>LOOSE CABOOSE</h3>
         </motion.span>
       </motion.div>
     </div>
