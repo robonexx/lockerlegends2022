@@ -1,17 +1,33 @@
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
+    height: 60px;
+    width: 100%;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    bottom: 0;
-    left: 0;
-    height: 100px;
-    width: 100%;
+    justify-content: space-between;
     overflow: hidden;
     color: white;
     background-color: #0000004b;
-    z-index: 1000;
-    visibility: hidden;
+    z-index: 100;
+
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+       p {
+           font-size: 0.6rem;
+       }
+
+       img {
+           width: 16px;
+           height: 16px;
+       }
+    }
+    
 }
