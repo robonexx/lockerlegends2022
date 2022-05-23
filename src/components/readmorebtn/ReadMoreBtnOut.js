@@ -1,13 +1,13 @@
-import React from 'react'
-
-import styles from '../../styles/components/ReadMoreBtn.module.scss'
+import React from 'react';
+import Link from 'next/link'
+import styles from '../../styles/components/ReadMoreBtn.module.scss';
 
 export default function ReadMoreBtnOut(props) {
   return (
-      <button className={styles.btn_special}>
-          <a href={props.srcUrl} target='_blank'>
-              {props.title}
-          </a>
-      </button>
-  )
+    <button className={styles.btn_special}>
+      <Link href={props.srcUrl} rel='noopener noreferrer nofollow' target='_blank' passHref>
+        {props.title}
+      </Link>
+    </button>
+  );
 }

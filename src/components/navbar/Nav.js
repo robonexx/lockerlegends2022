@@ -47,15 +47,7 @@ export default function Nav(props) {
 
   return (
     <nav className={styles.navbar} ref={navRef}>
-      {/* <div className={styles.menu_icon} onClick={handleClick}>
-        <div>
-          {click ? (
-            <FiX className={styles.nav_icon} />
-          ) : (
-            <FiMenu className={styles.nav_icon} />
-          )}
-        </div>
-      </div> */}
+      
       <button className={styles.menu_icon} onClick={handleClick}>
         <NavBtn navActive={navActive} />
       </button>

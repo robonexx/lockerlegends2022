@@ -49,7 +49,7 @@ const Memorial = (props) => (
           animate={{ x: 0, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          <a className={styles.go_back}>Back</a>
+          <a className={styles.go_back}>Go Back</a>
         </motion.div>
       </Link>
 
