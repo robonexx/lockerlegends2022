@@ -76,11 +76,13 @@ export default function Layout({ children }) {
         <meta name='robots' content='max-image-preview:large' />
         <link rel='canonical' href='https://www.lockerlegends.org/'></link>
       </Head>
-      <Header />
-      <ScrollToTop>
-        <main>{children}</main>
-      </ScrollToTop>
-      <Footer />
+      
+        <Header />
+        <ScrollToTop>
+          <main>{children}</main>
+        </ScrollToTop>
+        <Footer />
+    
     </>
   );
 }
