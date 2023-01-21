@@ -82,6 +82,7 @@ export default function Gogobrothers() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='gogo brohters at wattsstaxx concert'
           />
         </div>
 
@@ -130,6 +131,7 @@ export default function Gogobrothers() {
             objectFit='cover'
             objectPosition='center top'
             priority
+            alt='tony gogo'
           />
         </div>
         <p>

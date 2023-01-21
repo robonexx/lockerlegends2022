@@ -64,6 +64,7 @@ export default function Terminology({ speed }) {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='street terminology'
           />
         </motion.div>
         <div
@@ -124,6 +125,7 @@ export default function Terminology({ speed }) {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='terminology'
           />
         </div>
 

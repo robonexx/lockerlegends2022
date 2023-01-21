@@ -13,7 +13,10 @@ export default function Groups() {
           name='description'
           content='Information history about the dancers and groups that was active in the 70s'
         />
-        <meta property='og:title' content='Information about groups and dancers' />
+        <meta
+          property='og:title'
+          content='Information about groups and dancers'
+        />
       </Head>
       <section>
         <motion.header
@@ -46,6 +49,7 @@ export default function Groups() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='wild & peaceful'
           />
         </motion.div>
         <p>
@@ -88,6 +92,7 @@ export default function Groups() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='ghetto dancers'
           />
         </motion.div>
         <div className={styles.wrapper_col_2}>
@@ -133,6 +138,7 @@ export default function Groups() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='33 rpm'
             />
           </motion.div>
           <p>
@@ -167,6 +173,7 @@ export default function Groups() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='alphabet kids'
             />
           </div>
         </div>
@@ -186,6 +193,7 @@ export default function Groups() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='something special'
           />
         </div>
         <h2>Wild And Peaceful</h2>
@@ -205,6 +213,7 @@ export default function Groups() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='wild & peaceful'
             />
           </div>
         </div>
@@ -219,6 +228,7 @@ export default function Groups() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='the lockers'
             />
           </div>
           <p>
@@ -242,6 +252,7 @@ export default function Groups() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='the lockers late 70'
             />
           </div>
           <p>
@@ -292,6 +303,7 @@ export default function Groups() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='the lockers late 70 pt2'
             />
           </div>
         </div>
@@ -365,6 +377,7 @@ export default function Groups() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='captain crunch'
           />
         </div>
         <p>Charles (Kaptin Krunch) Washington</p>

@@ -1,12 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Image from 'next/image';
-import { motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // styles
 import styles from '../../styles/layout/PageLayout.module.scss';
 
 export default function Terminology() {
-
   return (
     <motion.div className={styles.pagelayout}>
       <Head lang='en'>
@@ -15,7 +14,10 @@ export default function Terminology() {
           name='description'
           content='History about the soul train televsion program that was a plattform for afro americans'
         />
-        <meta property='og:title' content='History about soul train the tv show' />
+        <meta
+          property='og:title'
+          content='History about soul train the tv show'
+        />
       </Head>
       <section>
         <motion.header
@@ -53,6 +55,7 @@ export default function Terminology() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='soultrain'
           />
         </motion.div>
 
@@ -99,6 +102,7 @@ export default function Terminology() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='soultrain'
           />
         </motion.div>
         <div className={styles.wrapper_col_2}>
@@ -131,6 +135,7 @@ export default function Terminology() {
             objectFit='cover'
             objectPosition='center'
             priority
+            alt='soultrain line'
           />
         </motion.div>
         <motion.div className={styles.wrapper}>
@@ -199,21 +204,21 @@ export default function Terminology() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='soultrain logo'
             />
           </div>
-          </div>
-          <p>
-            Don Cornelius retired as host in 1993, and the show used guest host
-            from that time until 1997, comedian Mystro Clark hosted for
-            two-years. Clark , and was then replaced by actor Shemor Moore in
-            1999. In 2003, There was another change when actor Dorian Gregory,
-            took over and hosted through 2006. then the show aired in reruns
-            until it finally ended its run as The Best of Soul Train for its
-            final two seasons. But Locking and other creative dance style
-            continued to be exposed.featuring many great dancers and musical
-            artist.
-          </p>
-        
+        </div>
+        <p>
+          Don Cornelius retired as host in 1993, and the show used guest host
+          from that time until 1997, comedian Mystro Clark hosted for two-years.
+          Clark , and was then replaced by actor Shemor Moore in 1999. In 2003,
+          There was another change when actor Dorian Gregory, took over and
+          hosted through 2006. then the show aired in reruns until it finally
+          ended its run as The Best of Soul Train for its final two seasons. But
+          Locking and other creative dance style continued to be
+          exposed.featuring many great dancers and musical artist.
+        </p>
+
         <div className={styles.wrapper}>
           <p>
             {' '}
@@ -311,6 +316,7 @@ export default function Terminology() {
               objectFit='cover'
               objectPosition='center'
               priority
+              alt='jody & jeffrey at soultrain'
             />
           </div>
           <div className={styles.wrapper}>
@@ -368,7 +374,9 @@ export default function Terminology() {
           </p>
         </div>
         <div className={styles.wrapper}>
-          <h1 className={styles.highlight_o}>The Damita Jo Freeman Foundation</h1>
+          <h1 className={styles.highlight_o}>
+            The Damita Jo Freeman Foundation
+          </h1>
           <h1 className={styles.highlight_w}>Soul Train Dancers speak :</h1>
         </div>
         <div className={styles.wrapper}>

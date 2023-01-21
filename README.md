@@ -1,19 +1,15 @@
 #  LockerLegends website 2022 
 
-## Exam project and a live site rebuilding the lockerlegends.net / .org websites 
-(site is hosted in two locations, two domains, youll fint the links in the end of my reflektion)
+## This project and a live site rebuilding the lockerlegends.net site, still old site up will be switced to this latest 19th of may 2022 (was on schedule)
 
-So this is the repo of the "end result" of my exam project at KYH, I decided to rebuild the lockerlegends website.
-I have also promised the product owner that I will continue to update and refine the website thru this year. 
-Add features and optimize a few things to make it faster and more stable. 
+So this is a heart filled project for me, I decided to rebuild the lockerlegends website for Mr James Higgins aka "Skeeter Rabbit".
+Also my first solo project and customer :D
 
 
 ### Why did I choose this project?
 
-Well James Higgins is the owner of the website and and locker goes by the alias O.G SKEETER RABBIT and is member of the crew called GOGO BROTHERS. 
-He had this website since 2004, when I was seaching for history and the background of the dance style Locking I stumbled up on his website and used it as my source of information while teaching the ART FORM OF LOCKING. 
-I also contacted the Owner and his partners and did a project called ** FUNKCAMP ** which gave the oportunity for youth in Stockholm to learn directly from the sources, pioneers of the dance. 
-He has always shared his knowledge and is the first one who actually had an informative page about the pioneers, history, steps and so on online.
+Well James Higgins is the owner of the website and he is a pioneer old school Soul-train dancer and locker, representing the artform of locking aka Campbellocking.
+He has always shared his knowledge and is the first one who actually had an informative page about the artform of locking, the pioneers, history, steps and so on.
 James has always given his time for the people who have shown interest and many times put in hours of his free time to teach and travel.
 
 #### > Giving back
@@ -21,38 +17,31 @@ So for me a chance of giving back to a person who has helped me in my carreer si
 
 ### What is the goal?
 
-The goal is to be able to use / implement everything ive learned since fall 2020 when this education started. 
-Its my exam so I have to use the different subjects we had during this education, try to get something from every part of the curriculum.
-Also i decided to use a new framework so I chose NEXT cause I've been working a little bit (for a year) in REACT
-We have to use the Web development techniques, UX (im not the best at this but did it) Design (using figma) and working methodologies, scrum kanban (used Trello).
+The goal is to be able to use / implement a lot of what I learned since fall 2020 when I took a deepdive in to programming. 
+Its my solo "big project" so I have to use the different subjects that I have learned and also learned when I was a student at KYH.
+I´m try to get something from every part of the curriculums I've learned from.
+
+Web development techniques, UX and working methodologies.
 
 ## The problem to solve
 
-Well the website has not been updated the past probably 10 years, it´s done in wordpress and has a lot of bugs in it that needs to be fixed.
-Links that goes no where or to pages that most dont want to visit. There are pages without content and so forth.
-It was hard to navigate as most commented this when i did the user research and har to read due to a lot of contect being plain text with out sepration of any kind no good quality images and so on. 
-The UI is outdated. The owner cant upload images in to wordpress, code is missing some one who has helped has missed and erased this in the php file. 
-The average visitor statistic is 1-2 pages per visitor, lasting from 30s-2min. In other words something is needed to be done. 
-A lot of spam to be removed with over 9000 comments, 23.000 spam messages of somekind and there is no comment section open!
-
-### Customer wants to have a 70´s look with a modern approach and feel of "news paper articles"
-
+Well the website had not been updated for the past probably 10 years, it´s done in wordpress and has a lot of bugs in it, spam and such, that needs to be cleaned/ fixed. (cleaned 18.000 comments and spam, links that was to well not so good sites etc)
+It´s hard to navigate and read due to a lot of content being plain text with out separation of any kind. 
+The UI is outdated. The owner can't upload images in to wordpress, code is missing. (fixed) 
+The average visitor statistic is 1-2 pages per visitor, lasting from 30s-2min. In other words something is needed to be done. (went up to about 2-300 first weeks and now jan 2023 its about 20-50 visitors, no updates for awhile)
+A lot of spam to be removed with over 18.000 comments/spam, and there is no comment section open? (fixed it)
 
 ## How will I try to solve the problems and build this site?
 
-So I desided to rebuild the page from scratch, In the end I chose NEXT JS.
-I have downloaded the DB and started a new WP project locally 
-I then restructured it in WP first, cleaned the DB and copied all the old information from the db, so it can be used as a headless CMS.
-Uploaded it to siteground.
-I built all pages in NEXT.JS that is not going to have any changes, so all the pages with valuable information and knowledge that dont change. 
-Used SASS scss.module for styling (switched from styled components)
-Made it so that the customer can use posts, create new posts in WP then fetch that information so that he has a blog section on the new website
-I first made it possible to also do pages, but then i changed my mind, cause if the customer can create new pages then the website will probable in the end,
-end up looking like the old one. So I wanted to avoid this. 
-Use headless cms in NEXT.js to get the data from wp (tried apollo and will probably change to it, used regular FETCH API on this one for now)
-Use siteground and make a subdomain for use as the wp site with the information
-Take the domain and use it in VERCEL where the new site will be hosted, for now. 
-Rebuild the nav, design new look, and add images, gifs and videos to the website (right now its a bit heavy on the image part so will move the images to provider, processor like imgix)
+So I desided to rebuild the page from scratch, I have downloaded the DB and started a new WP project locally. 
+I will then restructure it in WP first so it can be used as a CMS
+I will build all pages in NEXT.JS that is not going to have any changes
+Use posts in WP as the dynamic 'pages' that the customer will use as a cms
+Use headless cms in NEXT.js to get the data from wp
+Use siteground and make a subdomain for use as the wp site
+Then use NEXT and vercel to have the website on. 
+Wp page is hosted on siteground. 
+(all done and done)
 
 
 # __Languages and Tools:__
@@ -165,13 +154,11 @@ A yeah and contolling my ADHD... with that written
 - will be up until end of may
 </br>
 
---- 
-</br>
-and the New website (my version)
+- importing images, solved with the help of stack and next documents
 
-- LockerLegends New - [NewLockerLegends](https://www.lockerlegends.org/)
+- Nav not closing in NEXT due to it being serverside rendered (found a fix implemented it)
 
-- this page is already up and running and updated
+Next.js images, links, useEffect problems with useRef, (got it working)
 
 </br>
 
@@ -183,7 +170,7 @@ and the New website (my version)
 - Github - [robonexx](https://github.com/robonexx)
 - Instagram - [r.o.b_o.n.e](https://www.instagram.com/r.o.b_o.n.e/)
 - Linkedin - [Robert Wägar](https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/)
-- Portfolio - "In the works"
+- Portfolio - "Coming 2023"
 
 </br>
 

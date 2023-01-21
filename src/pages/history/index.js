@@ -1,6 +1,6 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Image from 'next/image';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 // styles
 import styles from '../../styles/layout/PageLayout.module.scss';
@@ -25,14 +25,16 @@ export default function History() {
         >
           <div>
             <motion.h1
-            initial={{ y: -200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.4 }}
-            >OUR STORY OF THE HISTORY OF LOCKING</motion.h1>
+              initial={{ y: -200, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
+            >
+              OUR STORY OF THE HISTORY OF LOCKING
+            </motion.h1>
             <motion.h2
-             initial={{ y: 200, opacity: 0 }}
-             animate={{ y: 0, opacity: 1 }}
-             transition={{ delay: 0.6, duration: 0.4 }}
+              initial={{ y: 200, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.4 }}
             >
               THIS IS A HISTORY OF THE ORIGINAL FOUNDATION OF A STREET DANCE
               CALLED ”LOCKING”
@@ -59,15 +61,14 @@ export default function History() {
             through the many eyes that experienced it, which all came together
             to produce its foundation <br /> <br />
           </p>
-          <h1></h1>
-          ...Read and Enjoy
         </div>
 
         <motion.div
-           initial={{ y: 200, opacity: 0 }}
-           animate={{ y: 0, opacity: 1 }}
-           transition={{ delay: 0.6, duration: 0.6 }}
-          className={styles.image}>
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className={styles.image}
+        >
           <Image
             src='/images/gogobrotherswatts.png'
             width='100'
@@ -75,6 +76,7 @@ export default function History() {
             layout='responsive'
             objectFit='cover'
             objectPosition='center'
+            alt='gogo brothers at wattsstaxx concert'
           />
         </motion.div>
         <div className={styles.wrapper}>
@@ -152,6 +154,7 @@ export default function History() {
             layout='responsive'
             objectFit='cover'
             objectPosition='center'
+            alt='mavericks flat'
           />
         </div>
         <div className={styles.wrapper}>
@@ -245,6 +248,7 @@ export default function History() {
             height='100'
             layout='responsive'
             objectFit='cover'
+            alt='the lockers late 70'
           />
         </div>
         <div className={styles.wrapper_2_col}>
@@ -281,6 +285,7 @@ export default function History() {
               layout='responsive'
               objectFit='cover'
               objectPosition='center'
+              alt='33 rpm'
             />
           </div>
         </div>

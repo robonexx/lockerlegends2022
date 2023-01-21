@@ -113,6 +113,7 @@ export default function Socialparty() {
             layout='responsive'
             objectFit='cover'
             objectPosition='center'
+            alt='social dances'
           />
         </div>
         <div className={styles.wrapper}>
@@ -157,6 +158,7 @@ export default function Socialparty() {
               layout='responsive'
               objectFit='cover'
               objectPosition='center'
+              alt='social dances'
             />
           </div>
         </div>

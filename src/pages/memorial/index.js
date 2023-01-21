@@ -70,6 +70,7 @@ const Index = (props) => (
             key={pioneer.id}
             href='/memorial/[id]'
             as={`/memorial/${pioneer.id}`}
+            passHref
           >
             <motion.div
               variants={fadeInUp}

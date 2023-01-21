@@ -76,6 +76,7 @@
 
     h2 {
         margin: 1rem 0;
+        padding: 0 0.5rem;
         color: $color-client-2;
     }
     p {
@@ -84,9 +85,9 @@
     }
 
     p:nth-child(2n) {
-        background-color: $color-black;
-        color: $color-client-2;
-        font-weight: 800;
+        background-color: $color-client-3;
+        color: $color-client-1;
+        font-weight: 400;
     }
 
     .wrapper {
@@ -189,7 +190,7 @@
   }
 
   .big_text {
-      font-size: $font-size-ml;
+      font-size: $font-size-m;
 
       @media screen and (min-width: 960px) {
           font-size: $font-size-l;
