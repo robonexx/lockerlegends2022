@@ -36,10 +36,11 @@ export default function Hero() {
           ></Image>
         </motion.div>
 
-        <motion.h3 className={styles.hero_subtitle}
-         initial={{ x: 100, opacity: 0 }}
-         animate={{ x: 0, opacity: 1 }}
-         transition={{delay: 0.2, duration: 0.5}}
+        <motion.h3
+          className={styles.hero_subtitle}
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
         >
           Official “LOCKING” pioneers website of the street dance pioneers
         </motion.h3>
