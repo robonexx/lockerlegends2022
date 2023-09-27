@@ -2,28 +2,21 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { formatDate } from '../../utils/functions';
+import IMG from '/public/images/socialdance.png';
 
 import styles from '../../styles/components/Grid.module.scss';
 
-export default function GridItem({
-  props: {
-    featuredImage: {
-      node: { sourceUrl },
-    },
-    slug,
-    title,
-    date,
-  },
-}) {
+function GridItem({ featuredImage, slug, title, date }) {
+  const sourceUrl = featuredImage?.node?.sourceUrl || '';
+
   return (
     <div className={styles.grid_item}>
-      <div
-        className={styles.image}>
+      <div className={styles.image}>
         <Image
-          src={sourceUrl}
+          src={sourceUrl || IMG}
+          alt={title}
           layout='fill'
           objectFit='cover'
-          alt='blog post image'
           priority
         />
       </div>
@@ -35,3 +28,5 @@ export default function GridItem({
     </div>
   );
 }
+
+export default GridItem;

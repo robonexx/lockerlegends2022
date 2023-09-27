@@ -78,6 +78,7 @@ export default function Home({ posts, interviews, streetdance }) {
             <div className={styles.image}>
               <Image
                 src='/images/socialdance2.png'
+                alt='social dancing'
                 width='100%'
                 height='100%'
                 layout='responsive'
@@ -99,10 +100,14 @@ export default function Home({ posts, interviews, streetdance }) {
           <div className={styles.section}>
             <h1>FROM CAMBELLOCKING to LOCKING</h1>
             <h2>History of Locking</h2>
-            <p>Don "Campbellock" Campbell, the Creator of Campbellocking</p>
+            <p>
+              Don &quat;Campbellock&quat; Campbell, the Creator of
+              Campbellocking
+            </p>
             <div className={styles.image}>
               <Image
                 src='/images/donflying.jpg'
+                alt='don campbellock swandive'
                 width='100%'
                 height='100%'
                 layout='responsive'
@@ -144,10 +149,7 @@ export default function Home({ posts, interviews, streetdance }) {
               Lewis, James “SkeeterRabbit” Higgins and Edwin “Buddy GoGo”
               Lombard..from the GoGo, YoYo and CoCo Watts Brothers Family
             </p>
-            <ReadMoreBtnIn
-              srcUrl='/gogobrothers'
-              title='The GOGO BROTHERS'
-            />
+            <ReadMoreBtnIn srcUrl='/gogobrothers' title='The GOGO BROTHERS' />
           </div>
 
           <div className={styles.section}>
@@ -199,6 +201,7 @@ export default function Home({ posts, interviews, streetdance }) {
           <div className={styles.image}>
             <Image
               src='/images/wattsriots.png'
+              alt='whatts riots'
               width='100%'
               height='100%'
               layout='responsive'
@@ -330,15 +333,17 @@ export default function Home({ posts, interviews, streetdance }) {
 
           <div className={styles.section}>
             <h2>In loving memory...</h2>
-            <p>...to the ones who contributed to the dance, artform and culture of locking. <br />
-              The artists that inspired us and who brought soul, funk and insipiration to the communities.<br />
-              To the ones who will forever be in our hearts and never forgotten, we have done this memorial page to honor these Legends!
+            <p>
+              ...to the ones who contributed to the dance, artform and culture
+              of locking. <br />
+              The artists that inspired us and who brought soul, funk and
+              insipiration to the communities.
+              <br />
+              To the ones who will forever be in our hearts and never forgotten,
+              we have done this memorial page to honor these Legends!
             </p>
 
-            <ReadMoreBtnIn
-              srcUrl='/memorial'
-              title='Memorial page'
-            />
+            <ReadMoreBtnIn srcUrl='/memorial' title='Memorial page' />
           </div>
           <div className={styles.section}>
             <div>
@@ -355,6 +360,7 @@ export default function Home({ posts, interviews, streetdance }) {
                 href={{
                   pathname: 'https://www.facebook.com/groups/158481954185947',
                 }}
+                passHref
                 target='_blank'
               >
                 <div className={styles.icons}>
@@ -381,8 +387,8 @@ export default function Home({ posts, interviews, streetdance }) {
               padding: '4px 8px',
             }}
           >
-            More content will be added, stay tuned and hope you'll like our new
-            look!
+            More content will be added, stay tuned and hope you&apos;ll like our
+            new look!
           </p>
           <h2 style={{ textAlign: 'center', fontSize: '2rem' }}>
             ENJOY THE WEBSITE!
