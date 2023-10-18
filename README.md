@@ -1,5 +1,7 @@
 #  LockerLegends website 2022 
 
+### - will combine some of this "old lockerlegends website with the new 2024 version"
+
 ## This project and a live site rebuilding the lockerlegends.net site, still old site up will be switced to this latest 19th of may 2022 (was on schedule)
 
 So this is a heart filled project for me, I decided to rebuild the lockerlegends website for Mr James Higgins aka "Skeeter Rabbit".
