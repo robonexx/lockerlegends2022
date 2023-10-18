@@ -64,7 +64,7 @@ Wp page is hosted on siteground.
 - [localstorage]
 - [json-server]
 
-### For design:
+### For design: (has changed since this was made)
 - [figma]
 
 ### For my Scrumboard, sprints etc:

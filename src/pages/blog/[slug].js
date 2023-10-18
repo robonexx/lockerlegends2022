@@ -39,22 +39,18 @@ export default function Blog({ blog, blogs }) {
             <meta content={makeExcerpt(blog.excerpt)} name='description' />
           </Head>
 
-            <article className={styles.blog_slug_main}>
-            <span
-                className={styles.go_back}
-                onClick={() => router.back()}
-              >Go Back</span>
+          <article className={styles.blog_slug_main}>
+            <span className={styles.go_back} onClick={() => router.back()}>
+              Go Back
+            </span>
             <span className={styles.date}>{formatDate(blog.date)}</span>
             <h4 className={styles.blog_title}>Editorial: {blog.title}</h4>
 
-           
-
             <div className={styles.post_wrapper}>
-             
               {parse(blog.content, replaceImage)}
             </div>
           </article>
-        
+
           <div className={styles.blog_related}>
             <h2 className={styles.more}>More to read</h2>
 

@@ -3,24 +3,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { formatDate } from '../../utils/functions';
 
+import IMG from '../../../public/images/33rpm.png'
+
 import styles from '../../styles/components/Grid.module.scss';
 
 export default function GridItem({
-  props: {
+  props
+}) {
+  console.log(props)
+  
+  const { title, slug, date, featuredImage } = props
+
+  const { node: { sourceUrl } } = featuredImage
+
+  console.log(sourceUrl)
+  
+/*   props: {
     featuredImage: {
       node: { sourceUrl },
     },
     slug,
     title,
     date,
-  },
-}) {
+  }, */
   return (
     <div className={styles.grid_item}>
-      <div
-        className={styles.image}>
+      <div className={styles.image}>
         <Image
-          src={sourceUrl}
+          src={ IMG}
           layout='fill'
           objectFit='cover'
           alt='blog post image'
