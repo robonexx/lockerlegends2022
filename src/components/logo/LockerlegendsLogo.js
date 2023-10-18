@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/components/Logo.module.scss';
+import Link from 'next/link';
 
 const LL_LOGO = () => {
   return (
@@ -119,9 +120,9 @@ const LL_LOGO = () => {
 export default function LockerlegendsLogo() {
   return (
     <div className={styles.logo}>
-     <a href='/'>
+     <Link href='/' passHref>
         <LL_LOGO />
-      </a>
+      </Link>
     </div>
   );
 }
